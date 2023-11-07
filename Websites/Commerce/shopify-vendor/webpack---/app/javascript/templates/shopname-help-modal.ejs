@@ -1,0 +1,22 @@
+module.exports = function(obj) {
+obj || (obj = {});
+var __t, __p = '', __j = Array.prototype.join;
+function print() { __p += __j.call(arguments, '') }
+with (obj) {
+__p += '<div id="' +
+((__t = ( modalId )) == null ? '' : __t) +
+'" class="helpmodal__container">\n    <div class="helpmodal">\n      <div class="helpmodal__header">\n        <h2>Your Store URL</h2>\n        <span class="helpmodal__close">&times;</span>\n      </div>\n      <div class="' +
+((__t = ( modalContentClass || 'helpmodal__content' )) == null ? '' : __t) +
+'">\n        ';
+ for (var i in Object.values(content)) {;
+__p += '\n          <div class="content__section">\n            ' +
+((__t = ( Object.values(content)[i].question )) == null ? '' : __t) +
+'\n            ' +
+((__t = ( Object.values(content)[i].answer )) == null ? '' : __t) +
+'\n          </div>\n       ';
+ } ;
+__p += '\n      </div>\n    </div>\n\n</div>\n';
+
+}
+return __p
+}

@@ -1,0 +1,105 @@
+{
+"type": "web",
+"devices_spec": "/home/rapanos/Desktop/android-runner/devices.json",
+"devices": {
+"Samsung-J7-Duos": {},
+"Pixel-5": {}
+},
+"repetitions": 3,
+"randomization": false,
+"clear_cache": true,
+"browsers": ["chrome","firefox","opera"],
+"paths": [
+"http://host_ip_address/General/baidu/www.baidu.com/index.html",
+"http://host_ip_address/General/espn/www.espn.com/index.html",
+"http://host_ip_address/General/blogger/www.blogger.com/about/",
+"http://host_ip_address/General/netvibes/www.netvibes.com/en.html",
+"http://host_ip_address/General/wikipedia/www.wikipedia.org/index.html",
+
+"http://host_ip_address/Finance/bloomberg/www.bloomberg.com/subscriptions/yTAOdl37xPb73LM.html",
+"http://host_ip_address/Finance/coinmarketcap/coinmarketcap.com/",
+"http://host_ip_address/Finance/forbes/www.forbes.com/",
+"http://host_ip_address/Finance/paypal/www.paypal.com/ro/home.html",
+"http://host_ip_address/Finance/tinkoff/www.tinkoff.ru/",
+
+"http://host_ip_address/Consumer/evri/www.evri.com/",
+"http://host_ip_address/Consumer/foursquare/foursquare.com/",
+"http://host_ip_address/Consumer/narvar/corp.narvar.com/",
+"http://host_ip_address/Consumer/rightmove/www.rightmove.co.uk/",
+"http://host_ip_address/Consumer/trulia/www.trulia.com/",
+
+"http://host_ip_address/Commerce/bestbuy/www.bestbuy.com/",
+"http://host_ip_address/Commerce/jimdo/www.jimdo.com/",
+"http://host_ip_address/Commerce/shopify/www.shopify.com/ppc/ecommerce.html",
+"http://host_ip_address/Commerce/target/www.target.com/",
+"http://host_ip_address/Commerce/woocommerce/woocommerce.com/",
+
+"http://host_ip_address/Social/facebook/www.facebook.com/",
+"http://host_ip_address/Social/myasiantv/myasiantv.cx/",
+"http://host_ip_address/Social/wechat/www.wechat.com/",
+"http://host_ip_address/Social/whatsapp/www.whatsapp.com/",
+"http://host_ip_address/Social/youtube/www.youtube.com/",
+
+
+
+
+
+"http://host_ip_address/General/baidu-vendor/www.baidu.com/index.html",
+"http://host_ip_address/General/espn-vendor/www.espn.com/index.html",
+"http://host_ip_address/General/blogger-vendor/www.blogger.com/about/",
+"http://host_ip_address/General/netvibes-vendor/www.netvibes.com/en.html",
+"http://host_ip_address/General/wikipedia-vendor/www.wikipedia.org/index.html",
+
+"http://host_ip_addressFinance/bloomberg-vendor/www.bloomberg.com/subscriptions/yTAOdl37xPb73LM.html",
+"http://host_ip_address/Finance/coinmarketcap-vendor/coinmarketcap.com/",
+"http://host_ip_address/Finance/forbes-vendor/www.forbes.com/",
+"http://host_ip_address/Finance/paypal-vendor/www.paypal.com/ro/home.html",
+"http://host_ip_address/Finance/tinkoff-vendor/www.tinkoff.ru/",
+
+"http://host_ip_address/Consumer/evri-prefixes/www.evri.com/",
+"http://host_ip_address/Consumer/foursquare-prefixes/foursquare.com/",
+"http://host_ip_address/Consumer/narvar-prefixes/corp.narvar.com/",
+"http://host_ip_address/Consumer/rightmove-prefixes/www.rightmove.co.uk/",
+"http://host_ip_address/Consumer/trulia-prefixes/www.trulia.com/",
+
+"http://host_ip_address/Commerce/bestbuy-vendor/www.bestbuy.com/",
+"http://host_ip_address/Commerce/jimdo-vendor/www.jimdo.com/",
+"http://host_ip_address/Commerce/shopify-vendor/www.shopify.com/ppc/ecommerce.html",
+"http://host_ip_address/Commerce/target-vendor/www.target.com/",
+"http://host_ip_address/Commerce/woocommerce-vendor/woocommerce.com/",
+
+"http://host_ip_address/Social/facebook-vendor/www.facebook.com/",
+"http://host_ip_address/Social/myasiantv-vendor/myasiantv.cx/",
+"http://host_ip_address/Social/wechat-vendor/www.wechat.com/",
+"http://host_ip_address/Social/whatsapp-vendor/www.whatsapp.com/",
+"http://host_ip_address/Social/youtube-vendor/www.youtube.com/"
+],
+"profilers": {
+"batterymanager": {
+"experiment_aggregation": "default",
+"sample_interval": 100,
+"data_points": [
+"BATTERY_PROPERTY_CURRENT_NOW", "EXTRA_VOLTAGE"
+],
+"persistency_strategy": [
+"adb_log"
+]
+},
+"AndroidPlugin": {
+"subject_aggregation": "none",
+"experiment_aggregation" : "Scripts/aggregate_android_plugin_cm.py",
+"sample_interval": 100,
+"data_points": ["cpu", "mem"]
+}
+},
+"scripts": {
+"before_experiment": "Scripts/before_experiment.py",
+"before_run": "Scripts/before_run.py",
+"after_launch": "Scripts/after_launch.py",
+"before_close": "Scripts/before_close.py",
+"after_run": "Scripts/after_run.py",
+"after_experiment": "Scripts/after_experiment.py"
+},
+
+"time_between_run": 60000
+}

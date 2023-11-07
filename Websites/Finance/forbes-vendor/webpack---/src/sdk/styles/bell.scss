@@ -1,0 +1,302 @@
+@import "variables";
+
+$arrowSize: 15px;
+$tooltipAnimationDisplacement: 30px;
+
+@media print {
+    .pushly_bell {
+        display: none !important;
+    }
+}
+
+.pushly_bell {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &:not(.managed) {
+        position: fixed;
+        z-index: 1000000;
+        transition: all 0.5s ease;
+    }
+
+    &.subscribed {
+        .pushly_bell-tooltip-notsubscribed {
+            display: none;
+        }
+
+        svg {
+            opacity: 0.7;
+        }
+    }
+
+    &:not(.subscribed) {
+        .pushly_bell-tooltip-subscribed {
+            display: none;
+        }
+    }
+
+    &.hover {
+        svg {
+            opacity: 0.7;
+        }
+
+        .pushly_bell-tooltip {
+            opacity: 1;
+        }
+    }
+
+    svg {
+        z-index: 1;
+        transition: all 0.5s ease;
+        box-shadow: 0px 1px 3px #888;
+        border-radius: 1000px;
+        cursor: pointer;
+    }
+
+    .pushly_bell-tooltip {
+        transition: all 0.5s ease;
+
+        position: relative;
+
+        opacity: 0;
+        pointer-events: none;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        margin-right: calc($arrowSize/2);
+        margin-left: calc($arrowSize/2);
+
+        .pushly_bell-tooltip-text {
+            padding: 8px 16px;
+            border-radius: 3px;
+
+            font-size: 13px;
+        }
+
+        .pushly_bell-tooltip-arrow {
+            position: relative;
+
+            width: $arrowSize;
+            height: $arrowSize;
+
+            border-radius: 1px;
+
+            transform: rotate(45deg);
+        }
+    }
+
+    /* desktop positioning */
+
+    @media screen and (min-width: $mobile-max-size) {
+        &.d-top-left {
+            top: 40px;
+            left: -200px;
+
+            &.hover {
+                .pushly_bell-tooltip {
+                    left: 0;
+                }
+            }
+
+            .pushly_bell-tooltip {
+                left: -$tooltipAnimationDisplacement;
+
+                .pushly_bell-tooltip-arrow {
+                    left: calc($arrowSize/2);
+                }
+            }
+
+            &.pushly-prompt-visible {
+                left: 40px;
+            }
+        }
+
+        &.d-top-right {
+            top: 40px;
+            right: -200px;
+
+            flex-direction: row-reverse;
+
+            &.hover {
+                .pushly_bell-tooltip {
+                    right: 0;
+                }
+            }
+
+            .pushly_bell-tooltip {
+                right: -$tooltipAnimationDisplacement;
+                flex-direction: row-reverse;
+
+                .pushly_bell-tooltip-arrow {
+                    right: calc($arrowSize/2);
+                }
+            }
+
+            &.pushly-prompt-visible {
+                right: 40px;
+            }
+        }
+
+        &.d-bottom-left {
+            bottom: 40px;
+            left: -200px;
+
+            &.hover {
+                .pushly_bell-tooltip {
+                    left: 0;
+                }
+            }
+
+            .pushly_bell-tooltip {
+                left: -$tooltipAnimationDisplacement;
+
+                .pushly_bell-tooltip-arrow {
+                    left: calc($arrowSize/2);
+                }
+            }
+
+            &.pushly-prompt-visible {
+                left: 40px;
+            }
+        }
+
+        &.d-bottom-right {
+            bottom: 40px;
+            right: -200px;
+
+            flex-direction: row-reverse;
+
+            &.hover {
+                .pushly_bell-tooltip {
+                    right: 0;
+                }
+            }
+
+            .pushly_bell-tooltip {
+                right: -$tooltipAnimationDisplacement;
+                flex-direction: row-reverse;
+
+                .pushly_bell-tooltip-arrow {
+                    right: calc($arrowSize/2);
+                }
+            }
+
+            &.pushly-prompt-visible {
+                right: 40px;
+            }
+        }
+
+        &.d-disabled {
+            display: none;
+        }
+    }
+
+    /* mobile positioning */
+
+    @media screen and (max-width: $mobile-max-size) {
+        &.m-top-left {
+            top: 40px;
+            left: -200px;
+
+            &.hover {
+                .pushly_bell-tooltip {
+                    left: 0;
+                }
+            }
+
+            .pushly_bell-tooltip {
+                left: -$tooltipAnimationDisplacement;
+
+                .pushly_bell-tooltip-arrow {
+                    left: calc($arrowSize/2);
+                }
+            }
+
+            &.pushly-prompt-visible {
+                left: 40px;
+            }
+        }
+
+        &.m-top-right {
+            top: 40px;
+            right: -200px;
+
+            flex-direction: row-reverse;
+
+            &.hover {
+                .pushly_bell-tooltip {
+                    right: 0;
+                }
+            }
+
+            .pushly_bell-tooltip {
+                right: -$tooltipAnimationDisplacement;
+                flex-direction: row-reverse;
+
+                .pushly_bell-tooltip-arrow {
+                    right: calc($arrowSize/2);
+                }
+            }
+
+            &.pushly-prompt-visible {
+                right: 40px;
+            }
+        }
+
+        &.m-bottom-left {
+            bottom: 40px;
+            left: -200px;
+
+            &.hover {
+                .pushly_bell-tooltip {
+                    left: 0;
+                }
+            }
+
+            .pushly_bell-tooltip {
+                left: -$tooltipAnimationDisplacement;
+
+                .pushly_bell-tooltip-arrow {
+                    left: calc($arrowSize/2);
+                }
+            }
+
+            &.pushly-prompt-visible {
+                left: 40px;
+            }
+        }
+
+        &.m-bottom-right {
+            bottom: 40px;
+            right: -200px;
+
+            flex-direction: row-reverse;
+
+            &.hover {
+                .pushly_bell-tooltip {
+                    right: 0;
+                }
+            }
+
+            .pushly_bell-tooltip {
+                right: -$tooltipAnimationDisplacement;
+                flex-direction: row-reverse;
+
+                .pushly_bell-tooltip-arrow {
+                    right: calc($arrowSize/2);
+                }
+            }
+
+            &.pushly-prompt-visible {
+                right: 40px;
+            }
+        }
+
+        &.m-disabled {
+            display: none;
+        }
+    }
+}

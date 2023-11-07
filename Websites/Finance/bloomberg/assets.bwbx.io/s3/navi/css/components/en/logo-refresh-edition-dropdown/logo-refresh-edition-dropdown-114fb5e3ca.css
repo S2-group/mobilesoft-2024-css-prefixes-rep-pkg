@@ -1,0 +1,190 @@
+.navi-edition {
+  font-size: 18px;
+  line-height: 1;
+  margin-top: -3px;
+  position: relative;
+  width: 100%;
+}
+
+.navi-edition__dropdown-wrapper {
+  left: -16px;
+  padding-top: 32px;
+  position: absolute;
+  width: 120px;
+  z-index: -1;
+}
+
+.navi-edition__dropdown {
+  background-color: #1c1c1c;
+  background-color: var(--navi-primary-color,#1c1c1c);
+  border-radius: 4px;
+  font-family: BWHaasGroteskWeb,BWHaasGrotesk-55Roman-Web,sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  height: 0;
+  line-height: 1.85;
+  list-style: none;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  text-align: left;
+  transition: opacity .3s ease-out;
+  width: 100%;
+}
+
+.navi-edition__dropdown--show {
+  height: auto;
+  opacity: 1;
+  padding: 8px 0 11px;
+}
+
+.navi-edition__item {
+  height: 28px;
+  padding: 0 10px;
+}
+
+.navi-edition__item:hover {
+  background-color: hsla(0,0%,100%,.20784);
+}
+
+.navi-edition__item:not(:last-child):after {
+  background-color: #fff;
+  background-color: var(--navi-secondary-color,#fff);
+  content: "";
+  height: 1px;
+  left: 0;
+  margin: auto;
+  right: 0;
+  position: absolute;
+  width: 100px;
+}
+
+.navi-edition__link {
+  align-items: center;
+  display: flex;
+  height: 28px;
+  line-height: 1.43;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  width: 100%;
+}
+
+.navi-edition__link,
+.navi-edition__link:visited {
+  color: #fff;
+  color: var(--navi-secondary-color,#fff);
+}
+
+.navi-edition__link--current .navi-edition__link--check,
+.navi-edition__link--selected .navi-edition__link--check {
+  background-color: #fff;
+  background-color: var(--navi-secondary-color,#fff);
+  display: inline-block;
+  height: 12px;
+  mask-image: url(https://assets.bwbx.io/s3/navi/images/green_check-41e5216e23.svg);
+  mask-repeat: no-repeat;
+  mask-size: 12px;
+  mask-position: center;
+  position: absolute;
+  right: 0;
+  width: 12px;
+}
+
+.navi-edition__link--current,
+.navi-edition__link:active {
+  font-family: BWHaasGroteskWeb,BWHaasGrotesk-75Bold-Web,sans-serif;
+  font-weight: 700;
+}
+
+.navi-edition__link:focus {
+  outline: 0;
+}
+
+.navi-edition__button {
+  background-color: #1c1c1c;
+  background-color: var(--navi-primary-color,#1c1c1c);
+  color: #fff;
+  color: var(--navi-secondary-color,#fff);
+  cursor: pointer;
+  font-size: 14px;
+  font-family: AvenirNextPForBBG,sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+
+.navi-edition__button--text::selection {
+  color: #000;
+  color: var(--navi-primary-color,#000);
+  background-color: #fff;
+  background-color: var(--navi-secondary-color,#fff);
+}
+
+.navi-edition__button--icon {
+  background-color: #fff;
+  background-color: var(--navi-secondary-color,#fff);
+  display: inline-block;
+  height: 8px;
+  mask: url(https://assets.bwbx.io/s3/navi/images/white_triangle-82220df3b4.svg) no-repeat center;
+  transform: rotate(180deg);
+  transition: transform .3s ease;
+  transition: transform .3s ease,transform .3s ease;
+  width: 10px;
+}
+
+.navi-edition__button--icon--rotate {
+  transform: rotate(1turn);
+}
+
+
+.navi-edition__button--icon::selection {
+  color: #000;
+  color: var(--navi-primary-color,#000);
+  background-color: #fff;
+  background-color: var(--navi-secondary-color,#fff);
+}
+
+.navi-edition__button--hidden {
+  visibility: hidden;
+}
+
+.navi-edition__button:active,
+.navi-edition__button:hover,
+.navi-edition__button[aria-expanded=true] {
+  color: #ccc;
+  color: var(--navi-tertiary-color,#ccc);
+}
+
+.navi-edition__button:active .navi-edition__button--icon,
+.navi-edition__button:hover .navi-edition__button--icon,
+.navi-edition__button[aria-expanded=true] .navi-edition__button--icon {
+  background-color: #ccc;
+  background-color: var(--navi-tertiary-color,#ccc);
+}
+
+
+.navi-edition__button::selection {
+  color: #000;
+  color: var(--navi-primary-color,#000);
+  background-color: #fff;
+  background-color: var(--navi-secondary-color,#fff);
+}
+
+.navi-edition__button[aria-expanded=true]+.navi-edition__dropdown-wrapper {
+  z-index: 3;
+}
+
+.navi.article-page .navi-edition__dropdown-wrapper {
+  padding-top: 22px;
+}
+
+@media screen and (max-width:1019px) {
+  .navi-edition {
+    display: none;
+  }
+}
+/*# sourceMappingURL=logo-refresh-edition-dropdown-114fb5e3ca.css.map*/

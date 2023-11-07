@@ -1,0 +1,1 @@
+window.mnjs.contextual.contextualcallback({"status":"OK","code":200,"notify_object":{"nid":"ylFPv6D-GWdh","ttl":1800},"data":{"category":{"taxo":"IAB-2.0","ids":[52,53],"name":"Business and Finance > Business"},"segments":[{"key":"Business"},{"key":"Business_and_Finance"}],"bssegments":[],"bs":1,"bsst":"NA"}});

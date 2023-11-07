@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[34539],{34539:function(n,e,t){t.r(e),t.d(e,{default:function(){return a}});var u=t(2784),c=t(99355);function i(){c.Z.sendEvent({category:"Android App",action:"App Installed"})}function a(){return(0,u.useEffect)((function(){window.addEventListener("appinstalled",i)}),[]),null}}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[72457],{72457:function(e,n,l){l.r(n);var s=l(52322),u=l(2784),r=l(15798),i=u.lazy((function(){return Promise.all([l.e(58358),l.e(43560),l.e(79576)]).then(l.bind(l,45196))}));n.default=function(){return r.isServer||!r.isLocalOrTesting?null:(0,s.jsx)(u.Suspense,{fallback:null,children:(0,s.jsx)(i,{})})}}}]);

@@ -1,0 +1,233 @@
+@import "variables";
+
+$width: 400px;
+$imageSize: 80px;
+$padding: 16px;
+
+@media print {
+    .pushly-prompt-window,
+    .pushly_popover {
+        display: none !important;
+    }
+}
+
+.pushly-prompt-window,
+.pushly_popover {
+    &:not(.managed) {
+        position: fixed;
+        z-index: 1000000;
+        transition: all 0.5s ease;
+    }
+
+    left: 0;
+    right: 0;
+    pointer-events: none;
+
+    .pushly-prompt-slide,
+    .pushly_popover-box {
+        pointer-events: all;
+        margin: 0px auto;
+        box-sizing: border-box;
+        display: flex;
+        width: $width;
+        padding: $padding;
+
+        &.pushly-prompt-visible {
+            top: 0;
+        }
+
+        .pushly-prompt-icon,
+        .pushly_popover-first {
+            position: relative;
+            max-width: $imageSize;
+            height: $imageSize;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .pushly-prompt-content,
+        .pushly_popover-second {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .pushly-prompt-message,
+            .pushly_popover-message {
+                .pushly-prompt-message-headline,
+                .pushly_popover-message-headline {
+                    font-size: 1em;
+                    padding-top: 8px;
+                }
+
+                .pushly-prompt-message-subheadline,
+                .pushly_popover-message-subheadline {
+                    font-size: 0.8em;
+                    padding-top: 12px;
+                }
+            }
+
+            .pushly-prompt-actions,
+            .pushly_popover-buttons {
+                margin-top: $padding;
+
+                button {
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    padding-left: 16px;
+                    padding-right: 16px;
+                    border: none;
+                    font-size: 0.8em;
+                    border-radius: 3px;
+                    background: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    /* theme: normal */
+
+    &.normal {
+        .pushly-prompt-slide,
+        .pushly_popover-box {
+            flex-direction: row;
+            justify-content: space-between;
+
+            .pushly-prompt-content,
+            .pushly_popover-second {
+                //width: calc(#{$width} - #{$imageSize} - #{$padding*3});
+                width: calc(100% - #{$imageSize});
+                padding-left: $padding;
+
+                .pushly-prompt-message,
+                .pushly_popover-message {
+                    .pushly-prompt-message-headline,
+                    .pushly_popover-message-headline {
+                        &:first-child {
+                            padding-top: 0 !important;
+                        }
+                    }
+                }
+
+                .pushly-prompt-actions,
+                .pushly_popover-buttons {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+
+    /* theme: stacked */
+
+    &.stacked {
+        .pushly-prompt-slide,
+        .pushly_popover-box {
+            text-align: center;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+        }
+    }
+
+    /* desktop positioning */
+
+    @media screen and (min-width: $mobile-max-size) {
+        &.d-top {
+            top: -600px;
+            bottom: auto;
+
+            .pushly-prompt-slide,
+            .pushly_popover-box {
+                box-shadow: 0px 1px 1px #bbb;
+            }
+
+            &.pushly-prompt-visible {
+                top: 0;
+            }
+        }
+
+        &.d-bottom {
+            bottom: -600px;
+            top: auto;
+
+            .pushly-prompt-slide,
+            .pushly_popover-box {
+                box-shadow: 0px -1px 1px #bbb;
+            }
+
+            &.pushly-prompt-visible {
+                bottom: 0;
+            }
+        }
+
+        &.d-disabled {
+            display: none;
+        }
+    }
+
+    /* mobile positioning */
+
+    @media screen and (max-width: $mobile-max-size) {
+        &.m-top {
+            top: -600px;
+            bottom: auto;
+
+            .pushly-prompt-slide,
+            .pushly_popover-box {
+                box-shadow: 0px 1px 1px #bbb;
+            }
+
+            &.pushly-prompt-visible {
+                top: 0;
+            }
+        }
+
+        &.m-bottom {
+            bottom: -600px;
+            top: auto;
+
+            .pushly-prompt-slide,
+            .pushly_popover-box {
+                box-shadow: 0px -1px 1px #bbb;
+            }
+
+            &.pushly-prompt-visible {
+                bottom: 0;
+            }
+        }
+
+        &.m-disabled {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: $small-screen) {
+        .pushly-prompt-slide,
+        .pushly_popover-box {
+            width: 100%;
+
+            .pushly-prompt-icon,
+            .pushly_popover-first {
+                max-width: calc(#{$imageSize} - 20px);
+                height: calc(#{$imageSize} - 20px);
+            }
+        }
+
+        &.normal {
+            .pushly-prompt-slide,
+            .pushly_popover-box {
+                .pushly-prompt-content,
+                .pushly_popover-second {
+                    width: calc(100% - #{$imageSize} + 20px);
+                }
+            }
+        }
+
+        &.m-disabled {
+            display: none;
+        }
+    }
+}

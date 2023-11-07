@@ -1,0 +1,1380 @@
+--------- beginning of main
+09-02 10:07:20.681 14031 14031 E adbd    : recv: OPEN 0001a364 00000000 009b:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 61 6D 20 73 74 61 72 74 20 2D 53 20 2D 61 20 61 6E 64 72 6F 69 64 2E 69 6E 74 65 6E 74 2E 61 63 74 69 6F 6E 2E 56 49 45 57 20 2D 6E 20 63 6F 6D 2E 61 6E 64 72 6F 69 64 2E 63 68 72 6F 6D 65 2F 63 6F 6D 2E 67 6F 6F 67 6C 65 2E 61 6E 64 72 6F 69 64 2E 61 70 70 73 2E 63 68 72 6F 6D 65 2E 4D 61 69 6E 20 2D 2D 61 63 74 69 76 69 74 79 2D 63 6C 65 61 72 2D 74 61 73 6B 00 
+09-02 10:07:20.681 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:am start -S -a android.intent.action.VIEW -n com.android.chrome/com.google.android.apps.chrome.Main --activity-clear-task
+--------- beginning of system
+09-02 10:07:20.750  3979  4670 I ActivityManager: Force stopping com.android.chrome appid=10096 user=0: from pid 29109
+09-02 10:07:20.756  3979  3979 D SamsungAlarmManager: Remove alarm for next reason : android.intent.action.PACKAGE_RESTARTED : package: com.android.chrome
+09-02 10:07:20.762  3979  3995 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_RESTARTED dat=package:com.android.chrome flg=0x10 (has extras) } to android/com.kddi.android.CpaNotiReceiver
+09-02 10:07:20.762  4633  4633 D CarrierSvcBindHelper: No carrier app for: 0
+09-02 10:07:20.763  3979  3995 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_RESTARTED dat=package:com.android.chrome flg=0x10 (has extras) } to com.sec.android.daemonapp/com.samsung.android.weather.daemon.receiver.ClearDataReceiver
+09-02 10:07:20.764  4633  4633 D CarrierSvcBindHelper: No carrier app for: 1
+09-02 10:07:21.016  3979  4670 I ActivityManager: START u0 {act=android.intent.action.VIEW typ=null flg=0x10008000 cmp=ComponentInfo{com.android.chrome/com.google.android.apps.chrome.Main}} from uid 2000
+09-02 10:07:21.021  3979  4670 D CustomFrequencyManagerService: acquireDVFSLockLocked : type : DVFS_MIN_LIMIT  frequency : 1560000  uid : 1000  pid : 3979  pkgName : AMS_APP_SWITCH@CPU_MIN@23
+09-02 10:07:21.025  3979  4670 D ActivityManagerPerformance: AMP_acquire() APP_SWITCH
+09-02 10:07:21.025  3979  5035 D ActivityManagerPerformance: Received MSG_CFMS_HINT_AMS_SWITCH pkgName: com.android.chrome
+09-02 10:07:21.032  3979  4046 E ResourceType: Style contains key with bad entry: 0x0101062c
+09-02 10:07:21.035  3979  4046 E ResourceType: Style contains key with bad entry: 0x0101062c
+09-02 10:07:21.036  3979  4672 D ActivityManager: isScaleDownAnimationEnabled() : false
+09-02 10:07:21.037  3979  4672 D StorageManagerService: getExternalStorageMountMode : 1
+09-02 10:07:21.037  3979  4672 D StorageManagerService: getExternalStorageMountMode : 3
+09-02 10:07:21.037  3979  4672 D StorageManagerService: getExternalStorageMountMode : final mountMode=1, uid : 10096, packageName : com.android.chrome
+09-02 10:07:21.038  3979  4672 I ApplicationPolicy: isApplicationExternalStorageWhitelisted:com.android.chrome user:0
+09-02 10:07:21.038  3979  4672 D ApplicationPolicy: isApplicationExternalStorageWhitelisted: DO is not enabled on user 0. Allowed.
+09-02 10:07:21.038  3979  4672 D ActivityManager: package  com.android.chrome, user - 0 is SDcard whitelisted
+09-02 10:07:21.038  3979  4672 I ApplicationPolicy: isApplicationExternalStorageBlacklisted:com.android.chrome user:0
+09-02 10:07:21.038  3979  4672 D ApplicationPolicy: isApplicationExternalStorageBlacklisted: DO is not enabled on user 0. Allowed.
+09-02 10:07:21.041  3979  4046 D ViewRootImpl@c798c9a[chrome]: setView = DecorView@dbf65a8[chrome] TM=true MM=false
+09-02 10:07:21.047 29111 29111 E Zygote  : isWhitelistProcess - Process is Whitelisted
+09-02 10:07:21.047  3979  4672 I ActivityManager: Start proc 29111:com.android.chrome/u0a96 for activity com.android.chrome/com.google.android.apps.chrome.Main
+09-02 10:07:21.047 29111 29111 E libpersona: scanKnoxPersonas
+09-02 10:07:21.047 29111 29111 E libpersona: Couldn't open the File - /data/system/users/0/personalist.xml - No such file or directory
+09-02 10:07:21.049 29111 29111 W SELinux : SELinux selinux_android_compute_policy_index : Policy Index[2],  Con:u:r:zygote:s0 RAM:SEPF_SM-J720F_8.0.0_0017, [-1 -1 -1 -1 0 1]
+09-02 10:07:21.050  3979  4046 D ViewRootImpl@c798c9a[chrome]: dispatchAttachedToWindow
+09-02 10:07:21.050 29111 29111 I SELinux : SELinux: seapp_context_lookup: seinfo=chrome, level=s0:c512,c768, pkgname=com.android.chrome 
+09-02 10:07:21.050  3979  4046 V WindowManager: Relayout Window{1b3f9cb u0 Splash Screen com.android.chrome}: viewVisibility=0 req=719x1237 WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#81830118 pfl=0x20011 wanim=0x10302fd vsysui=0x2600 needsMenuKey=2 colorMode=0 naviIconColor=0}
+09-02 10:07:21.054  3462  3462 I SurfaceFlinger: id=859 createSurf (720x1280),1 flag=404, Splash Screen com.android.chrome#0
+09-02 10:07:21.055  3979  4046 V Surface : sf_framedrop debug : 0x4f4c, game : false, logging : 0
+09-02 10:07:21.057  3979  4046 D InputDispatcher: Focus left window: 29070
+09-02 10:07:21.058  3979  4046 D ViewRootImpl@c798c9a[chrome]: Relayout returned: old=[0,0][0,0] new=[0,0][720,1280] result=0x7 surface={valid=true 535495442432} changed=true
+09-02 10:07:21.060  3979  4046 D ViewRootImpl@c798c9a[chrome]: MSG_RESIZED_REPORT: frame=Rect(0, 0 - 720, 1280) ci=Rect(0, 42 - 0, 0) vi=Rect(0, 42 - 0, 0) or=1
+09-02 10:07:21.060 29070 29070 D ViewRootImpl@110cd72[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 0
+09-02 10:07:21.065 29111 29111 D TimaKeyStoreProvider: TimaKeyStore is not enabled: cannot add TimaSignature Service and generateKeyPair Service
+09-02 10:07:21.066 29111 29111 D ActivityThread: Added TimaKeyStore provider
+09-02 10:07:21.068  3979  4672 I ActivityManager: DSS on for com.android.chrome and scale is 1.0
+09-02 10:07:21.074  3979  4046 V WindowManager: finishDrawingLocked: mDrawState=COMMIT_DRAW_PENDING Window{1b3f9cb u0 Splash Screen com.android.chrome} in Surface(name=Splash Screen com.android.chrome)
+09-02 10:07:21.076  3979  4672 D PersonaManagerService: Current focused persona service handled id set to : 0
+09-02 10:07:21.077  3979  4672 D InputDispatcher: Focused application set to: xxxx
+09-02 10:07:21.078  3979  4672 D MARsPolicyManager: onPackageResumedFG pkgName = com.android.chrome, userId = 0
+09-02 10:07:21.078  3979  4238 D GameManagerService: handleForegroundChange(). pkgName: com.android.chrome, clsName: org.chromium.chrome.browser.ChromeTabbedActivity,FgActivityName:com.android.chrome/org.chromium.chrome.browser.ChromeTabbedActivity
+09-02 10:07:21.078  3979  4238 D GameManagerService: sem_perfomance_mode: 3
+09-02 10:07:21.079  3979  4238 D GameManagerService: notifyResumePause(). pkg: com.android.chrome, type: 4, isMinimized: false, isTunableApp: false
+09-02 10:07:21.079  3979  4238 D GameManagerService:   notifyResumePause(). unexpected mPrevNotiType: -1
+09-02 10:07:21.085  3462  3462 V Surface : sf_framedrop debug : 0x4f4c, game : false, logging : 0
+09-02 10:07:21.086 29070 29086 D OpenGLRenderer: eglDestroySurface = 0x7cc1baee80
+09-02 10:07:21.094  3979  4672 D TaskSnapshotCache: putSnapshot mTaskId=235 RunningCache size=4
+09-02 10:07:21.100  3979  5979 V WindowManager: Relayout Window{faeb4d5 u0 com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity}: viewVisibility=8 req=720x1280 WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#81810100 pfl=0x20000 wanim=0x10302fd vsysui=0x600 needsMenuKey=2 colorMode=0 naviIconColor=0}
+09-02 10:07:21.101  3979  6899 D GamePkgDataHelper: getGamePkgDataIncServer(). com.android.chrome
+09-02 10:07:21.102  3979  6899 D GameManagerService: identifyGamePackage. com.android.chrome
+09-02 10:07:21.102  3979  6899 D GamePkgDataHelper: getGamePkgData(). com.android.chrome
+09-02 10:07:21.103  3979  6899 D GameManagerService: identifyGamePackage. com.android.chrome
+09-02 10:07:21.103  3979  6899 D GamePkgDataHelper: getGamePkgData(). com.android.chrome
+09-02 10:07:21.103  3979  6899 D GamePkgDataHelper: getSosPolicy(). com.android.chrome
+09-02 10:07:21.104  3462  3462 I SurfaceFlinger: Display 0 HWC layers:
+09-02 10:07:21.104  3462  3462 I SurfaceFlinger:     type    |    handle    | flag |  format   |   source crop (l,t,r,b)    |         frame       | name 
+09-02 10:07:21.104  3462  3462 I SurfaceFlinger: ------------+--------------+------+-----------+----------------------------+---------------------+------
+09-02 10:07:21.104  3462  3462 I SurfaceFlinger:      Client |              | 0000 |  Unknown  |  -0.2   -0.2   -0.8   -0.8 |    0    0  720 1280 | animation background stackId=1#0
+09-02 10:07:21.104  3462  3462 I SurfaceFlinger:      Client | 0x7ac4c243c0 | 0002 | RGBA_8888 |   0.0    0.0  720.0 1280.0 |    0    0  720 1279 | com.example.batterymanager_utility/c[...]atterymanager_utility.MainActivity#0
+09-02 10:07:21.104  3462  3462 I SurfaceFlinger:      Device | 0x7ac4c25140 | 0000 | RGBA_8888 |   0.0    0.0  720.0   42.0 |    0    0  720   42 | StatusBar#0
+09-02 10:07:21.104  3462  3462 I SurfaceFlinger: 
+09-02 10:07:21.107  3979  6899 D GameManagerService: identifyGamePackage. com.android.chrome
+09-02 10:07:21.107  3979  6899 D GamePkgDataHelper: getGamePkgData(). com.android.chrome
+09-02 10:07:21.108  3979  6899 D GameManagerService: identifyGamePackage. com.android.chrome
+09-02 10:07:21.108  3979  6899 D GamePkgDataHelper: getGamePkgData(). com.android.chrome
+09-02 10:07:21.109 29070 29070 D ViewRootImpl@110cd72[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x5 surface={valid=false 0} changed=true
+09-02 10:07:21.110  3979  3996 D WindowManager: set systemUiVisibility : systemUiFlags= 0x2608 fullscreenStackSysUiFlags= 0x2000
+09-02 10:07:21.111  3979  4670 D WindowManager: adjustSystemUiVisibilityLw : vis= 0x2608
+09-02 10:07:21.113 29111 29111 I zygote  : no shared libraies, dex_files: 1
+09-02 10:07:21.113 29111 29111 I zygote  : Failed to open app image /data/app/com.android.chrome-soetEorOVr6imPkWiOhOmA==/oat/arm/base.art Oat checksum 0x51daa4d does not match the image one 0xb7efa09c in image /data/app/com.android.chrome-soetEorOVr6imPkWiOhOmA==/oat/arm/base.art
+09-02 10:07:21.126 29111 29111 I cr_SplitCompatApp: Launched version=107.0.5304.91 minSdkVersion=24 isBundle=true processName=com.android.chrome isIsolated=false
+09-02 10:07:21.141 29111 29127 I zygote  : Failed to open app image /data/app/com.android.chrome-soetEorOVr6imPkWiOhOmA==/oat/arm/split_chrome.art Oat checksum 0x64963730 does not match the image one 0x2cd7b9ba in image /data/app/com.android.chrome-soetEorOVr6imPkWiOhOmA==/oat/arm/split_chrome.art
+09-02 10:07:21.159  4349  4372 D SystemServicesProxy: updateOverviewLastStackActiveTimeAsync: newTime=1693559943942
+09-02 10:07:21.160  3979  5979 D SecContentProvider: query(), uri = 17 selection = isSettingsChangesAllowed
+09-02 10:07:21.161  3979  5979 D SecContentProvider: called from android.uid.systemui:10009
+09-02 10:07:21.161  4349  4561 D SystemServicesProxy: updateOverviewLastStackActiveTimeAsync: done.
+09-02 10:07:21.166  3979  4670 W StorageManager: getStorageLowBytes lowPercent : 5, lowBytes : 1260145254, maxLowBytes : 524288000
+09-02 10:07:21.171  3979  5979 D PackageManager: getComponentMetadataForIconTray : com.example.batterymanager_utility.MainActivity does not exist in mServices
+09-02 10:07:21.171  3979  5979 D PackageManager: getComponentMetadataForIconTray : com.example.batterymanager_utility.MainActivity does not exist in mProviders
+09-02 10:07:21.171  3979  5979 D PackageManager: getComponentMetadataForIconTray : com.example.batterymanager_utility.MainActivity does not exist in mReceivers
+09-02 10:07:21.171  4349  4372 D ApplicationPackageManager: updateItemMetaDataForFixedIconScale: package: com.example.batterymanager_utility
+09-02 10:07:21.172  3979  5979 D PackageManager: getSelectedMetaData : packageName(com.example.batterymanager_utility) or Metadata strings {[Ljava.lang.String;@527d743}
+09-02 10:07:21.172  4349  4372 I ApplicationPackageManager: load=com.example.batterymanager_utility, bg=144-144, dr=189-189, forDefault=true, density=0
+09-02 10:07:21.173  3979  5979 W StorageManager: getStorageLowBytes lowPercent : 5, lowBytes : 1260145254, maxLowBytes : 524288000
+09-02 10:07:21.174  4349  4372 I ApplicationPackageManager: scaled rate=0.72, size=189, alpha=54, hold=102
+09-02 10:07:21.174  4349  4372 D ApplicationPackageManager: iconScale: getScale(): 0.72 getAlpha(): 54
+09-02 10:07:21.176  4349  4372 I ApplicationPackageManager: load=com.example.batterymanager_utility-contain, bg=112-112, dr=189-189
+09-02 10:07:21.189 10264 10609 I FontLog : Received query Google Sans, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+09-02 10:07:21.189 10264 10609 I FontLog : Query [Google Sans] resolved to {Google Sans, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+09-02 10:07:21.191 10264 10609 I FontLog : Font PFD returned from cache for {Google Sans, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+09-02 10:07:21.191 10264 10609 I FontLog : Fetch {Google Sans, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+09-02 10:07:21.198 10264 10609 I FontLog : Pulling font file for id = 417, cache size = 8 [CONTEXT service_id=132 ]
+09-02 10:07:21.201  3979  4670 D ConnectivityService: filterNetworkStateForUid() uid: 10025 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:21.211 10264 10609 I FontLog : Received query Google Sans:500, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+09-02 10:07:21.212 10264 10609 I FontLog : Query [Google Sans:500] resolved to {Google Sans, wdth 100.0, wght 500, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+09-02 10:07:21.213 10264 10609 I FontLog : Font PFD returned from cache for {Google Sans, wdth 100.0, wght 500, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+09-02 10:07:21.213 10264 10609 I FontLog : Fetch {Google Sans, wdth 100.0, wght 500, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+09-02 10:07:21.217 10264 10609 I FontLog : Pulling font file for id = 418, cache size = 9 [CONTEXT service_id=132 ]
+09-02 10:07:21.227 10264 10609 I FontLog : Received query Google Sans:700, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+09-02 10:07:21.227 10264 10609 I FontLog : Query [Google Sans:700] resolved to {Google Sans, wdth 100.0, wght 700, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+09-02 10:07:21.228 29111 29111 E ResourceType: Style contains key with bad entry: 0x0101062c
+09-02 10:07:21.228 10264 10609 I FontLog : Fetch {Google Sans, wdth 100.0, wght 700, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+09-02 10:07:21.235 29111 29131 I cr_LibraryLoader: Successfully loaded native library
+09-02 10:07:21.236 10264 10609 I FontLog : Pulling font file for id = 419, cache size = 10 [CONTEXT service_id=132 ]
+09-02 10:07:21.236 29111 29131 I cr_CachingUmaRecorder: Flushed 24 samples from 22 histograms.
+09-02 10:07:21.240  3979  4111 D MdnieScenarioControlService:  packageName : com.android.chrome    className : com.google.android.apps.chrome.Main
+09-02 10:07:21.244 29111 29111 E ResourceType: Style contains key with bad entry: 0x0101062c
+09-02 10:07:21.246 29111 29134 W DynamiteModule: Local module descriptor class for com.google.android.gms.googlecertificates not found.
+09-02 10:07:21.256 29111 29134 W zygote  : Skipping duplicate class check due to unrecognized classloader
+09-02 10:07:21.257 29111 29134 I DynamiteModule: Considering local module com.google.android.gms.googlecertificates:0 and remote module com.google.android.gms.googlecertificates:7
+09-02 10:07:21.257 29111 29134 I DynamiteModule: Selected remote version of com.google.android.gms.googlecertificates, version >= 7
+09-02 10:07:21.266 29111 29134 W ResourceType: ResTable_typeSpec entry count inconsistent: given 77, previously 79
+09-02 10:07:21.267 29111 29134 W ResourceType: ResTable_typeSpec entry count inconsistent: given 3309, previously 3332
+09-02 10:07:21.267 29111 29134 W ResourceType: ResTable_typeSpec entry count inconsistent: given 518, previously 4352
+09-02 10:07:21.279 29111 29134 W zygote  : Skipping duplicate class check due to unrecognized classloader
+09-02 10:07:21.282  3979  4111 V MdnieScenarioControlService: Calling MdnieManager API(setContentMode(8))
+09-02 10:07:21.282  3979  4111 D SemDisplaySolutionManagerService: uid : 1000 , pid : 3979 , name : hdr_effect_off
+09-02 10:07:21.282  3979  4111 D SemDisplaySolutionManagerService: where : application what : DEFAULT setScreenBrightnessScaleFactor(-1.0)
+09-02 10:07:21.282  3979  4111 D PowerManagerService: [api] setScreenBrightnessScaleFactor: scaleFactor: -1.0 (uid: 1000 pid: 3979)
+09-02 10:07:21.282  3979  4111 D SemDisplaySolutionManagerService: setMultipleScreenBrightness , application, DEFAULT, -1.0
+09-02 10:07:21.282  3979  4111 V MdnieScenarioControlService: Calling SemDisplaySolutionManager API(setMultipleScreenBrightness(0)
+09-02 10:07:21.283  3603 18534 V APM_AudioPolicyManager: setAudioPolicyConfig: audioEffectParam;audioHDR=0;packageName=com.android.chrome
+09-02 10:07:21.287  3979  4111 I AudioService: audioEffectParam;audioHDR=0;packageName=com.android.chrome
+09-02 10:07:21.287  3979  4111 V MdnieScenarioControlService: setBrowserMode from Browser function
+09-02 10:07:21.305  3979  5979 W AppOps  : Bad call: specified package com.google.android.gms under uid 10096 but it is really 10025
+09-02 10:07:21.305  3979  5979 W AppOps  : java.lang.RuntimeException: here
+09-02 10:07:21.305  3979  5979 W AppOps  : 	at com.android.server.AppOpsService.getOpsRawLocked(AppOpsService.java:1402)
+09-02 10:07:21.305  3979  5979 W AppOps  : 	at com.android.server.AppOpsService.checkPackage(AppOpsService.java:1106)
+09-02 10:07:21.305  3979  5979 W AppOps  : 	at com.android.internal.app.IAppOpsService$Stub.onTransact(IAppOpsService.java:169)
+09-02 10:07:21.305  3979  5979 W AppOps  : 	at android.os.Binder.execTransact(Binder.java:682)
+09-02 10:07:21.306  3462  3462 I SurfaceFlinger: Display 0 HWC layers:
+09-02 10:07:21.306  3462  3462 I SurfaceFlinger:     type    |    handle    | flag |  format   |   source crop (l,t,r,b)    |         frame       | name 
+09-02 10:07:21.306  3462  3462 I SurfaceFlinger: ------------+--------------+------+-----------+----------------------------+---------------------+------
+09-02 10:07:21.306  3462  3462 I SurfaceFlinger:      Client |              | 0000 |  Unknown  |  -0.2   -0.2   -0.8   -0.8 |    0    0  720 1280 | animation background stackId=1#0
+09-02 10:07:21.306  3462  3462 I SurfaceFlinger:      Client | 0x7ac4c243c0 | 0002 | RGBA_8888 |   0.0    0.0  720.0 1280.0 |   16   29  703 1251 | com.example.batterymanager_utility/c[...]atterymanager_utility.MainActivity#0
+09-02 10:07:21.306  3462  3462 I SurfaceFlinger:      Device | 0x7ac4c24a80 | 0002 | RGBA_8888 |   0.0    0.0  720.0 1022.0 |   17  305  704 1280 | Splash Screen com.android.chrome#0
+09-02 10:07:21.306  3462  3462 I SurfaceFlinger:      Device | 0x7ac4c24480 | 0000 | RGBA_8888 |   0.0    0.0  720.0   42.0 |    0    0  720   42 | StatusBar#0
+09-02 10:07:21.306  3462  3462 I SurfaceFlinger: 
+09-02 10:07:21.313 22051 22051 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.safetynet.service.START pkg=com.google.android.gms }
+09-02 10:07:21.313 22051 22051 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.safetynet.service.START pkg=com.google.android.gms }
+09-02 10:07:21.314 29111 29111 W ResourceType: Failure getting entry for 0x7f010055 (t=0 e=85) (error -75)
+09-02 10:07:21.315  3979  5979 I chatty  : uid=1000(system) Binder:3979_15 identical 3 lines
+09-02 10:07:21.317  3979  5979 W AppOps  : Bad call: specified package com.google.android.gms under uid 10096 but it is really 10025
+09-02 10:07:21.317  3979  5979 W AppOps  : java.lang.RuntimeException: here
+09-02 10:07:21.317  3979  5979 W AppOps  : 	at com.android.server.AppOpsService.getOpsRawLocked(AppOpsService.java:1402)
+09-02 10:07:21.317  3979  5979 W AppOps  : 	at com.android.server.AppOpsService.checkPackage(AppOpsService.java:1106)
+09-02 10:07:21.317  3979  5979 W AppOps  : 	at com.android.internal.app.IAppOpsService$Stub.onTransact(IAppOpsService.java:169)
+09-02 10:07:21.317  3979  5979 W AppOps  : 	at android.os.Binder.execTransact(Binder.java:682)
+09-02 10:07:21.328 29111 29111 I cr_CompositorSurfaceMgr: Transitioning to surface with format: -1
+09-02 10:07:21.335 29111 29111 W ResourceType: Failure getting entry for 0x7f010556 (t=0 e=1366) (error -75)
+09-02 10:07:21.384 29111 29127 I cr_tabmodel: Starting to fetch tab list for tab_state0
+09-02 10:07:21.384 29111 29136 I cr_tabmodel: Starting to fetch tab list for tab_state1
+09-02 10:07:21.385 29111 29136 I cr_tabmodel: State file does not exist.
+09-02 10:07:21.385 29111 29127 I cr_tabmodel: Finished fetching tab list.
+09-02 10:07:21.441 29111 29145 D OpenGLRenderer: HWUI GL Pipeline
+09-02 10:07:21.447 29111 29111 D ViewRootImpl@22a972f[Main]: setView = DecorView@45ec5[Main] TM=true MM=false
+09-02 10:07:21.449  3979  4672 D ActivityManager: post active user change for 0 fullscreen true isHomeActivity() false
+09-02 10:07:21.465 29111 29111 V InputMethodManager: Not IME target window, ignoring
+09-02 10:07:21.465 29111 29111 D ViewRootImpl@22a972f[Main]: dispatchAttachedToWindow
+09-02 10:07:21.466  3979  4672 I ApplicationPolicy: isApplicationExternalStorageWhitelisted:com.android.chrome user:0
+09-02 10:07:21.466  3979  4672 D ApplicationPolicy: isApplicationExternalStorageWhitelisted: DO is not enabled on user 0. Allowed.
+09-02 10:07:21.466  3979  4672 D ActivityManager: package  com.android.chrome, user - 0 is SDcard whitelisted
+09-02 10:07:21.466  3979  4672 I ApplicationPolicy: isApplicationExternalStorageBlacklisted:com.android.chrome user:0
+09-02 10:07:21.466  3979  4672 D ApplicationPolicy: isApplicationExternalStorageBlacklisted: DO is not enabled on user 0. Allowed.
+09-02 10:07:21.466  3979  4672 I ActivityManager: SA, print process name forked by webview_zygote : com.android.chrome:sandboxed_process0
+09-02 10:07:21.471  3979  5979 V WindowManager: Relayout Window{203bbaa u0 com.android.chrome/com.google.android.apps.chrome.Main}: viewVisibility=0 req=719x1237 WM.LayoutParams{(0,0)(fillxfill) sim=#113 ty=1 fl=#81810100 pfl=0x20000 wanim=0x10302fd vsysui=0x2600 sysuil=true needsMenuKey=2 colorMode=0 naviIconColor=0}
+09-02 10:07:21.471  4443  4443 E SchedPolicy: add_tid_to_cgroup failed; fd=-1
+09-02 10:07:21.474  3462  3462 I SurfaceFlinger: id=860 createSurf (720x1280),1 flag=404, com.android.chrome/com.google.android.apps.chrome.Main#0
+09-02 10:07:21.475  3979  5979 V Surface : sf_framedrop debug : 0x4f4c, game : false, logging : 0
+09-02 10:07:21.478  3979  5979 D InputDispatcher: Focus entered window: 29111
+09-02 10:07:21.479 29147 29147 E /system/bin/webview_zygote32: failed to make and chown /acct/uid_99133: Permission denied
+09-02 10:07:21.479 29111 29111 V Surface : sf_framedrop debug : 0x4f4c, game : false, logging : 0
+09-02 10:07:21.479 29147 29147 E Zygote  : createProcessGroup(99133, 0) failed: Permission denied
+09-02 10:07:21.479 29147 29147 E libpersona: Couldn't open the File - /data/system/users/0.xml - Permission denied
+09-02 10:07:21.479 29111 29111 D ViewRootImpl@22a972f[Main]: Relayout returned: old=[0,0][0,0] new=[0,0][720,1280] result=0x7 surface={valid=true 3326457856} changed=true
+09-02 10:07:21.480 29147 29147 W SELinux : SELinux selinux_android_compute_policy_index : Policy Index[2],  Con:u:r:webview_zygote:s0 RAM:SEPF_SM-J720F_8.0.0_0017, [-1 -1 -1 -1 0 1]
+09-02 10:07:21.481  3979  4672 I ActivityManager: Start proc 29147:com.android.chrome:sandboxed_process0/u0i133 for webview_service com.android.chrome/org.chromium.content.app.SandboxedProcessService0
+09-02 10:07:21.481 29147 29147 I SELinux : SELinux: seapp_context_lookup: seinfo=chrome, level=s0:c512,c768, pkgname=com.android.chrome:sandboxed_process0 
+09-02 10:07:21.486 29111 29145 I OpenGLRenderer: Initialized EGL, version 1.4
+09-02 10:07:21.486 29111 29145 D OpenGLRenderer: Swap behavior 2
+09-02 10:07:21.490 29111 29145 D libGLESv1: STS_GLApi : DTS, ODTC are not allowed for Package : com.android.chrome
+09-02 10:07:21.491 29111 29145 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, egl_color_buffer_format *, EGLBoolean) returns 0x3000,  [720x1280]-format:1
+09-02 10:07:21.491 29111 29145 D OpenGLRenderer: eglCreateWindowSurface = 0xdd6ed5e0
+09-02 10:07:21.492 10264 14970 E bgla    : Phenotype API error. Event # dexn@c84995e5, EventCode: 7 [CONTEXT service_id=51 ]
+09-02 10:07:21.492 10264 14970 E bgla    : bgkc: 29505: No config packages for log source, or config package not registered
+09-02 10:07:21.492 10264 14970 E bgla    : 	at bglv.b(:com.google.android.gms@224312019@22.43.12 (040400-483592595):4)
+09-02 10:07:21.492 10264 14970 E bgla    : 	at bgls.g(:com.google.android.gms@224312019@22.43.12 (040400-483592595):0)
+09-02 10:07:21.492 10264 14970 E bgla    : 	at bgla.e(:com.google.android.gms@224312019@22.43.12 (040400-483592595):4)
+09-02 10:07:21.492 10264 14970 E bgla    : 	at bgla.f(:com.google.android.gms@224312019@22.43.12 (040400-483592595):2)
+09-02 10:07:21.492 10264 14970 E bgla    : 	at asbe.er(:com.google.android.gms@224312019@22.43.12 (040400-483592595):1)
+09-02 10:07:21.492 10264 14970 E bgla    : 	at asbk.run(:com.google.android.gms@224312019@22.43.12 (040400-483592595):12)
+09-02 10:07:21.492 10264 14970 E bgla    : 	at ckoo.run(:com.google.android.gms@224312019@22.43.12 (040400-483592595):2)
+09-02 10:07:21.492 10264 14970 E bgla    : 	at abce.c(:com.google.android.gms@224312019@22.43.12 (040400-483592595):6)
+09-02 10:07:21.492 10264 14970 E bgla    : 	at abce.run(:com.google.android.gms@224312019@22.43.12 (040400-483592595):7)
+09-02 10:07:21.492 10264 14970 E bgla    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+09-02 10:07:21.492 10264 14970 E bgla    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+09-02 10:07:21.492 10264 14970 E bgla    : 	at abhk.run(:com.google.android.gms@224312019@22.43.12 (040400-483592595):0)
+09-02 10:07:21.492 10264 14970 E bgla    : 	at java.lang.Thread.run(Thread.java:764)
+09-02 10:07:21.493 10264 14970 W AsyncOperation: operation=GetExperimentTokensOperationCall, opStatusCode=29505 [CONTEXT service_id=51 ]
+09-02 10:07:21.493 10264 14970 W AsyncOperation: OperationException[Status{statusCode=No config packages for log source, or config package not registered, resolution=null}]
+09-02 10:07:21.493 10264 14970 W AsyncOperation: 	at bgla.e(:com.google.android.gms@224312019@22.43.12 (040400-483592595):6)
+09-02 10:07:21.493 10264 14970 W AsyncOperation: 	at bgla.f(:com.google.android.gms@224312019@22.43.12 (040400-483592595):2)
+09-02 10:07:21.493 10264 14970 W AsyncOperation: 	at asbe.er(:com.google.android.gms@224312019@22.43.12 (040400-483592595):1)
+09-02 10:07:21.493 10264 14970 W AsyncOperation: 	at asbk.run(:com.google.android.gms@224312019@22.43.12 (040400-483592595):12)
+09-02 10:07:21.493 10264 14970 W AsyncOperation: 	at ckoo.run(:com.google.android.gms@224312019@22.43.12 (040400-483592595):2)
+09-02 10:07:21.493 10264 14970 W AsyncOperation: 	at abce.c(:com.google.android.gms@224312019@22.43.12 (040400-483592595):6)
+09-02 10:07:21.493 10264 14970 W AsyncOperation: 	at abce.run(:com.google.android.gms@224312019@22.43.12 (040400-483592595):7)
+09-02 10:07:21.493 10264 14970 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+09-02 10:07:21.493 10264 14970 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+09-02 10:07:21.493 10264 14970 W AsyncOperation: 	at abhk.run(:com.google.android.gms@224312019@22.43.12 (040400-483592595):0)
+09-02 10:07:21.493 10264 14970 W AsyncOperation: 	at java.lang.Thread.run(Thread.java:764)
+09-02 10:07:21.500 29111 29111 D ViewRootImpl@22a972f[Main]: MSG_RESIZED_REPORT: frame=Rect(0, 0 - 720, 1280) ci=Rect(0, 42 - 0, 0) vi=Rect(0, 42 - 0, 0) or=1
+09-02 10:07:21.500 29111 29111 D ViewRootImpl@22a972f[Main]: MSG_WINDOW_FOCUS_CHANGED 1
+09-02 10:07:21.506 29147 29147 I SamplingProfilerIntegration: Profiling disabled.
+09-02 10:07:21.510 29111 29111 V InputMethodManager: Starting input: tba=android.view.inputmethod.EditorInfo@9e0a0a3 nm : com.android.chrome ic=null
+09-02 10:07:21.510 29111 29111 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+09-02 10:07:21.511  3979  4672 D InputMethodManagerService: startInputOrWindowGainedFocus : windowGainedFocus 
+09-02 10:07:21.511  3979  4672 D InputMethodManagerService: windowGainedFocus: destinationUserId (getCallingUid) = 0
+09-02 10:07:21.511  3979  4672 D InputMethodManagerService: windowGainedFocus: currentUserId=0
+09-02 10:07:21.511  3979  4672 D InputMethodManagerService: windowGainedFocus: mCurrentFocusedUserId=0
+09-02 10:07:21.511  3979  4672 D InputMethodManagerService: windowGainedFocus : lock - currentUserId = 0 destinationUserId = 0
+09-02 10:07:21.511  3979  4672 D InputMethodManagerService: windowGainedFocus : mCurrentFocusedUserId - 0 and mSecureKeypadEnabled - false, userSwitched - false
+09-02 10:07:21.511  3979  4672 V InputMethodManagerService: windowGainedFocus : reason=WINDOW_FOCUS_GAIN client=android.os.BinderProxy@14d9e4c inputContext=null missingMethods= attribute=android.view.inputmethod.EditorInfo@6ca2b4d nm = com.android.chrome controlFlags=#105 softInputMode=#113 windowFlags=#81810100
+09-02 10:07:21.511  3979  4672 V InputMethodManagerService: Window asks to hide input
+09-02 10:07:21.511  3979  4672 V InputMethodManagerService: hideCurrentInputLocked : shouldHideSoftInput is false
+09-02 10:07:21.511 29147 29147 D TimaKeyStoreProvider: TimaKeyStore is not enabled: cannot add TimaSignature Service and generateKeyPair Service
+09-02 10:07:21.511  3979  4672 D InputMethodManagerService: isImeSwitcherDisabledPackage : false
+09-02 10:07:21.512  3979  4672 V InputMethodManagerService: Creating new session for client ClientState{7d41602 uid 10096 pid 29111}
+09-02 10:07:21.512 29147 29147 D ActivityThread: Added TimaKeyStore provider
+09-02 10:07:21.513 29111 29111 I cr_StartSurfaceConfig: Recorded Startup.Android.FirstDrawCompletedTime.NoInstant = 241 ms
+09-02 10:07:21.513  3979  4672 D InputMethodManagerService: setCurrentInputInfo - inputContext : null eidtorInfo : android.view.inputmethod.EditorInfo@6ca2b4d missingMethods : 0
+09-02 10:07:21.514  4336  4336 I InputMethodWrapper:  call dispatchStartInputWithToken
+09-02 10:07:21.514  4336  4336 I InputMethodService: dispatchStartInputWithToken
+09-02 10:07:21.514  4336  4336 I SKBD    : SamsungKeypad [IMI] onStartInput - caller pid : 29111, caller uid : 10096
+09-02 10:07:21.516  3979  4670 I ActivityManager: DSS on for com.android.chrome and scale is 1.0
+09-02 10:07:21.542  3979  4672 V WindowManager: finishDrawingLocked: mDrawState=COMMIT_DRAW_PENDING Window{203bbaa u0 com.android.chrome/com.google.android.apps.chrome.Main} in Surface(name=com.android.chrome/com.google.android.apps.chrome.Main)
+09-02 10:07:21.543 29111 29111 V InputMethodManager: Starting input: tba=android.view.inputmethod.EditorInfo@6a83fa0 nm : com.android.chrome ic=null
+09-02 10:07:21.547  3979  4046 D ViewRootImpl@c798c9a[chrome]: dispatchDetachedFromWindow
+09-02 10:07:21.547  3979  4046 D InputEventReceiver: channel '1b3f9cb Splash Screen com.android.chrome (client)' ~ Disposing input event receiver.
+09-02 10:07:21.547  3979  4046 D InputEventReceiver: channel '1b3f9cb Splash Screen com.android.chrome (client)' ~NativeInputEventReceiver.
+09-02 10:07:21.549  3979  3996 D WindowManager: set systemUiVisibility : systemUiFlags= 0x2608 fullscreenStackSysUiFlags= 0x0
+09-02 10:07:21.551 29176 29176 E asset   : setgid: Operation not permitted
+09-02 10:07:21.552  3979  4004 I ActivityManager: Displayed com.android.chrome/com.google.android.apps.chrome.Main: +510ms
+09-02 10:07:21.557  3979  3996 D WindowManager: set systemUiVisibility : systemUiFlags= 0x2608 fullscreenStackSysUiFlags= 0x2000
+09-02 10:07:21.568  3979  4046 I WindowManager: Destroying surface Surface(name=Splash Screen com.android.chrome) called by com.android.server.wm.WindowStateAnimator.destroySurface:2501 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:985 com.android.server.wm.WindowState.destroyOrSaveSurfaceUnchecked:3671 com.android.server.wm.WindowState.destroySurface:3619 com.android.server.wm.AppWindowToken.destroySurfaces:722 com.android.server.wm.AppWindowToken.destroySurfaces:706 com.android.server.wm.WindowState.onExitAnimationDone:5333 com.android.server.wm.WindowStateAnimator.stepAnimationLocked:550 
+09-02 10:07:21.568  3462  3502 I SurfaceFlinger: id=859 Removed Splash Screen com.android.chrome#0 (5/6)
+09-02 10:07:21.573  3462  3462 I SurfaceFlinger: Display 0 HWC layers:
+09-02 10:07:21.573  3462  3462 I SurfaceFlinger:     type    |    handle    | flag |  format   |   source crop (l,t,r,b)    |         frame       | name 
+09-02 10:07:21.573  3462  3462 I SurfaceFlinger: ------------+--------------+------+-----------+----------------------------+---------------------+------
+09-02 10:07:21.573  3462  3462 I SurfaceFlinger:      Client |              | 0000 |  Unknown  |  -0.2   -0.2   -0.8   -0.8 |    0    0  720 1280 | animation background stackId=1#0
+09-02 10:07:21.573  3462  3462 I SurfaceFlinger:      Client | 0x7ac4c243c0 | 0002 | RGBA_8888 |   0.0    0.0  720.0 1280.0 |   18   32  702 1248 | com.example.batterymanager_utility/c[...]atterymanager_utility.MainActivity#0
+09-02 10:07:21.573  3462  3462 I SurfaceFlinger:      Device | 0x7abdc74dc0 | 0002 | RGBA_8888 |   0.0    0.0  720.0 1279.0 |    0    1  720 1280 | com.android.chrome/com.google.android.apps.chrome.Main#0
+09-02 10:07:21.573  3462  3462 I SurfaceFlinger:      Device | 0x7ac4c24480 | 0000 | RGBA_8888 |   0.0    0.0  720.0   42.0 |    0    0  720   42 | StatusBar#0
+09-02 10:07:21.573  3462  3462 I SurfaceFlinger: 
+09-02 10:07:21.575  3462  5840 I SurfaceFlinger: id=859 Removed Splash Screen com.android.chrome#0 (-2/6)
+09-02 10:07:21.584  3462  3462 I Layer   : id=859 onRemoved Splash Screen com.android.chrome#0 
+09-02 10:07:21.586  3979  4046 I WindowManager: Destroying surface Surface(name=com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity) called by com.android.server.wm.WindowStateAnimator.destroySurface:2501 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:985 com.android.server.wm.WindowState.destroyOrSaveSurfaceUnchecked:3671 com.android.server.wm.WindowState.destroySurface:3619 com.android.server.wm.AppWindowToken.destroySurfaces:722 com.android.server.wm.AppWindowToken.destroySurfaces:706 com.android.server.wm.WindowState.onExitAnimationDone:5333 com.android.server.wm.WindowStateAnimator.stepAnimationLocked:550 
+09-02 10:07:21.586  3462  3501 I SurfaceFlinger: id=858 Removed com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity#0 (2/5)
+09-02 10:07:21.587  3979  4004 D CustomFrequencyManagerService: acquireDVFSLockLocked : type : DVFS_MIN_LIMIT  frequency : 1560000  uid : 1000  pid : 3979  pkgName : AMS_RESUME_TAIL@CPU_MIN@14
+09-02 10:07:21.587 29147 29147 I cr_SplitCompatApp: Launched version=107.0.5304.91 minSdkVersion=24 isBundle=true processName=com.android.chrome:sandboxed_process0 isIsolated=true
+09-02 10:07:21.587  3979  4004 D ActivityManagerPerformance: AMP_acquire() TAIL
+09-02 10:07:21.587  3462  3462 I SurfaceFlinger: Display 0 HWC layers:
+09-02 10:07:21.587  3462  3462 I SurfaceFlinger:     type    |    handle    | flag |  format   |   source crop (l,t,r,b)    |         frame       | name 
+09-02 10:07:21.587  3462  3462 I SurfaceFlinger: ------------+--------------+------+-----------+----------------------------+---------------------+------
+09-02 10:07:21.587  3462  3462 I SurfaceFlinger:      Device | 0x7abdc74dc0 | 0002 | RGBA_8888 |   0.0    0.0  720.0 1280.0 |    0    0  720 1280 | com.android.chrome/com.google.android.apps.chrome.Main#0
+09-02 10:07:21.587  3462  3462 I SurfaceFlinger:      Device | 0x7abe64b980 | 0000 | RGBA_8888 |   0.0    0.0  720.0   42.0 |    0    0  720   42 | StatusBar#0
+09-02 10:07:21.587  3462  3462 I SurfaceFlinger: 
+09-02 10:07:21.587  3979  4004 D CustomFrequencyManagerService: releaseDVFSLockLocked : Getting Lock type frm List : DVFS_MIN_LIMIT  frequency : 1560000  uid : 1000  pid : 3979  tag : AMS_APP_SWITCH@CPU_MIN@23
+09-02 10:07:21.588  3979  4004 D ActivityManagerPerformance: AMP_release() APP_SWITCH
+09-02 10:07:21.591  3462  3502 I SurfaceFlinger: id=858 Removed com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity#0 (-2/5)
+09-02 10:07:21.600  3462  3462 I Layer   : id=858 onRemoved com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity#0 
+09-02 10:07:21.601 29147 29147 W SystemServiceRegistry: No service published for: uimode
+09-02 10:07:21.605  3979  4672 W StorageManager: getStorageLowBytes lowPercent : 5, lowBytes : 1260145254, maxLowBytes : 524288000
+09-02 10:07:21.607 29147 29147 V Monotype: fonts.xml take from : /system/etc/
+09-02 10:07:21.628  3979  4672 D ActivityManager: The following uid has registered to recieve broadcast for proxy related updates 10096
+09-02 10:07:21.628  3979  4672 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:971 com.android.server.am.ActivityManagerService.requestKnoxVpnToSendProxyBroadcast:29502 com.android.server.am.ActivityManagerService.registerReceiver:23187 android.app.IActivityManager$Stub.onTransact:176 com.android.server.am.ActivityManagerService.onTransact:3862 
+09-02 10:07:21.630  3979  3979 D KnoxVpnEngineService: Vpn Receiver : com.samsung.android.knox.intent.action.VPN_PROXY_BROADCAST_INTERNAL
+09-02 10:07:21.630  3979  4130 I KnoxVpnEngineService: vpn handle : Message received
+09-02 10:07:21.656 29070 29188 D ProfileInstaller: Installing profile for com.example.batterymanager_utility
+09-02 10:07:21.690  3979  4672 D StorageManagerService: getExternalStorageMountMode : 1
+09-02 10:07:21.691  3979  4672 D StorageManagerService: getExternalStorageMountMode : 3
+09-02 10:07:21.691  3979  4672 D StorageManagerService: getExternalStorageMountMode : final mountMode=1, uid : 10096, packageName : com.android.chrome
+09-02 10:07:21.692  3979  4672 I ApplicationPolicy: isApplicationExternalStorageWhitelisted:com.android.chrome user:0
+09-02 10:07:21.692  3979  4672 D ApplicationPolicy: isApplicationExternalStorageWhitelisted: DO is not enabled on user 0. Allowed.
+09-02 10:07:21.692  3979  4672 D ActivityManager: package  com.android.chrome, user - 0 is SDcard whitelisted
+09-02 10:07:21.692  3979  4672 I ApplicationPolicy: isApplicationExternalStorageBlacklisted:com.android.chrome user:0
+09-02 10:07:21.692  3979  4672 D ApplicationPolicy: isApplicationExternalStorageBlacklisted: DO is not enabled on user 0. Allowed.
+09-02 10:07:21.702  3979  4323 I OpenGLRenderer: Initialized EGL, version 1.4
+09-02 10:07:21.703  3979  4323 D OpenGLRenderer: Swap behavior 2
+09-02 10:07:21.708 29194 29194 E Zygote  : isWhitelistProcess - Process is Whitelisted
+09-02 10:07:21.710 29194 29194 E libpersona: scanKnoxPersonas
+09-02 10:07:21.710 29194 29194 E libpersona: Couldn't open the File - /data/system/users/0/personalist.xml - No such file or directory
+09-02 10:07:21.713 29194 29194 W SELinux : SELinux selinux_android_compute_policy_index : Policy Index[2],  Con:u:r:zygote:s0 RAM:SEPF_SM-J720F_8.0.0_0017, [-1 -1 -1 -1 0 1]
+09-02 10:07:21.714 29194 29194 I SELinux : SELinux: seapp_context_lookup: seinfo=chrome, level=s0:c512,c768, pkgname=com.android.chrome:privileged_process0 
+09-02 10:07:21.717  3979  4672 I ActivityManager: Start proc 29194:com.android.chrome:privileged_process0/u0a96 for service com.android.chrome/org.chromium.content.app.PrivilegedProcessService0
+09-02 10:07:21.718  3979  4672 D ActivityManager: The following uid has registered to recieve broadcast for proxy related updates 10096
+09-02 10:07:21.718  3979  4672 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:971 com.android.server.am.ActivityManagerService.requestKnoxVpnToSendProxyBroadcast:29502 com.android.server.am.ActivityManagerService.registerReceiver:23187 android.app.IActivityManager$Stub.onTransact:176 com.android.server.am.ActivityManagerService.onTransact:3862 
+09-02 10:07:21.720  3979  3979 D KnoxVpnEngineService: Vpn Receiver : com.samsung.android.knox.intent.action.VPN_PROXY_BROADCAST_INTERNAL
+09-02 10:07:21.720  3979  4130 I KnoxVpnEngineService: vpn handle : Message received
+09-02 10:07:21.724 29147 29147 E Typeface: Error mapping font file /system/fonts/SamsungSans-Num3L.ttf
+09-02 10:07:21.725 29147 29147 E Minikin : Could not get cmap table size!
+09-02 10:07:21.725 29147 29147 E Typeface: Unable to load Family: samsung-sans-num3L:null
+09-02 10:07:21.725 29147 29147 E Typeface: Error mapping font file /system/fonts/SamsungSans-Num3T.ttf
+09-02 10:07:21.725 29147 29147 E Minikin : Could not get cmap table size!
+09-02 10:07:21.725 29147 29147 E Typeface: Unable to load Family: samsung-sans-num3T:null
+09-02 10:07:21.725 29147 29147 E Typeface: Error mapping font file /system/fonts/SamsungSans-Num4L.ttf
+09-02 10:07:21.725 29147 29147 E Minikin : Could not get cmap table size!
+09-02 10:07:21.725 29147 29147 E Typeface: Unable to load Family: samsung-sans-num4L:null
+09-02 10:07:21.725 29147 29147 E Typeface: Error mapping font file /system/fonts/SamsungSans-Num4T.ttf
+09-02 10:07:21.725 29147 29147 E Minikin : Could not get cmap table size!
+09-02 10:07:21.725 29147 29147 E Typeface: Unable to load Family: samsung-sans-num4T:null
+09-02 10:07:21.725 29147 29147 E Typeface: Error mapping font file /system/fonts/SamsungSans-Num35.ttf
+09-02 10:07:21.725 29147 29147 E Minikin : Could not get cmap table size!
+09-02 10:07:21.725 29147 29147 E Typeface: Unable to load Family: samsung-sans-num35:null
+09-02 10:07:21.726 29147 29147 E Typeface: Error mapping font file /system/fonts/SamsungSans-Num45.ttf
+09-02 10:07:21.726 29147 29147 E Minikin : Could not get cmap table size!
+09-02 10:07:21.726 29147 29147 E Typeface: Unable to load Family: samsung-sans-num45:null
+09-02 10:07:21.726 29147 29147 E Typeface: Error mapping font file /system/fonts/SamsungSans-Num3Lv.ttf
+09-02 10:07:21.726 29147 29147 E Minikin : Could not get cmap table size!
+09-02 10:07:21.726 29147 29147 E Typeface: Unable to load Family: samsung-sans-num3LV:null
+09-02 10:07:21.726 29147 29147 E Typeface: Error mapping font file /system/fonts/SamsungSans-Num3R.ttf
+09-02 10:07:21.726 29147 29147 E Minikin : Could not get cmap table size!
+09-02 10:07:21.726 29147 29147 E Typeface: Unable to load Family: samsung-sans-num3R:null
+09-02 10:07:21.726 29147 29147 E Typeface: Error mapping font file /system/fonts/SamsungSans-Num4Tv.ttf
+09-02 10:07:21.726 29147 29147 E Minikin : Could not get cmap table size!
+09-02 10:07:21.726 29147 29147 E Typeface: Unable to load Family: samsung-sans-num4Tv:null
+09-02 10:07:21.726 29147 29147 E Typeface: Error mapping font file /system/fonts/SamsungSans-Num4Lv.ttf
+09-02 10:07:21.726 29147 29147 E Minikin : Could not get cmap table size!
+09-02 10:07:21.726 29147 29147 E Typeface: Unable to load Family: samsung-sans-num4Lv:null
+09-02 10:07:21.732 29147 29147 I cr_ChildProcessService: Creating new ChildProcessService pid=29147
+09-02 10:07:21.742 29147 29147 E WebViewFactory: can't load with relro file; address space not reserved
+09-02 10:07:21.744  3979  5979 W StorageManager: getStorageLowBytes lowPercent : 5, lowBytes : 1260145254, maxLowBytes : 524288000
+09-02 10:07:21.752 29194 29194 D TimaKeyStoreProvider: TimaKeyStore is not enabled: cannot add TimaSignature Service and generateKeyPair Service
+09-02 10:07:21.752 22051 22051 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.credential.manager.service.firstparty.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsApiService }
+09-02 10:07:21.752 29194 29194 D ActivityThread: Added TimaKeyStore provider
+09-02 10:07:21.752 22051 22051 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.credential.manager.service.firstparty.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsApiService }
+09-02 10:07:21.755  3979  5172 I ActivityManager: DSS on for com.android.chrome and scale is 1.0
+09-02 10:07:21.755 29111 29111 I cr_SmsProviderGms: construction successfull ec3@218d885, bc3@26ae6da
+09-02 10:07:21.763 22051 22051 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.auth.key.retrieval.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsApiService }
+09-02 10:07:21.763 22051 22051 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.auth.key.retrieval.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsApiService }
+09-02 10:07:21.766  3979  4670 D ActivityManager: The following uid has registered to recieve broadcast for proxy related updates 10096
+09-02 10:07:21.766  3979  4670 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:971 com.android.server.am.ActivityManagerService.requestKnoxVpnToSendProxyBroadcast:29502 com.android.server.am.ActivityManagerService.registerReceiver:23187 android.app.IActivityManager$Stub.onTransact:176 com.android.server.am.ActivityManagerService.onTransact:3862 
+09-02 10:07:21.767  3979  3979 D KnoxVpnEngineService: Vpn Receiver : com.samsung.android.knox.intent.action.VPN_PROXY_BROADCAST_INTERNAL
+09-02 10:07:21.767  3979  4130 I KnoxVpnEngineService: vpn handle : Message received
+09-02 10:07:21.770  3979  4670 D ConnectivityService: filterNetworkStateForUid() uid: 10096 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:21.775 29194 29194 I zygote  : no shared libraies, dex_files: 1
+09-02 10:07:21.776 29194 29194 I zygote  : Failed to open app image /data/app/com.android.chrome-soetEorOVr6imPkWiOhOmA==/oat/arm/base.art Oat checksum 0x51daa4d does not match the image one 0xb7efa09c in image /data/app/com.android.chrome-soetEorOVr6imPkWiOhOmA==/oat/arm/base.art
+09-02 10:07:21.777  3979  5979 D ConnectivityService: filterNetworkStateForUid() uid: 10096 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:21.781 29111 29111 D ConnectivityManager: requestNetwork; CallingUid : 10096, CallingPid : 29111
+09-02 10:07:21.783  3979  4670 D ConnectivityService: listenForNetwork for uid/pid:10096/29111 NetworkRequest [ LISTEN id=445, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ]
+09-02 10:07:21.783  3979  4180 D ConnectivityService: rematching NetworkAgentInfo [WIFI () - 502]
+09-02 10:07:21.784  3979  4180 D ConnectivityService:  network has: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&FOREGROUND LinkUpBandwidth>=1048576Kbps LinkDnBandwidth>=1048576Kbps SignalStrength: -58]
+09-02 10:07:21.784  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 420. No change.
+09-02 10:07:21.784  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 3. No change.
+09-02 10:07:21.784  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 424. No change.
+09-02 10:07:21.784  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 1. No change.
+09-02 10:07:21.784  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 419. No change.
+09-02 10:07:21.784  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 443. No change.
+09-02 10:07:21.784  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 423. No change.
+09-02 10:07:21.784  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 140. No change.
+09-02 10:07:21.784  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 425. No change.
+09-02 10:07:21.784  3979  4180 D ConnectivityService: sending notification AVAILABLE for NetworkRequest [ LISTEN id=445, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ]
+09-02 10:07:21.784  3979  4180 D ConnectivityService: sending notification CAP_CHANGED for NetworkRequest [ LISTEN id=445, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ]
+09-02 10:07:21.784  3979  4180 D ConnectivityService: sending notification IP_CHANGED for NetworkRequest [ LISTEN id=445, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ]
+09-02 10:07:21.784  3979  4670 D ConnectivityService: filterNetworkStateForUid() uid: 10096 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:21.788 29194 29194 I cr_SplitCompatApp: Launched version=107.0.5304.91 minSdkVersion=24 isBundle=true processName=com.android.chrome:privileged_process0 isIsolated=false
+09-02 10:07:21.815 29194 29194 I cr_ChildProcessService: Creating new ChildProcessService pid=29194
+09-02 10:07:21.831  3979  5172 D PackageManager: setEnabledSetting : userId = 0 packageName = com.android.chrome cmp = org.chromium.chrome.browser.quickactionsearchwidget.QuickActionSearchWidgetProvider$QuickActionSearchWidgetProviderSearch newState = 1 callingPackage = 10096/com.android.chrome
+09-02 10:07:21.833  3979  4670 D PackageManager: setEnabledSetting : userId = 0 packageName = com.android.chrome cmp = org.chromium.chrome.browser.quickactionsearchwidget.QuickActionSearchWidgetProvider$QuickActionSearchWidgetProviderDino newState = 1 callingPackage = 10096/com.android.chrome
+09-02 10:07:21.853  3979  5172 D ConnectivityService: filterNetworkStateForUid() uid: 10096 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:21.858 29111 29111 D ConnectivityManager: requestNetwork; CallingUid : 10096, CallingPid : 29111
+09-02 10:07:21.859  3979  5979 D ConnectivityService: listenForNetwork for uid/pid:10096/29111 NetworkRequest [ LISTEN id=446, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ]
+09-02 10:07:21.860  3979  4180 D ConnectivityService: rematching NetworkAgentInfo [WIFI () - 502]
+09-02 10:07:21.860  3979  4180 D ConnectivityService:  network has: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&FOREGROUND LinkUpBandwidth>=1048576Kbps LinkDnBandwidth>=1048576Kbps SignalStrength: -58]
+09-02 10:07:21.860  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 420. No change.
+09-02 10:07:21.860  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 3. No change.
+09-02 10:07:21.860  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 424. No change.
+09-02 10:07:21.860  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 1. No change.
+09-02 10:07:21.860  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 419. No change.
+09-02 10:07:21.860  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 443. No change.
+09-02 10:07:21.860  3979  5172 D ConnectivityService: filterNetworkStateForUid() uid: 10096 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:21.860  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 423. No change.
+09-02 10:07:21.860  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 140. No change.
+09-02 10:07:21.860  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 425. No change.
+09-02 10:07:21.860  3979  4180 D ConnectivityService: sending notification AVAILABLE for NetworkRequest [ LISTEN id=446, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ]
+09-02 10:07:21.861  3979  4180 D ConnectivityService: sending notification CAP_CHANGED for NetworkRequest [ LISTEN id=446, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ]
+09-02 10:07:21.861  3979  4180 D ConnectivityService: sending notification IP_CHANGED for NetworkRequest [ LISTEN id=446, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ]
+09-02 10:07:21.863 29194 29217 I cr_LibraryLoader: Successfully loaded native library
+09-02 10:07:21.864 29194 29217 I cr_CachingUmaRecorder: Flushed 3 samples from 3 histograms.
+09-02 10:07:21.874  3979  4670 D SecContentProvider: query(), uri = 2 selection = isAuditLogEnabled
+09-02 10:07:21.875  3979  4670 D SecContentProvider: called from com.android.chrome
+09-02 10:07:21.876  3979  5172 D SecContentProvider: query(), uri = 5 selection = getAutoFillSetting
+09-02 10:07:21.876  3979  5172 D SecContentProvider: called from com.android.chrome
+09-02 10:07:21.877  3979  4670 D SecContentProvider: query(), uri = 5 selection = getCookiesSetting
+09-02 10:07:21.878  3979  4670 D SecContentProvider: called from com.android.chrome
+09-02 10:07:21.879  3979  4670 D SecContentProvider: query(), uri = 5 selection = getHttpProxy
+09-02 10:07:21.881  3979  4670 D SecContentProvider: query(), uri = 5 selection = getJavaScriptSetting
+09-02 10:07:21.882 29111 29111 I cr_CompositorSurfaceMgr: Transitioning to surface with format: -1
+09-02 10:07:21.882  3979  4670 D SecContentProvider: query(), uri = 5 selection = getPopupsSetting
+09-02 10:07:21.883  3979  4670 I chatty  : uid=1000(system) Binder:3979_A identical 3 lines
+09-02 10:07:21.884  3979  4670 D SecContentProvider: query(), uri = 22 selection = isAuthenticationEnabled
+09-02 10:07:21.884  3462  3462 I SurfaceFlinger: id=861 createSurf (720x1238),4 flag=404, SurfaceView - com.android.chrome/com.google.android.apps.chrome.Main@a93a8fb@0#0
+09-02 10:07:21.885  3979  4670 D SecContentProvider: called from com.android.chrome
+09-02 10:07:21.885  3462  3462 I SurfaceFlinger: id=862 createSurf (720x1238),-1 flag=20404, Background for - SurfaceView - com.android.chrome/com.google.android.apps.chrome.Main@a93a8fb@0#0
+09-02 10:07:21.886 29111 29111 D SurfaceView: BG show() Surface(name=Background for - SurfaceView - com.android.chrome/com.google.android.apps.chrome.Main@a93a8fb@0) android.view.SurfaceView{a93a8fb V.E...... ......ID 0,0-720,1238}
+09-02 10:07:21.887 29111 29111 V Surface : sf_framedrop debug : 0x4f4c, game : false, logging : 0
+09-02 10:07:21.888 29111 29111 D SurfaceView: surfaceCreated 1 android.view.SurfaceView{a93a8fb V.E...... ......ID 0,0-720,1238}
+09-02 10:07:21.888 29111 29111 I cr_CompositorSurfaceMgr: surfaceCreated format: 0
+09-02 10:07:21.888  3979  5979 D SecContentProvider: query(), uri = 10 selection = getURLFilterList
+09-02 10:07:21.888 29111 29111 D SurfaceView: surfaceChanged (720,1238) 1 android.view.SurfaceView{a93a8fb V.E...... ......ID 0,0-720,1238}
+09-02 10:07:21.889  3979  5979 D SecContentProvider: called from com.android.chrome
+09-02 10:07:21.890  3979  4670 D SecContentProvider: query(), uri = 10 selection = getURLFilterEnabled
+09-02 10:07:21.890  3979  4670 D SecContentProvider: called from com.android.chrome
+09-02 10:07:21.891  3979  4670 D SecContentProvider: query(), uri = 10 selection = getURLFilterReportEnabled
+09-02 10:07:21.893  3979  4670 D SecContentProvider: query(), uri = 2 selection = isAuditLogEnabled
+09-02 10:07:21.895  3979  4670 D SecContentProvider: query(), uri = 5 selection = getAutoFillSetting
+09-02 10:07:21.896  3979  4670 I chatty  : uid=1000(system) Binder:3979_A identical 3 lines
+09-02 10:07:21.897  3979  4670 D SecContentProvider: query(), uri = 5 selection = getCookiesSetting
+09-02 10:07:21.897  3979  4670 D SecContentProvider: called from com.android.chrome
+09-02 10:07:21.898  3979  5979 D SecContentProvider: query(), uri = 5 selection = getHttpProxy
+09-02 10:07:21.899  3979  5979 D SecContentProvider: called from com.android.chrome
+09-02 10:07:21.900  3979  5979 D SecContentProvider: query(), uri = 5 selection = getJavaScriptSetting
+09-02 10:07:21.901  3979  5979 D SecContentProvider: query(), uri = 5 selection = getPopupsSetting
+09-02 10:07:21.903  3979  5979 D SecContentProvider: query(), uri = 22 selection = isAuthenticationEnabled
+09-02 10:07:21.903  3979  5979 I chatty  : uid=1000(system) Binder:3979_15 identical 3 lines
+09-02 10:07:21.907  3979  5979 D SecContentProvider: query(), uri = 10 selection = getURLFilterList
+09-02 10:07:21.908  3979  5979 D SecContentProvider: called from com.android.chrome
+09-02 10:07:21.909  3979  4670 D SecContentProvider: query(), uri = 10 selection = getURLFilterEnabled
+09-02 10:07:21.911 29111 29111 I cr_ChromeTabbedActivity: #initializeState
+09-02 10:07:21.911 29111 29111 I cr_CipherFactory: #restoreFromBundle, no savedInstanceState.
+09-02 10:07:21.911 29111 29111 I cr_tabmodel: #loadState, ignoreIncognitoFiles? true
+09-02 10:07:21.912 29111 29111 I cr_tabmodel: Tab metadata, skipIncognitoCount? false incognitoCount: 0 totalCount: 25
+09-02 10:07:21.912 29111 29111 I cr_tabmodel: #isIncognitoTabBeingRestored from tabState:  false
+09-02 10:07:21.914  3979  4670 D SecContentProvider: called from com.android.chrome
+09-02 10:07:21.915  3979  4670 D SecContentProvider: query(), uri = 10 selection = getURLFilterReportEnabled
+09-02 10:07:21.916  3979  4670 D SecContentProvider: called from com.android.chrome
+09-02 10:07:21.935 29111 29111 E ResourceType: Style contains key with bad entry: 0x0101062c
+09-02 10:07:21.935 29194 29217 D libGLESv2: STS_GLApi : DTS, ODTC are not allowed for Package : com.android.chrome:privileged_process0
+09-02 10:07:21.945 22051 22051 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.languageprofile.service.START pkg=com.google.android.gms }
+09-02 10:07:21.945 22051 22051 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.languageprofile.service.START pkg=com.google.android.gms }
+09-02 10:07:21.947  3979  5172 D ConnectivityService: filterNetworkStateForUid() uid: 10096 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:21.960  3979  4673 D SamsungAlarmManager: setInexact Intent (T:3/F:0/AC:false) 20330830T100721 - CU:10025/CP:22051
+09-02 10:07:21.994 29147 29208 I cr_LibraryLoader: Successfully loaded native library
+09-02 10:07:21.996 29147 29208 I cr_CachingUmaRecorder: Flushed 3 samples from 3 histograms.
+09-02 10:07:22.023 29194 29217 V Surface : sf_framedrop debug : 0x4f4c, game : false, logging : 0
+09-02 10:07:22.025 29194 29217 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, egl_color_buffer_format *, EGLBoolean) returns 0x3000,  [720x1238]-format:1
+09-02 10:07:22.043 10264 10609 I FontLog : Received query name=Google Sans&weight=700&besteffort=false, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+09-02 10:07:22.043 10264 10609 I FontLog : Query [name=Google Sans&weight=700&besteffort=false] resolved to {Google Sans, wdth 100.0, wght 700, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+09-02 10:07:22.047 10264 10609 I FontLog : Fetch {Google Sans, wdth 100.0, wght 700, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+09-02 10:07:22.047  3979  5966 D SamsungAlarmManager: setExact Intent (T:3/F:0/AC:false) 20230902T100723 - CU:10025/CP:10264
+09-02 10:07:22.048  3979  5966 I SamsungAlarmManager: setLocked to kernel - T:3 / 20230902T100723, SetElapsed=87224469, nowELAPSED=87223480
+09-02 10:07:22.052 10264 10609 I FontLog : Pulling font file for id = 420, cache size = 8 [CONTEXT service_id=132 ]
+09-02 10:07:22.053  3979  5172 D ConnectivityService: filterNetworkStateForUid() uid: 10025 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:22.058  3979  5966 D ConnectivityService: filterNetworkStateForUid() uid: 10025 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:22.059 10264 10609 I FontLog : Received query name=Noto Color Emoji Compat&weight=400&besteffort=false, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+09-02 10:07:22.059 10264 10609 I FontLog : Query [name=Noto Color Emoji Compat&weight=400&besteffort=false] resolved to {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+09-02 10:07:22.063 10264 10609 I FontLog : Fetch {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+09-02 10:07:22.065  3979  5172 D SamsungAlarmManager: Cancel Alarm calling from uid:10025 pid :10264 / op:PendingIntent{a75e6c3: PendingIntentRecord{9212591 com.google.android.gms broadcastIntent}}
+09-02 10:07:22.068 10264 10609 I FontLog : Pulling font file for id = 421, cache size = 9 [CONTEXT service_id=132 ]
+09-02 10:07:22.070  3979  5172 I SamsungAlarmManager: setLocked to kernel - T:3 / 20230902T100800, SetElapsed=87261432, nowELAPSED=87223502
+09-02 10:07:22.076 29111 29111 W ResourceType: Failure getting entry for 0x7f01032b (t=0 e=811) (error -75)
+09-02 10:07:22.078 10264 10609 I FontLog : Received query name=Google Sans&weight=400&besteffort=false, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+09-02 10:07:22.079 10264 10609 I FontLog : Query [name=Google Sans&weight=400&besteffort=false] resolved to {Google Sans, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+09-02 10:07:22.080 10264 10609 I FontLog : Font PFD returned from cache for {Google Sans, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+09-02 10:07:22.081 10264 10609 I FontLog : Fetch {Google Sans, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+09-02 10:07:22.085 10264 10609 I FontLog : Pulling font file for id = 422, cache size = 7 [CONTEXT service_id=132 ]
+09-02 10:07:22.092 10264 10609 I FontLog : Received query name=Google Sans&weight=500&besteffort=false, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+09-02 10:07:22.093 29111 29111 W ResourceType: Failure getting entry for 0x7f0107ae (t=0 e=1966) (error -75)
+09-02 10:07:22.093 10264 10609 I FontLog : Query [name=Google Sans&weight=500&besteffort=false] resolved to {Google Sans, wdth 100.0, wght 500, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+09-02 10:07:22.094 29111 29111 W ResourceType: Failure getting entry for 0x7f010206 (t=0 e=518) (error -75)
+09-02 10:07:22.095 10264 10609 I FontLog : Font PFD returned from cache for {Google Sans, wdth 100.0, wght 500, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+09-02 10:07:22.095 10264 10609 I FontLog : Fetch {Google Sans, wdth 100.0, wght 500, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+09-02 10:07:22.102 10264 10609 I FontLog : Pulling font file for id = 423, cache size = 8 [CONTEXT service_id=132 ]
+09-02 10:07:22.135  3979  5172 D SamsungAlarmManager: setInexact Intent (T:3/F:0/AC:false) 20230902T101213 - CU:10025/CP:10264
+09-02 10:07:22.137 29111 29111 I cr_OfflineIndicator: onConnectionTypeChanged 2
+09-02 10:07:22.138 10264 28741 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.languageprofile.GcmTaskService started execution. cause:7 exec_start_elapsed_seconds: 87223 [CONTEXT service_id=218 ]
+09-02 10:07:22.139 29111 29111 I cr_OfflineIndicator: Reported by system: [ Transports: WIFI Capabilities: WIFI_P2P&NOT_RESTRICTED&TRUSTED&NOT_VPN LinkUpBandwidth>=1048576Kbps LinkDnBandwidth>=1048576Kbps]
+09-02 10:07:22.139 29111 29111 I cr_OfflineIndicator: Reported by system: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&FOREGROUND LinkUpBandwidth>=1048576Kbps LinkDnBandwidth>=1048576Kbps SignalStrength: -58]
+09-02 10:07:22.140 29111 29111 I cr_OfflineIndicator: setConnectionState connectionState=4
+09-02 10:07:22.140 29111 29111 I cr_OfflineDetector: Running updateState mConnectivityDetectorInitialized: true, mTimeWhenLastForegrounded: 87223569, getElapsedTime: 87223572, mTimeWhenLastOfflineNotificationReceived: 0, mTimeWhenLastOnline: 87223572, mApplicationState: 1, mIsOfflineLastReportedByConnectivityDetector: false, mIsEffectivelyOffline: false
+09-02 10:07:22.140 29111 29111 I cr_OfflineDetector: updateState(): timeSinceLastForeground: 3, timeSinceOfflineNotificationReceived: 87223572, timeSinceLastOnline: 0, timeNeededForForeground: 1997, timeNeededForOffline: -87221572
+09-02 10:07:22.140 29111 29111 I cr_OfflineIndicator: processConnectivityCheckResult mConnectionState=4 mConnectivityCheckingStage=1
+09-02 10:07:22.161  3979  4672 W AppOps  : Bad call: specified package com.google.android.gms under uid 10096 but it is really 10025
+09-02 10:07:22.161  3979  4672 W AppOps  : java.lang.RuntimeException: here
+09-02 10:07:22.161  3979  4672 W AppOps  : 	at com.android.server.AppOpsService.getOpsRawLocked(AppOpsService.java:1402)
+09-02 10:07:22.161  3979  4672 W AppOps  : 	at com.android.server.AppOpsService.checkPackage(AppOpsService.java:1106)
+09-02 10:07:22.161  3979  4672 W AppOps  : 	at com.android.internal.app.IAppOpsService$Stub.onTransact(IAppOpsService.java:169)
+09-02 10:07:22.161  3979  4672 W AppOps  : 	at android.os.Binder.execTransact(Binder.java:682)
+09-02 10:07:22.162  3979  4672 I chatty  : uid=1000(system) Binder:3979_B identical 1 line
+09-02 10:07:22.162  3979  4672 W AppOps  : Bad call: specified package com.google.android.gms under uid 10096 but it is really 10025
+09-02 10:07:22.162  3979  4672 W AppOps  : java.lang.RuntimeException: here
+09-02 10:07:22.162  3979  4672 W AppOps  : 	at com.android.server.AppOpsService.getOpsRawLocked(AppOpsService.java:1402)
+09-02 10:07:22.162  3979  4672 W AppOps  : 	at com.android.server.AppOpsService.checkPackage(AppOpsService.java:1106)
+09-02 10:07:22.162  3979  4672 W AppOps  : 	at com.android.internal.app.IAppOpsService$Stub.onTransact(IAppOpsService.java:169)
+09-02 10:07:22.162  3979  4672 W AppOps  : 	at android.os.Binder.execTransact(Binder.java:682)
+09-02 10:07:22.165  3979  5172 W AppOps  : Bad call: specified package com.google.android.gms under uid 10096 but it is really 10025
+09-02 10:07:22.165  3979  5172 W AppOps  : java.lang.RuntimeException: here
+09-02 10:07:22.165  3979  5172 W AppOps  : 	at com.android.server.AppOpsService.getOpsRawLocked(AppOpsService.java:1402)
+09-02 10:07:22.165  3979  5172 W AppOps  : 	at com.android.server.AppOpsService.checkPackage(AppOpsService.java:1106)
+09-02 10:07:22.165  3979  5172 W AppOps  : 	at com.android.internal.app.IAppOpsService$Stub.onTransact(IAppOpsService.java:169)
+09-02 10:07:22.165  3979  5172 W AppOps  : 	at android.os.Binder.execTransact(Binder.java:682)
+09-02 10:07:22.167  3979  4672 W AppOps  : Bad call: specified package com.google.android.gms under uid 10096 but it is really 10025
+09-02 10:07:22.167  3979  4672 W AppOps  : java.lang.RuntimeException: here
+09-02 10:07:22.167  3979  4672 W AppOps  : 	at com.android.server.AppOpsService.getOpsRawLocked(AppOpsService.java:1402)
+09-02 10:07:22.167  3979  4672 W AppOps  : 	at com.android.server.AppOpsService.checkPackage(AppOpsService.java:1106)
+09-02 10:07:22.167  3979  4672 W AppOps  : 	at com.android.internal.app.IAppOpsService$Stub.onTransact(IAppOpsService.java:169)
+09-02 10:07:22.167  3979  4672 W AppOps  : 	at android.os.Binder.execTransact(Binder.java:682)
+09-02 10:07:22.187  3979  3979 D CustomFrequencyManagerService: releaseDVFSLockLocked : Getting Lock type frm List : DVFS_MIN_LIMIT  frequency : 1560000  uid : 1000  pid : 3979  tag : AMS_RESUME_TAIL@CPU_MIN@14
+09-02 10:07:22.200 29111 29111 V InputMethodManager: Starting input: tba=android.view.inputmethod.EditorInfo@9be6715 nm : com.android.chrome ic=null
+09-02 10:07:22.200 29111 29111 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+09-02 10:07:22.200  3979  5172 D InputMethodManagerService: startInputOrWindowGainedFocus : startInput 
+09-02 10:07:22.202  3979  5172 D InputMethodManagerService: setCurrentInputInfo - inputContext : null eidtorInfo : android.view.inputmethod.EditorInfo@f028fb1 missingMethods : 0
+09-02 10:07:22.203  4336  4336 I InputMethodWrapper:  call dispatchStartInputWithToken
+09-02 10:07:22.203  4336  4336 I InputMethodService: dispatchStartInputWithToken
+09-02 10:07:22.203  4336  4336 I SKBD    : SamsungKeypad [IMI] onStartInput - caller pid : 29111, caller uid : 10096
+09-02 10:07:22.203  4336  4336 I SKBD    : SamsungKeypad  CACHEDIC onStartInput  isCachedICEnabled:  false
+09-02 10:07:22.203  4336  4336 I SKBD    : atl getDefaultInputRange : UNKNOWN
+09-02 10:07:22.203  4336  4336 I SKBD    : awo resetBinderManager()
+09-02 10:07:22.203  4336  4336 I SKBD_SYNC: SamsungKeypad onStartInput: import DLM
+09-02 10:07:22.204  4336  4336 I SKBD    : atl setPrivateImeOptionsToTable privateImeOptions ( null )
+09-02 10:07:22.204  4336  4336 I SKBD    : atl imeOptions is null
+09-02 10:07:22.204  4336  4336 I SKBD    : SamsungKeypad [PF_OP][onStartInput] 619808
+09-02 10:07:22.207  3979  5172 W StorageManager: getStorageLowBytes lowPercent : 5, lowBytes : 1260145254, maxLowBytes : 524288000
+09-02 10:07:22.210  3979  5172 W StorageManager: getStorageLowBytes lowPercent : 5, lowBytes : 1260145254, maxLowBytes : 524288000
+09-02 10:07:22.227 10264 26968 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.languageprofile.GcmTaskService finished executing. cause:7 result: 1 elapsed_millis: 110 uptime_millis: 110 exec_start_elapsed_seconds: 87223 [CONTEXT service_id=218 ]
+09-02 10:07:22.236  3979  5172 D ConnectivityService: filterNetworkStateForUid() uid: 10025 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:22.237  3979  5172 D ConnectivityService: filterNetworkStateForUid() uid: 10025 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:22.240  3979  4672 D SamsungAlarmManager: Cancel Alarm calling from uid:10025 pid :10264 / op:PendingIntent{fc54c96: PendingIntentRecord{9212591 com.google.android.gms broadcastIntent}}
+09-02 10:07:22.240  3979  5172 D ConnectivityService: filterNetworkStateForUid() uid: 10096 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:22.244 29111 29256 D ConnectivityManager: requestNetwork; CallingUid : 10096, CallingPid : 29111
+09-02 10:07:22.245  3979  5172 D SamsungAlarmManager: setInexact Intent (T:3/F:0/AC:false) 20230902T101213 - CU:10025/CP:10264
+09-02 10:07:22.246  3979  4672 D ConnectivityService: listenForNetwork for uid/pid:10096/29111 NetworkRequest [ LISTEN id=447, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ]
+09-02 10:07:22.247  3979  4180 D ConnectivityService: rematching NetworkAgentInfo [WIFI () - 502]
+09-02 10:07:22.247  3979  4180 D ConnectivityService:  network has: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&FOREGROUND LinkUpBandwidth>=1048576Kbps LinkDnBandwidth>=1048576Kbps SignalStrength: -58]
+09-02 10:07:22.247  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 420. No change.
+09-02 10:07:22.247  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 3. No change.
+09-02 10:07:22.247  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 424. No change.
+09-02 10:07:22.247  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 1. No change.
+09-02 10:07:22.247  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 419. No change.
+09-02 10:07:22.247  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 443. No change.
+09-02 10:07:22.247  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 423. No change.
+09-02 10:07:22.247  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 140. No change.
+09-02 10:07:22.247  3979  4180 D ConnectivityService: Network NetworkAgentInfo [WIFI () - 502] was already satisfying request 425. No change.
+09-02 10:07:22.247  3979  4180 D ConnectivityService: sending notification AVAILABLE for NetworkRequest [ LISTEN id=447, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ]
+09-02 10:07:22.248  3979  4180 D ConnectivityService: sending notification CAP_CHANGED for NetworkRequest [ LISTEN id=447, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ]
+09-02 10:07:22.248  3979  4180 D ConnectivityService: sending notification IP_CHANGED for NetworkRequest [ LISTEN id=447, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ]
+09-02 10:07:22.249  3979  5172 D ConnectivityService: filterNetworkStateForUid() uid: 10096 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:22.261  3979  5172 I chatty  : uid=1000(system) Binder:3979_D identical 4 lines
+09-02 10:07:22.273  3979  5172 D ConnectivityService: filterNetworkStateForUid() uid: 10096 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:22.281 29111 29111 W ResourceType: Failure getting entry for 0x7f0100fa (t=0 e=250) (error -75)
+09-02 10:07:22.284 29111 29111 W ResourceType: Failure getting entry for 0x7f010854 (t=0 e=2132) (error -75)
+09-02 10:07:22.313 29111 29111 W ResourceType: Failure getting entry for 0x7f010220 (t=0 e=544) (error -75)
+09-02 10:07:22.315 29111 29111 W ResourceType: Failure getting entry for 0x7f0107f5 (t=0 e=2037) (error -75)
+09-02 10:07:22.347 29111 29111 W ResourceType: Failure getting entry for 0x7f010853 (t=0 e=2131) (error -75)
+09-02 10:07:22.376 29111 29111 I Choreographer: Skipped 51 frames!  The application may be doing too much work on its main thread.
+09-02 10:07:22.381  3979  5172 V WindowManager: Relayout Window{203bbaa u0 com.android.chrome/com.google.android.apps.chrome.Main}: viewVisibility=0 req=720x1280 WM.LayoutParams{(0,0)(fillxfill) sim=#13 ty=1 fl=#81810100 pfl=0x20000 fmt=-3 wanim=0x10302fd vsysui=0x600 sysuil=true needsMenuKey=2 colorMode=0 naviIconColor=0}
+09-02 10:07:22.383  3979  3996 D WindowManager: set systemUiVisibility : systemUiFlags= 0x608 fullscreenStackSysUiFlags= 0x0
+09-02 10:07:22.387 29111 29111 D ViewRootImpl@22a972f[Main]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x1 surface={valid=true 3326457856} changed=false
+09-02 10:07:22.387  3979  4672 D WindowManager: adjustSystemUiVisibilityLw : vis= 0x608
+09-02 10:07:22.390  3462  3462 I SurfaceFlinger: Display 0 HWC layers:
+09-02 10:07:22.390  3462  3462 I SurfaceFlinger:     type    |    handle    | flag |  format   |   source crop (l,t,r,b)    |         frame       | name 
+09-02 10:07:22.390  3462  3462 I SurfaceFlinger: ------------+--------------+------+-----------+----------------------------+---------------------+------
+09-02 10:07:22.390  3462  3462 I SurfaceFlinger:      Client | 0x7ac0b8f040 | 0002 | RGBA_8888 |   0.0    0.0  720.0 1238.0 |    0   42  720 1280 | SurfaceView - com.android.chrome/com[...]android.apps.chrome.Main@a93a8fb@0#0
+09-02 10:07:22.390  3462  3462 I SurfaceFlinger:      Client | 0x7abdc74dc0 | 0000 | RGBA_8888 |   0.0    0.0  720.0 1280.0 |    0    0  720 1280 | com.android.chrome/com.google.android.apps.chrome.Main#0
+09-02 10:07:22.390  3462  3462 I SurfaceFlinger:      Client | 0x7ac4c24480 | 0000 | RGBA_8888 |   0.0    0.0  720.0   42.0 |    0    0  720   42 | StatusBar#0
+09-02 10:07:22.390  3462  3462 I SurfaceFlinger: 
+09-02 10:07:22.405  3979  4672 D ConnectivityService: filterNetworkStateForUid() uid: 10096 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:22.406  3979  4672 D ConnectivityService: filterNetworkStateForUid() uid: 10096 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:22.409  3979  5172 D ConnectivityService: filterNetworkStateForUid() uid: 10096 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:22.410  3979  4672 D ConnectivityService: filterNetworkStateForUid() uid: 10096 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:22.413  3979  4672 I chatty  : uid=1000(system) Binder:3979_B identical 1 line
+09-02 10:07:22.415  3979  4672 D ConnectivityService: filterNetworkStateForUid() uid: 10096 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:22.418 29111 29111 I cr_tabmodel: #isIncognitoTabBeingRestored from tabState:  false
+09-02 10:07:22.418 29111 29111 I cr_tabmodel: #isIncognitoTabBeingRestored from tabState:  false
+09-02 10:07:22.430  3449  3449 I android.hardware.wifi@1.0-service: getLinkLayerStats
+09-02 10:07:22.432 22051 22057 I zygote64: Do partial code cache collection, code=30KB, data=19KB
+09-02 10:07:22.432 22051 22057 I zygote64: After code cache collection, code=30KB, data=19KB
+09-02 10:07:22.433 22051 22057 I zygote64: Increasing code cache capacity to 128KB
+09-02 10:07:22.452 29111 29111 I cr_tabmodel: #isIncognitoTabBeingRestored from tabState:  false
+09-02 10:07:22.523 29111 29111 I chatty  : uid=10096(u0_a96) identical 32 lines
+09-02 10:07:22.523 29111 29111 I cr_tabmodel: #isIncognitoTabBeingRestored from tabState:  false
+09-02 10:07:22.523 29111 29190 D NetworkSecurityConfig: Using Network Security Config from resource 0_resource_name_obfuscated debugBuild: false
+09-02 10:07:22.526 29111 29111 I cr_tabmodel: #isIncognitoTabBeingRestored from tabState:  false
+09-02 10:07:22.546 29111 29111 I chatty  : uid=10096(u0_a96) identical 10 lines
+09-02 10:07:22.546 29111 29111 I cr_tabmodel: #isIncognitoTabBeingRestored from tabState:  false
+09-02 10:07:22.572 29111 29111 I cr_tabmodel: Loaded tab lists; counts: 25,0
+09-02 10:07:22.653  3979  4111 D MdnieScenarioControlService:  packageName : com.android.chrome    className : com.google.android.apps.chrome.Main
+09-02 10:07:22.721 22051 22051 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+09-02 10:07:22.721 22051 22051 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+09-02 10:07:22.735  3979  4292 D WifiConnectivityMonitor:  [|222] [] []
+09-02 10:07:22.782 22051 22205 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=30
+09-02 10:07:22.791 22051 22051 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-02 10:07:22.791 22051 22051 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-02 10:07:22.796 22051 22051 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-02 10:07:22.803 22051 23405 I GmsCoreXrpcWrapper: (REDACTED) Returning a channel provider with trafficStatsTag=%d trafficStatsUid=%d
+09-02 10:07:22.915 22051 23405 I Icing   : Usage reports ok 6, Failed Usage reports 0, indexed 4, rejected 0
+09-02 10:07:22.927  3979  3988 I zygote64: Background concurrent copying GC freed 58571(3MB) AllocSpace objects, 8(160KB) LOS objects, 38% free, 37MB/61MB, paused 545us total 179.133ms
+09-02 10:07:23.048  3979  3979 D PreBindingService: handleMessage : 1
+09-02 10:07:23.081 29111 29111 I cr_tabmodel: Appending tabs being restored to metadata lists, 0, startingNormalCount: 25, startingIncognitoCount: 0
+09-02 10:07:23.081 29111 29111 I cr_tabmodel: Serializing tab lists; counts: 25, 0
+09-02 10:07:23.112  3979  3994 D SemExecuteManagerService: onShortcutChanged: com.android.chrome0
+09-02 10:07:23.112 29111 29111 I cr_StartSurface: Recorded Startup.Android.StartSurfaceShownAtStartup = false
+09-02 10:07:23.112  5213 25725 D LauncherApps: onShortcutChanged 0,com.android.chrome
+09-02 10:07:23.113  5213  5213 D DeepShortcutManager: bindDeepShortcutMap: {com.android.launcher3.util.ComponentKey@1e9a2cfa=[DynamicFullRecent], com.android.launcher3.util.ComponentKey@92548096=[Search, Messages, Share, Notifications], com.android.launcher3.util.ComponentKey@9df2b1d6=[scanQrCode, newTab, newPrivateTab, search], com.android.launcher3.util.ComponentKey@489bf67c=[text_shortcut, voice_shortcut], com.android.launcher3.util.ComponentKey@86e56e2c=[open_new_tab, password_manager, open_new_private_tab], com.android.launcher3.util.ComponentKey@d85d54d0=[search_event_task, create_task, create_event], com.android.launcher3.util.ComponentKey@f5d080bf=[phoneadd, search, missedcall], com.android.launcher3.util.ComponentKey@515cb72c=[VIEW_MY_DOWNLOADS], com.android.launcher3.util.ComponentKey@683678e7=[create_message], com.android.launcher3.util.ComponentKey@64033792=[explore-shortcut, search-shortcut, shorts-shortcut, subscriptions-shortcut], com.android.launcher3.util.ComponentKey@3a8c61b=[compose], com.android.launcher3.util.ComponentKey@429b698e=[selfie, auto], com.android.launcher3.util.ComponentKey@91a61c5e=[contactadd, myprofile, contactgroup], com.android.launcher3.util.ComponentKey@3e17fc4f=[updates], com.android.launcher3.util.ComponentKey@967f6ac6=[search_shortcut], com.android.launcher3.util.ComponentKey@afe2ea5f=[manifest_home, manifest_work], com.android.launcher3.util.ComponentKey@7bfa09e7=[manifest_compose_shortcut, andrei.bogdan.marcel97@gmail.com], com.android.launcher3.util.ComponentKey@947c4a03=[new-tab-shortcut, dynamic-new-incognito-tab-shortcut]}
+09-02 10:07:23.129  3979  5966 W StorageManager: getStorageLowBytes lowPercent : 5, lowBytes : 1260145254, maxLowBytes : 524288000
+09-02 10:07:23.132 29111 29146 I cr_BindingManager: Visible binding enabled: maxSize=40
+09-02 10:07:23.514 22051 22051 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-02 10:07:23.514 22051 22051 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-02 10:07:23.523 22051 22051 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-02 10:07:23.601  3979  5172 D ConnectivityService: filterNetworkStateForUid() uid: 10025 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:23.786  4962  4962 D io_stats: !@ 179,0 r 554724 16995620 w 304646 6506692 d 30451 18717288 f 92454 94177 iot 407616 341865 th 51200 0 0 pt 0 inp 0 0 32577.030
+09-02 10:07:23.832 29111 29111 E cr_BTSPrefs: No data found for task id: 53
+09-02 10:07:23.834 29111 29111 E cr_BkgrdTaskScheduler: Task cannot be canceled because no data was found instorage or data was invalid
+09-02 10:07:25.132  3979  6899 D SSRM:G  : SIOP:: AP = 300, PST = 294 (W:10), BAT = 262, USB = 0, CHG = 0
+09-02 10:07:25.229  3979  4673 D BatteryService: !@BatteryListener : batteryPropertiesChanged!
+09-02 10:07:25.230  3979  4673 D BatteryService: level:100, scale:100, status:5, health:2, present:true, voltage: 4152, temperature: 259, technology: Li-ion, AC powered:false, USB powered:true, POGO powered:false, Wireless powered:false, icon:17303834, invalid charger:0, maxChargingCurrent:0, maxChargingVoltage:0, chargeCounter:0
+09-02 10:07:25.231  3979  4673 D BatteryService: online:4, current avg:-384, charge type:1, power sharing:false, high voltage charger:false, capacity:280000, batterySWSelfDischarging:false, misc_event:0, current_event:0, current_now:-354
+09-02 10:07:25.231  3979  3979 D BatteryService: Sending ACTION_BATTERY_CHANGED.
+09-02 10:07:25.234  3979  3979 D SamsungPhoneWindowManager: ACTION_BATTERY_CHANGED - Level :: 100, battStatus :: 5
+09-02 10:07:25.235  3979  3979 I MotionRecognitionService: Plugged
+09-02 10:07:25.235  3979  3979 D MotionRecognitionService:   mCableConnection= 1
+09-02 10:07:25.235  3979  3979 D MotionRecognitionService: setPowerConnected : mGripEnabled = false
+09-02 10:07:25.239  4349  4349 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+09-02 10:07:25.241  4349  4349 D BatteryController: onReceive-ACTION_BATTERY_CHANGED : mLevel=100, mBatteryStatus=5
+09-02 10:07:25.250  3979  4002 D UsbDeviceManager: handleMessage -> MSG_UPDATE_CHARGING_STATE = 1
+09-02 10:07:25.252  4349  4349 D PowerUI : priorPlugType = 2 mPlugType =  2
+09-02 10:07:25.441  3449  3449 I android.hardware.wifi@1.0-service: getLinkLayerStats
+09-02 10:07:25.570  3979  4484 E Watchdog: !@Sync 1085 [2023-09-02 10:07:25.569]
+09-02 10:07:25.588  3979  4327 D skia    : Encode PNG Singlethread processname=system_server :      34468 us, width=84, height=84
+09-02 10:07:25.762  4349  4349 D KeyguardUpdateMonitor: handleStatusBarState( false )
+09-02 10:07:26.091 14031 14031 E adbd    : recv: OPEN 0001a367 00000000 0076:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 64 75 6D 70 73 79 73 20 61 63 74 69 76 69 74 79 20 72 65 63 65 6E 74 73 20 7C 20 67 72 65 70 20 22 52 65 63 65 6E 74 20 23 30 22 20 7C 20 63 75 74 20 2D 64 20 22 3D 22 20 2D 66 32 20 7C 20 67 72 65 70 20 2D 6F 20 2D 70 20 22 5B 61 2D 7A 7C 2E 5D 2A 22 00 
+09-02 10:07:26.091 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:dumpsys activity recents | grep "Recent #0" | cut -d "=" -f2 | grep -o -p "[a-z|.]*"
+09-02 10:07:26.216 14031 14031 E adbd    : recv: OPEN 0001a36a 00000000 0042:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 67 65 74 70 72 6F 70 20 72 6F 2E 62 75 69 6C 64 2E 76 65 72 73 69 6F 6E 2E 72 65 6C 65 61 73 65 00 
+09-02 10:07:26.217 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:getprop ro.build.version.release
+09-02 10:07:26.298 14031 14031 E adbd    : recv: OPEN 0001a36d 00000000 003e:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 67 65 74 70 72 6F 70 20 72 6F 2E 62 75 69 6C 64 2E 76 65 72 73 69 6F 6E 2E 73 64 6B 00 
+09-02 10:07:26.298 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:getprop ro.build.version.sdk
+09-02 10:07:26.382 14031 14031 E adbd    : recv: OPEN 0001a370 00000000 0034:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 69 6E 70 75 74 20 74 61 70 20 35 35 30 20 31 35 30 30 00 
+09-02 10:07:26.382 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:input tap 550 1500
+09-02 10:07:26.829 29279 29279 W ADebug  : Failed to get property persist.sys.media.traces
+09-02 10:07:26.832 29279 29279 E appproc : Enhanced Zygote ASLR: ro.knox.enhance.zygote.aslr != 1. Enhanced Zygote ASLR is DISABLED!
+09-02 10:07:26.833 29279 29279 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+09-02 10:07:26.838 29279 29279 D SecNativeFeatureCppIf: encoded
+09-02 10:07:26.838 29279 29279 D SecNativeFeatureCppIf: decoding and unzip finish
+09-02 10:07:26.838 29279 29279 D SecNativeFeatureCppIf: use unCompDataBuff. encoded
+09-02 10:07:26.839 29279 29279 D SecNativeFeatureCppIf: Free unCompDataBuff
+09-02 10:07:26.839 29279 29279 D SecNativeFeatureCppIf: encoded
+09-02 10:07:26.839 29279 29279 D SecNativeFeatureCppIf: decoding and unzip finish
+09-02 10:07:26.839 29279 29279 D SecNativeFeatureCppIf: use unCompDataBuff. encoded
+09-02 10:07:26.839 29279 29279 D SecNativeFeatureCppIf: Free unCompDataBuff
+09-02 10:07:26.839 29279 29279 D SecNativeFeatureCppIf: encoded
+09-02 10:07:26.839 29279 29279 D SecNativeFeatureCppIf: decoding and unzip finish
+09-02 10:07:26.839 29279 29279 D SecNativeFeatureCppIf: use unCompDataBuff. encoded
+09-02 10:07:26.839 29279 29279 D SecNativeFeatureCppIf: Free unCompDataBuff
+09-02 10:07:26.839 29279 29279 D SecNativeFeatureCppIf: encoded
+09-02 10:07:26.839 29279 29279 D SecNativeFeatureCppIf: decoding and unzip finish
+09-02 10:07:26.839 29279 29279 D SecNativeFeatureCppIf: use unCompDataBuff. encoded
+09-02 10:07:26.839 29279 29279 D SecNativeFeatureCppIf: Free unCompDataBuff
+09-02 10:07:26.954 29279 29279 D ICU     : Timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+09-02 10:07:26.978 29279 29279 I app_process: find the special shared library, skip check
+09-02 10:07:27.012 29279 29279 D SemCscFeature: Encoded
+09-02 10:07:27.015 29279 29279 I chatty  : uid=2000(shell) identical 2 lines
+09-02 10:07:27.016 29279 29279 D SemCscFeature: Encoded
+09-02 10:07:27.017 29279 29279 E SemAffinityControl: SemAffinityControl: registerfunction enter
+09-02 10:07:27.023 29279 29279 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+09-02 10:07:27.033 29279 29279 I Input   : injectMotionEvent: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=550.0, y[0]=1500.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=32580269, downTime=32580269, deviceId=3, source=0x1002 }
+09-02 10:07:27.034  3979  5172 D InputDispatcher: Inject motion (29279): action=0x0, eventTime=32580269000000, displayId=0
+09-02 10:07:27.035  3979  4081 I InputDispatcher: Dropping event because there is no touchable window at (550, 1500).
+09-02 10:07:27.036  3979  5172 W InputManager: Input event injection from pid 29279 failed.
+09-02 10:07:27.036  3979  4081 D PowerManagerService: [api] userActivityFromNative : 120 (event: 2 flags: 0) eventTime = 32580269
+09-02 10:07:27.037 29279 29279 I Input   : injectMotionEvent: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=550.0, y[0]=1500.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=32580269, downTime=32580269, deviceId=3, source=0x1002 }
+09-02 10:07:27.037  3979  5172 D InputDispatcher: Inject motion (29279): action=0x1, eventTime=32580269000000, displayId=0
+09-02 10:07:27.038  3979  5172 W InputManager: Input event injection from pid 29279 failed.
+09-02 10:07:27.040 29279 29279 D AndroidRuntime: Shutting down VM
+09-02 10:07:27.129 14031 14031 E adbd    : recv: OPEN 0001a373 00000000 0042:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 67 65 74 70 72 6F 70 20 72 6F 2E 62 75 69 6C 64 2E 76 65 72 73 69 6F 6E 2E 72 65 6C 65 61 73 65 00 
+09-02 10:07:27.130 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:getprop ro.build.version.release
+09-02 10:07:27.225 14031 14031 E adbd    : recv: OPEN 0001a376 00000000 003e:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 67 65 74 70 72 6F 70 20 72 6F 2E 62 75 69 6C 64 2E 76 65 72 73 69 6F 6E 2E 73 64 6B 00 
+09-02 10:07:27.226 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:getprop ro.build.version.sdk
+09-02 10:07:27.269 29111 29189 I cr_omaha: Attempting to schedule next job for: Sat Sep 02 13:14:49 GMT+02:00 2023
+09-02 10:07:27.274 29111 29111 I cr_omaha: Scheduled using JobService
+09-02 10:07:27.288 29111 29111 E cr_BkgrdTaskJS: Tried finishing non-current BackgroundTask.
+09-02 10:07:27.312 14031 14031 E adbd    : recv: OPEN 0001a379 00000000 0102:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 61 6D 20 73 74 61 72 74 2D 66 6F 72 65 67 72 6F 75 6E 64 2D 73 65 72 76 69 63 65 20 2D 6E 20 22 63 6F 6D 2E 65 78 61 6D 70 6C 65 2E 62 61 74 74 65 72 79 6D 61 6E 61 67 65 72 5F 75 74 69 6C 69 74 79 2F 63 6F 6D 2E 65 78 61 6D 70 6C 65 2E 62 61 74 74 65 72 79 6D 61 6E 61 67 65 72 5F 75 74 69 6C 69 74 79 2E 44 61 74 61 43 6F 6C 6C 65 63 74 69 6F 6E 53 65 72 76 69 63 65 22 20 2D 2D 65 69 20 73 61 6D 70 6C 65 52 61 74 65 20 31 30 30 20 2D 2D 65 73 20 22 64 61 74 61 46 69 65 6C 64 73 22 20 22 42 41 54 54 45 52 59 5F 50 52 4F 50 45 52 54 59 5F 43 55 52 52 45 4E 54 5F 4E 4F 57 2C 45 58 54 52 41 5F 56 4F 4C 54 41 47 45 22 20 2D 2D 65 7A 20 74 6F 43 53 56 20 66 61 6C 73 65 00 
+09-02 10:07:27.312 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:am start-foreground-service -n "com.example.batterymanager_utility/com.example.batterymanager_utility.DataCollectionService" --ei sampleRate 100 --es "dataFields" "BATTERY_PROPERTY_CURRENT_NOW,EXTRA_VOLTAGE" --ez toCSV false
+09-02 10:07:27.393 29070 29070 I BatteryMgr:DataCollectionService: onStartCommand: begin
+09-02 10:07:27.393 29070 29070 I BatteryMgr:DataCollectionService: onStartCommand: sampleRate => 100
+09-02 10:07:27.394 29070 29070 I BatteryMgr:DataCollectionService: onStartCommand: rawFields => Timestamp,BATTERY_PROPERTY_CURRENT_NOW,EXTRA_VOLTAGE
+09-02 10:07:27.396 29070 29070 I BatteryMgr:DataCollectionService: onStartCommand: notification done
+09-02 10:07:27.397 29070 29070 D Notification: allPendingIntents
+09-02 10:07:27.400 29070 29070 I BatteryMgr:DataCollectionService: started foreground
+09-02 10:07:27.402  3979  3995 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = android,userId = 0
+09-02 10:07:27.402  3979  3995 D API test: getContainerInfo: value is 
+09-02 10:07:27.402  3979  3995 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = android,userId = 0
+09-02 10:07:27.402  3979  3995 D API test: getContainerInfo: value is 
+09-02 10:07:27.403  3979  3995 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.example.batterymanager_utility,userId = 0
+09-02 10:07:27.403  3979  3995 D API test: getContainerInfo: value is 
+09-02 10:07:27.404  3979  3995 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.example.batterymanager_utility,userId = 0
+09-02 10:07:27.404  3979  3995 D API test: getContainerInfo: value is 
+09-02 10:07:27.406  3979  3979 D AudioService: getStreamVolume 5 index 110
+09-02 10:07:27.408  3979  5172 D Notification: allPendingIntents
+09-02 10:07:27.409  3979  5172 D Notification: allPendingIntents
+09-02 10:07:27.410  4349  4349 D StatusBar: addNotification key=0|android|40|null|1000 fullscreen:false
+09-02 10:07:27.411  3979  3979 I AccessibilityManagerService: semOnLightNotification(null), bIsFlashOn : false
+09-02 10:07:27.411  3979  3979 D AccessibilityManagerService: Can't use light notification
+09-02 10:07:27.412  3979  3979 D AudioService: getStreamVolume 5 index 110
+09-02 10:07:27.414  3979  5172 D Notification: allPendingIntents
+09-02 10:07:27.415  3979  4673 D Notification: allPendingIntents
+09-02 10:07:27.417 29070 29298 I BatteryMgr:DataCollectionService: collectData: begin
+09-02 10:07:27.419  4349  4349 D StatusBar: addNotification key=0|com.example.batterymanager_utility|1|null|10157 fullscreen:false
+09-02 10:07:27.424 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642047423,-354,4152
+09-02 10:07:27.432 14031 14031 E adbd    : recv: OPEN 0001a37c 00000000 0042:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 67 65 74 70 72 6F 70 20 72 6F 2E 62 75 69 6C 64 2E 76 65 72 73 69 6F 6E 2E 72 65 6C 65 61 73 65 00 
+09-02 10:07:27.433 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:getprop ro.build.version.release
+09-02 10:07:27.511 14031 14031 E adbd    : recv: OPEN 0001a37f 00000000 003e:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 67 65 74 70 72 6F 70 20 72 6F 2E 62 75 69 6C 64 2E 76 65 72 73 69 6F 6E 2E 73 64 6B 00 
+09-02 10:07:27.511 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:getprop ro.build.version.sdk
+09-02 10:07:27.520  4349  4349 D KeyguardUpdateMonitor: handleStatusBarState( false )
+09-02 10:07:27.530 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642047530,-354,4152
+09-02 10:07:27.575 14031 14031 E adbd    : recv: OPEN 0001a382 00000000 0029:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 64 61 74 65 20 2D 75 00 
+09-02 10:07:27.575 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:date -u
+09-02 10:07:27.635 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642047635,-354,4152
+09-02 10:07:27.651 14031 14031 E adbd    : recv: OPEN 0001a385 00000000 003e:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 64 75 6D 70 73 79 73 20 63 70 75 69 6E 66 6F 20 7C 20 67 72 65 70 20 54 4F 54 41 4C 00 
+09-02 10:07:27.651 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:dumpsys cpuinfo | grep TOTAL
+09-02 10:07:27.741 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642047741,-354,4152
+09-02 10:07:27.745 14031 14031 E adbd    : recv: OPEN 0001a388 00000000 003d:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 64 75 6D 70 73 79 73 20 6D 65 6D 69 6E 66 6F 20 7C 20 67 72 65 70 20 55 73 65 64 00 
+09-02 10:07:27.745 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:dumpsys meminfo | grep Used
+09-02 10:07:27.846 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642047846,-354,4152
+09-02 10:07:27.957 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642047957,-354,4152
+09-02 10:07:28.068 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642048067,-354,4152
+09-02 10:07:28.179 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642048179,-354,4152
+09-02 10:07:28.285 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642048285,-354,4152
+09-02 10:07:28.396 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642048396,-354,4152
+09-02 10:07:28.453  3449  3449 I android.hardware.wifi@1.0-service: getLinkLayerStats
+09-02 10:07:28.508 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642048507,-354,4152
+09-02 10:07:28.619 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642048619,-354,4152
+09-02 10:07:28.730 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642048729,-354,4152
+09-02 10:07:28.792  4962  4962 D io_stats: !@ 179,0 r 554865 16997636 w 304847 6510164 d 30462 18717800 f 92469 94194 iot 407744 341960 th 51200 0 0 pt 0 inp 0 0 32582.036
+09-02 10:07:28.842 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642048841,-354,4152
+09-02 10:07:28.953 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642048952,-354,4152
+09-02 10:07:29.019  3979  5966 D SamsungAlarmManager: Cancel Alarm calling from uid:10025 pid :22051 / op:PendingIntent{d1e8eb: PendingIntentRecord{333f7f8 com.google.android.gms startService}}
+09-02 10:07:29.063 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642049063,-354,4152
+09-02 10:07:29.175 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642049174,-354,4152
+09-02 10:07:29.285 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642049285,-354,4152
+09-02 10:07:29.396 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642049396,-354,4152
+09-02 10:07:29.507 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642049507,-354,4152
+09-02 10:07:29.618 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642049617,-354,4152
+09-02 10:07:29.729 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642049728,-354,4152
+09-02 10:07:29.839 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642049839,-354,4152
+09-02 10:07:29.895  3979  4051 D SensorService: [SO] 0.144 -0.369 9.840
+09-02 10:07:29.950 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642049950,-354,4152
+09-02 10:07:30.061 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642050060,-354,4152
+09-02 10:07:30.172 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642050171,-354,4152
+09-02 10:07:30.283 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642050282,-354,4152
+09-02 10:07:30.393 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642050393,-354,4152
+09-02 10:07:30.504 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642050503,-354,4152
+09-02 10:07:30.614 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642050613,-354,4152
+09-02 10:07:30.724 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642050723,-354,4152
+09-02 10:07:30.836 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642050835,-354,4152
+09-02 10:07:30.946 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642050945,-354,4152
+09-02 10:07:31.055 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642051055,-354,4152
+09-02 10:07:31.166 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642051166,-354,4152
+09-02 10:07:31.276 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642051276,-354,4152
+09-02 10:07:31.390 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642051390,-354,4152
+09-02 10:07:31.474  3449  3449 I android.hardware.wifi@1.0-service: getLinkLayerStats
+09-02 10:07:31.500 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642051500,-354,4152
+09-02 10:07:31.608 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642051608,-354,4152
+09-02 10:07:31.653 14031 14031 E adbd    : recv: OPEN 0001a38b 00000000 0029:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 64 61 74 65 20 2D 75 00 
+09-02 10:07:31.653 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:date -u
+09-02 10:07:31.670 14031 14031 E adbd    : recv: OPEN 0001a38e 00000000 00cb:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 61 6D 20 73 74 61 72 74 20 2D 61 20 61 6E 64 72 6F 69 64 2E 69 6E 74 65 6E 74 2E 61 63 74 69 6F 6E 2E 56 49 45 57 20 2D 6E 20 63 6F 6D 2E 61 6E 64 72 6F 69 64 2E 63 68 72 6F 6D 65 2F 63 6F 6D 2E 67 6F 6F 67 6C 65 2E 61 6E 64 72 6F 69 64 2E 61 70 70 73 2E 63 68 72 6F 6D 65 2E 4D 61 69 6E 20 2D 64 20 68 74 74 70 3A 2F 2F 31 39 32 2E 31 36 38 2E 38 38 2E 31 37 37 3A 38 30 30 30 2F 46 69 6E 61 6E 63 65 2F 70 61 79 70 61 6C 2F 77 77 77 2E 70 61 79 70 61 6C 2E 63 6F 6D 2F 72 6F 2F 68 6F 6D 65 2E 68 74 6D 6C 00 
+09-02 10:07:31.670 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:am start -a android.intent.action.VIEW -n com.android.chrome/com.google.android.apps.chrome.Main -d http://192.168.88.177:8000/Finance/paypal/www.paypal.com/ro/home.html
+09-02 10:07:31.714 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642051714,-354,4152
+09-02 10:07:31.721 14031 14031 E adbd    : recv: OPEN 0001a391 00000000 003e:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 64 75 6D 70 73 79 73 20 63 70 75 69 6E 66 6F 20 7C 20 67 72 65 70 20 54 4F 54 41 4C 00 
+09-02 10:07:31.721 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:dumpsys cpuinfo | grep TOTAL
+09-02 10:07:31.738  3979  4673 I ActivityManager: START u0 {act=android.intent.action.VIEW typ=null flg=0x10000000 cmp=ComponentInfo{com.android.chrome/com.google.android.apps.chrome.Main}} from uid 2000
+09-02 10:07:31.739  3979  4673 D CustomFrequencyManagerService: acquireDVFSLockLocked : type : DVFS_MIN_LIMIT  frequency : 1560000  uid : 1000  pid : 3979  pkgName : AMS_ACT_START@CPU_MIN@8
+09-02 10:07:31.741  3979  4673 D ActivityManagerPerformance: AMP_acquire() ACT_START
+09-02 10:07:31.757 29111 29111 D InputMethodManager: HSIFW - flag : 0 Pid : 29111
+09-02 10:07:31.757  3979  4673 V InputMethodManagerService: Client requesting input be hidden, flags : 0
+09-02 10:07:31.757  3979  4673 V InputMethodManagerService: hideCurrentInputLocked : shouldHideSoftInput is false
+09-02 10:07:31.761  3979  4673 D ConnectivityService: filterNetworkStateForUid() uid: 10096 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:31.766 29111 29111 E cr_IntentUtils: getInt failed on bundle null
+09-02 10:07:31.771 29111 29111 E ResourceType: Style contains key with bad entry: 0x0101062c
+09-02 10:07:31.774  3979  4673 D ConnectivityService: filterNetworkStateForUid() uid: 10096 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:31.783  3979  4673 I ApplicationPolicy: isApplicationExternalStorageWhitelisted:com.android.chrome user:0
+09-02 10:07:31.783  3979  4673 D ApplicationPolicy: isApplicationExternalStorageWhitelisted: DO is not enabled on user 0. Allowed.
+09-02 10:07:31.783  3979  4673 D ActivityManager: package  com.android.chrome, user - 0 is SDcard whitelisted
+09-02 10:07:31.783  3979  4673 I ApplicationPolicy: isApplicationExternalStorageBlacklisted:com.android.chrome user:0
+09-02 10:07:31.783  3979  4673 D ApplicationPolicy: isApplicationExternalStorageBlacklisted: DO is not enabled on user 0. Allowed.
+09-02 10:07:31.783  3979  4673 I ActivityManager: SA, print process name forked by webview_zygote : com.android.chrome:sandboxed_process1
+09-02 10:07:31.785  4443  4443 E SchedPolicy: add_tid_to_cgroup failed; fd=-1
+09-02 10:07:31.787 14031 14031 E adbd    : recv: OPEN 0001a394 00000000 003d:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 64 75 6D 70 73 79 73 20 6D 65 6D 69 6E 66 6F 20 7C 20 67 72 65 70 20 55 73 65 64 00 
+09-02 10:07:31.788 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:dumpsys meminfo | grep Used
+09-02 10:07:31.794 29339 29339 E /system/bin/webview_zygote32: failed to make and chown /acct/uid_99134: Permission denied
+09-02 10:07:31.794 29339 29339 E Zygote  : createProcessGroup(99134, 0) failed: Permission denied
+09-02 10:07:31.794 29339 29339 E libpersona: Couldn't open the File - /data/system/users/0.xml - Permission denied
+09-02 10:07:31.794 29339 29339 W SELinux : SELinux selinux_android_compute_policy_index : Policy Index[2],  Con:u:r:webview_zygote:s0 RAM:SEPF_SM-J720F_8.0.0_0017, [-1 -1 -1 -1 0 1]
+09-02 10:07:31.795 29111 29111 D InputMethodManager: HSIFW - flag : 0 Pid : 29111
+09-02 10:07:31.795 29339 29339 I SELinux : SELinux: seapp_context_lookup: seinfo=chrome, level=s0:c512,c768, pkgname=com.android.chrome:sandboxed_process1 
+09-02 10:07:31.795  3979  4673 I ActivityManager: Start proc 29339:com.android.chrome:sandboxed_process1/u0i134 for webview_service com.android.chrome/org.chromium.content.app.SandboxedProcessService1
+09-02 10:07:31.795  3979  5966 V InputMethodManagerService: Client requesting input be hidden, flags : 0
+09-02 10:07:31.796  3979  5966 V InputMethodManagerService: hideCurrentInputLocked : shouldHideSoftInput is false
+09-02 10:07:31.814 29111 29111 V InputMethodManager: Starting input: tba=android.view.inputmethod.EditorInfo@da48d80 nm : com.android.chrome ic=null
+09-02 10:07:31.814 29111 29111 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+09-02 10:07:31.814  3979  4673 D InputMethodManagerService: startInputOrWindowGainedFocus : startInput 
+09-02 10:07:31.815 29339 29339 I SamplingProfilerIntegration: Profiling disabled.
+09-02 10:07:31.815  3979  4673 D InputMethodManagerService: setCurrentInputInfo - inputContext : null eidtorInfo : android.view.inputmethod.EditorInfo@1274660 missingMethods : 0
+09-02 10:07:31.816  4336  4336 I InputMethodWrapper:  call dispatchStartInputWithToken
+09-02 10:07:31.816  4336  4336 I InputMethodService: dispatchStartInputWithToken
+09-02 10:07:31.817  4336  4336 I SKBD    : SamsungKeypad [IMI] onStartInput - caller pid : 29111, caller uid : 10096
+09-02 10:07:31.817  4336  4336 I SKBD    : SamsungKeypad  CACHEDIC onStartInput  isCachedICEnabled:  false
+09-02 10:07:31.817  4336  4336 I SKBD    : atl getDefaultInputRange : UNKNOWN
+09-02 10:07:31.817  4336  4336 I SKBD    : awo resetBinderManager()
+09-02 10:07:31.817  4336  4336 I SKBD_SYNC: SamsungKeypad onStartInput: import DLM
+09-02 10:07:31.818  4336  4336 I SKBD    : atl setPrivateImeOptionsToTable privateImeOptions ( null )
+09-02 10:07:31.818  4336  4336 I SKBD    : atl imeOptions is null
+09-02 10:07:31.818  4336  4336 I SKBD    : SamsungKeypad [PF_OP][onStartInput] 786539
+09-02 10:07:31.819 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642051818,-354,4152
+09-02 10:07:31.829 29339 29339 D TimaKeyStoreProvider: TimaKeyStore is not enabled: cannot add TimaSignature Service and generateKeyPair Service
+09-02 10:07:31.829 29339 29339 D ActivityThread: Added TimaKeyStore provider
+09-02 10:07:31.837  3979  4672 I ActivityManager: DSS on for com.android.chrome and scale is 1.0
+09-02 10:07:31.845  3979  5966 D ConnectivityService: filterNetworkStateForUid() uid: 10096 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:31.846 29111 29111 I cr_OfflineDetector: Running updateState mConnectivityDetectorInitialized: true, mTimeWhenLastForegrounded: 87233278, getElapsedTime: 87233278, mTimeWhenLastOfflineNotificationReceived: 0, mTimeWhenLastOnline: 87223572, mApplicationState: 1, mIsOfflineLastReportedByConnectivityDetector: false, mIsEffectivelyOffline: false
+09-02 10:07:31.846 29111 29111 I cr_OfflineDetector: updateState(): timeSinceLastForeground: 0, timeSinceOfflineNotificationReceived: 87233278, timeSinceLastOnline: 9706, timeNeededForForeground: 2000, timeNeededForOffline: -87231278
+09-02 10:07:31.847  3979  5966 I chatty  : uid=1000(system) Binder:3979_11 identical 1 line
+09-02 10:07:31.850  3979  5966 D ConnectivityService: filterNetworkStateForUid() uid: 10096 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:31.867  3979  5172 D ConnectivityService: filterNetworkStateForUid() uid: 10096 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:31.874 29356 29356 E asset   : setgid: Operation not permitted
+09-02 10:07:31.902  3979  4672 V WindowManager: Relayout Window{203bbaa u0 com.android.chrome/com.google.android.apps.chrome.Main}: viewVisibility=0 req=720x1280 WM.LayoutParams{(0,0)(fillxfill) sim=#13 ty=1 fl=#81810100 pfl=0x20000 fmt=-3 wanim=0x10302fd vsysui=0x2600 sysuil=true needsMenuKey=2 colorMode=0 naviIconColor=0}
+09-02 10:07:31.904  3979  3996 D WindowManager: set systemUiVisibility : systemUiFlags= 0x2608 fullscreenStackSysUiFlags= 0x2000
+09-02 10:07:31.908 29111 29111 D ViewRootImpl@22a972f[Main]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x1 surface={valid=true 3326457856} changed=false
+09-02 10:07:31.908  3979  5172 D WindowManager: adjustSystemUiVisibilityLw : vis= 0x2608
+09-02 10:07:31.915 29339 29339 I cr_SplitCompatApp: Launched version=107.0.5304.91 minSdkVersion=24 isBundle=true processName=com.android.chrome:sandboxed_process1 isIsolated=true
+09-02 10:07:31.918 29111 29111 I cr_tabmodel: Appending tabs being restored to metadata lists, 0, startingNormalCount: 26, startingIncognitoCount: 0
+09-02 10:07:31.918 29111 29111 I cr_tabmodel: Serializing tab lists; counts: 26, 0
+09-02 10:07:31.924 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642051924,-354,4152
+09-02 10:07:31.934 29339 29339 W SystemServiceRegistry: No service published for: uimode
+09-02 10:07:31.939 29339 29339 V Monotype: fonts.xml take from : /system/etc/
+09-02 10:07:32.031 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642052031,-354,4152
+09-02 10:07:32.136 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642052136,-354,4152
+09-02 10:07:32.168 29339 29339 E Typeface: Error mapping font file /system/fonts/SamsungSans-Num3L.ttf
+09-02 10:07:32.168 29339 29339 E Minikin : Could not get cmap table size!
+09-02 10:07:32.168 29339 29339 E Typeface: Unable to load Family: samsung-sans-num3L:null
+09-02 10:07:32.168 29339 29339 E Typeface: Error mapping font file /system/fonts/SamsungSans-Num3T.ttf
+09-02 10:07:32.168 29339 29339 E Minikin : Could not get cmap table size!
+09-02 10:07:32.168 29339 29339 E Typeface: Unable to load Family: samsung-sans-num3T:null
+09-02 10:07:32.168 29339 29339 E Typeface: Error mapping font file /system/fonts/SamsungSans-Num4L.ttf
+09-02 10:07:32.168 29339 29339 E Minikin : Could not get cmap table size!
+09-02 10:07:32.168 29339 29339 E Typeface: Unable to load Family: samsung-sans-num4L:null
+09-02 10:07:32.168 29339 29339 E Typeface: Error mapping font file /system/fonts/SamsungSans-Num4T.ttf
+09-02 10:07:32.168 29339 29339 E Minikin : Could not get cmap table size!
+09-02 10:07:32.168 29339 29339 E Typeface: Unable to load Family: samsung-sans-num4T:null
+09-02 10:07:32.168 29339 29339 E Typeface: Error mapping font file /system/fonts/SamsungSans-Num35.ttf
+09-02 10:07:32.168 29339 29339 E Minikin : Could not get cmap table size!
+09-02 10:07:32.168 29339 29339 E Typeface: Unable to load Family: samsung-sans-num35:null
+09-02 10:07:32.168 29339 29339 E Typeface: Error mapping font file /system/fonts/SamsungSans-Num45.ttf
+09-02 10:07:32.168 29339 29339 E Minikin : Could not get cmap table size!
+09-02 10:07:32.168 29339 29339 E Typeface: Unable to load Family: samsung-sans-num45:null
+09-02 10:07:32.168 29339 29339 E Typeface: Error mapping font file /system/fonts/SamsungSans-Num3Lv.ttf
+09-02 10:07:32.168 29339 29339 E Minikin : Could not get cmap table size!
+09-02 10:07:32.168 29339 29339 E Typeface: Unable to load Family: samsung-sans-num3LV:null
+09-02 10:07:32.169 29339 29339 E Typeface: Error mapping font file /system/fonts/SamsungSans-Num3R.ttf
+09-02 10:07:32.169 29339 29339 E Minikin : Could not get cmap table size!
+09-02 10:07:32.169 29339 29339 E Typeface: Unable to load Family: samsung-sans-num3R:null
+09-02 10:07:32.169 29339 29339 E Typeface: Error mapping font file /system/fonts/SamsungSans-Num4Tv.ttf
+09-02 10:07:32.169 29339 29339 E Minikin : Could not get cmap table size!
+09-02 10:07:32.169 29339 29339 E Typeface: Unable to load Family: samsung-sans-num4Tv:null
+09-02 10:07:32.169 29339 29339 E Typeface: Error mapping font file /system/fonts/SamsungSans-Num4Lv.ttf
+09-02 10:07:32.169 29339 29339 E Minikin : Could not get cmap table size!
+09-02 10:07:32.169 29339 29339 E Typeface: Unable to load Family: samsung-sans-num4Lv:null
+09-02 10:07:32.175 29339 29339 I cr_ChildProcessService: Creating new ChildProcessService pid=29339
+09-02 10:07:32.184 29339 29339 E WebViewFactory: can't load with relro file; address space not reserved
+09-02 10:07:32.196 29339 29357 I cr_LibraryLoader: Successfully loaded native library
+09-02 10:07:32.197 29339 29357 I cr_CachingUmaRecorder: Flushed 3 samples from 3 histograms.
+09-02 10:07:32.241 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642052240,-354,4152
+09-02 10:07:32.313 29339 29357 I tflite  : Initialized TensorFlow Lite runtime.
+09-02 10:07:32.346 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642052346,-354,4152
+09-02 10:07:32.443  3979  4672 D ConnectivityService: filterNetworkStateForUid() uid: 10122 networkInfo: [type: WIFI[] - WIFI, state: DISCONNECTED/BLOCKED, reason: (unspecified), extra: (none), failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:32.445  3979  4672 D ConnectivityService: filterNetworkStateForUid() uid: 10122 networkInfo: [type: WIFI[] - WIFI, state: DISCONNECTED/BLOCKED, reason: (unspecified), extra: (none), failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:32.451 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642052450,-354,4152
+09-02 10:07:32.555 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642052555,-354,4152
+09-02 10:07:32.661 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642052661,-354,4152
+09-02 10:07:32.759 22051 22051 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-02 10:07:32.760 22051 22051 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-02 10:07:32.767 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642052767,-354,4152
+09-02 10:07:32.771 22051 22051 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-02 10:07:32.779  3979  5172 V WindowManager: Relayout Window{203bbaa u0 com.android.chrome/com.google.android.apps.chrome.Main}: viewVisibility=0 req=720x1280 WM.LayoutParams{(0,0)(fillxfill) sim=#13 ty=1 fl=#81810100 pfl=0x20000 fmt=-3 wanim=0x10302fd vsysui=0x600 sysuil=true needsMenuKey=2 colorMode=0 naviIconColor=0}
+09-02 10:07:32.781  3979  3996 D WindowManager: set systemUiVisibility : systemUiFlags= 0x608 fullscreenStackSysUiFlags= 0x0
+09-02 10:07:32.785 29111 29111 D ViewRootImpl@22a972f[Main]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x1 surface={valid=true 3326457856} changed=false
+09-02 10:07:32.785  3979  4672 D WindowManager: adjustSystemUiVisibilityLw : vis= 0x608
+09-02 10:07:32.870 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642052870,-354,4152
+09-02 10:07:32.963 29111 29111 I cr_tabmodel: Appending tabs being restored to metadata lists, 0, startingNormalCount: 26, startingIncognitoCount: 0
+09-02 10:07:32.963 29111 29111 I cr_tabmodel: Serializing tab lists; counts: 26, 0
+09-02 10:07:32.974 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642052974,-354,4152
+09-02 10:07:33.079 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642053079,-354,4152
+09-02 10:07:33.186 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642053185,-354,4152
+09-02 10:07:33.243 29111 29111 E cr_BTSPrefs: No data found for task id: 56
+09-02 10:07:33.243 29111 29111 E cr_BkgrdTaskScheduler: Task cannot be canceled because no data was found instorage or data was invalid
+09-02 10:07:33.290 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642053290,-354,4152
+09-02 10:07:33.394 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642053394,-354,4152
+09-02 10:07:33.498 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642053498,-354,4152
+09-02 10:07:33.602 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642053602,-354,4152
+09-02 10:07:33.708 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642053707,-354,4152
+09-02 10:07:33.744  3979  5035 D ActivityManagerPerformance: Received MSG_DISABLE_ACT_START, r: ActivityRecord{f19f648 u0 com.android.chrome/com.google.android.apps.chrome.Main t236}
+09-02 10:07:33.745  3979  5035 D CustomFrequencyManagerService: acquireDVFSLockLocked : type : DVFS_MIN_LIMIT  frequency : 1560000  uid : 1000  pid : 3979  pkgName : AMS_RESUME_TAIL@CPU_MIN@14
+09-02 10:07:33.746  3979  5035 D ActivityManagerPerformance: AMP_acquire() TAIL
+09-02 10:07:33.746  3979  5035 D CustomFrequencyManagerService: releaseDVFSLockLocked : Getting Lock type frm List : DVFS_MIN_LIMIT  frequency : 1560000  uid : 1000  pid : 3979  tag : AMS_ACT_START@CPU_MIN@8
+09-02 10:07:33.747  3979  5035 D ActivityManagerPerformance: AMP_release() ACT_START
+09-02 10:07:33.796  4962  4962 D io_stats: !@ 179,0 r 554865 16997636 w 304978 6512236 d 30479 18718180 f 92492 94217 iot 407816 342021 th 51200 0 0 pt 0 inp 0 0 32587.041
+09-02 10:07:33.813 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642053812,-354,4152
+09-02 10:07:33.919 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642053918,-354,4152
+09-02 10:07:34.024 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642054024,-354,4152
+09-02 10:07:34.129 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642054129,-354,4152
+09-02 10:07:34.236 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642054236,-354,4152
+09-02 10:07:34.341 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642054341,-354,4152
+09-02 10:07:34.347  3979  3979 D CustomFrequencyManagerService: releaseDVFSLockLocked : Getting Lock type frm List : DVFS_MIN_LIMIT  frequency : 1560000  uid : 1000  pid : 3979  tag : AMS_RESUME_TAIL@CPU_MIN@14
+09-02 10:07:34.459 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642054459,-354,4152
+09-02 10:07:34.498  3449  3449 I android.hardware.wifi@1.0-service: getLinkLayerStats
+09-02 10:07:34.569 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642054568,-354,4152
+09-02 10:07:34.679 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642054678,-354,4152
+09-02 10:07:34.789 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642054788,-354,4152
+09-02 10:07:34.804 29070 29075 I zygote64: Do partial code cache collection, code=58KB, data=45KB
+09-02 10:07:34.804 29070 29075 I zygote64: After code cache collection, code=58KB, data=45KB
+09-02 10:07:34.804 29070 29075 I zygote64: Increasing code cache capacity to 256KB
+09-02 10:07:34.899 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642054899,-354,4152
+09-02 10:07:34.944  3979  5172 D ConnectivityService: filterNetworkStateForUid() uid: 10114 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:35.009 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642055008,-354,4152
+09-02 10:07:35.119 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642055118,-354,4152
+09-02 10:07:35.175  3979  6899 D SSRM:G  : SIOP:: AP = 310, PST = 291 (W:10), BAT = 259, USB = 0, CHG = 0
+09-02 10:07:35.229 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642055229,80,4152
+09-02 10:07:35.334 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642055334,80,4152
+09-02 10:07:35.444 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642055444,80,4152
+09-02 10:07:35.550 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642055550,80,4152
+09-02 10:07:35.661 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642055660,80,4152
+09-02 10:07:35.725  3979  5172 D BatteryService: !@BatteryListener : batteryPropertiesChanged!
+09-02 10:07:35.727  3979  5172 D BatteryService: level:100, scale:100, status:5, health:2, present:true, voltage: 4264, temperature: 263, technology: Li-ion, AC powered:false, USB powered:true, POGO powered:false, Wireless powered:false, icon:17303834, invalid charger:0, maxChargingCurrent:0, maxChargingVoltage:0, chargeCounter:0
+09-02 10:07:35.727  3979  5172 D BatteryService: online:4, current avg:-81, charge type:1, power sharing:false, high voltage charger:false, capacity:280000, batterySWSelfDischarging:false, misc_event:0, current_event:0, current_now:80
+09-02 10:07:35.728  3979  3979 D BatteryService: Sending ACTION_BATTERY_CHANGED.
+09-02 10:07:35.731  3979  3979 D SamsungPhoneWindowManager: ACTION_BATTERY_CHANGED - Level :: 100, battStatus :: 5
+09-02 10:07:35.731  3979  3979 I MotionRecognitionService: Plugged
+09-02 10:07:35.731  3979  3979 D MotionRecognitionService:   mCableConnection= 1
+09-02 10:07:35.731  3979  3979 D MotionRecognitionService: setPowerConnected : mGripEnabled = false
+09-02 10:07:35.732  3979  4002 D UsbDeviceManager: handleMessage -> MSG_UPDATE_CHARGING_STATE = 1
+09-02 10:07:35.733  4349  4349 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+09-02 10:07:35.735  4349  4349 D BatteryController: onReceive-ACTION_BATTERY_CHANGED : mLevel=100, mBatteryStatus=5
+09-02 10:07:35.748  4349  4349 D PowerUI : priorPlugType = 2 mPlugType =  2
+09-02 10:07:35.769 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642055769,80,4264
+09-02 10:07:35.847 14031 14031 E adbd    : recv: OPEN 0001a397 00000000 0029:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 64 61 74 65 20 2D 75 00 
+09-02 10:07:35.847 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:date -u
+09-02 10:07:35.876 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642055876,80,4264
+09-02 10:07:35.921 14031 14031 E adbd    : recv: OPEN 0001a39a 00000000 003e:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 64 75 6D 70 73 79 73 20 63 70 75 69 6E 66 6F 20 7C 20 67 72 65 70 20 54 4F 54 41 4C 00 
+09-02 10:07:35.922 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:dumpsys cpuinfo | grep TOTAL
+09-02 10:07:35.983 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642055983,80,4264
+09-02 10:07:36.007 14031 14031 E adbd    : recv: OPEN 0001a39d 00000000 003d:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 64 75 6D 70 73 79 73 20 6D 65 6D 69 6E 66 6F 20 7C 20 67 72 65 70 20 55 73 65 64 00 
+09-02 10:07:36.007 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:dumpsys meminfo | grep Used
+09-02 10:07:36.089 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642056089,80,4264
+09-02 10:07:36.195 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642056194,80,4264
+09-02 10:07:36.305 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642056304,80,4264
+09-02 10:07:36.413 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642056413,80,4264
+09-02 10:07:36.518 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642056518,80,4264
+09-02 10:07:36.626 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642056626,80,4264
+09-02 10:07:36.736 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642056736,80,4264
+09-02 10:07:36.797 14031 14031 E adbd    : recv: OPEN 0001a3a0 00000000 0042:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 67 65 74 70 72 6F 70 20 72 6F 2E 62 75 69 6C 64 2E 76 65 72 73 69 6F 6E 2E 72 65 6C 65 61 73 65 00 
+09-02 10:07:36.798 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:getprop ro.build.version.release
+09-02 10:07:36.843 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642056842,80,4264
+09-02 10:07:36.893 14031 14031 E adbd    : recv: OPEN 0001a3a3 00000000 003e:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 67 65 74 70 72 6F 70 20 72 6F 2E 62 75 69 6C 64 2E 76 65 72 73 69 6F 6E 2E 73 64 6B 00 
+09-02 10:07:36.893 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:getprop ro.build.version.sdk
+09-02 10:07:36.947 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642056947,80,4264
+09-02 10:07:36.966 14031 14031 E adbd    : recv: OPEN 0001a3a6 00000000 0042:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 67 65 74 70 72 6F 70 20 72 6F 2E 62 75 69 6C 64 2E 76 65 72 73 69 6F 6E 2E 72 65 6C 65 61 73 65 00 
+09-02 10:07:36.966 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:getprop ro.build.version.release
+09-02 10:07:37.036 14031 14031 E adbd    : recv: OPEN 0001a3a9 00000000 003e:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 67 65 74 70 72 6F 70 20 72 6F 2E 62 75 69 6C 64 2E 76 65 72 73 69 6F 6E 2E 73 64 6B 00 
+09-02 10:07:37.036 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:getprop ro.build.version.sdk
+09-02 10:07:37.053 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642057052,80,4264
+09-02 10:07:37.099 14031 14031 E adbd    : recv: OPEN 0001a3ac 00000000 008c:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 61 6D 20 73 74 6F 70 73 65 72 76 69 63 65 20 63 6F 6D 2E 65 78 61 6D 70 6C 65 2E 62 61 74 74 65 72 79 6D 61 6E 61 67 65 72 5F 75 74 69 6C 69 74 79 2F 63 6F 6D 2E 65 78 61 6D 70 6C 65 2E 62 61 74 74 65 72 79 6D 61 6E 61 67 65 72 5F 75 74 69 6C 69 74 79 2E 44 61 74 61 43 6F 6C 6C 65 63 74 69 6F 6E 53 65 72 76 69 63 65 00 
+09-02 10:07:37.099 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:am stopservice com.example.batterymanager_utility/com.example.batterymanager_utility.DataCollectionService
+09-02 10:07:37.158 29070 29298 I BatteryMgr:DataCollectionService: stats => 1693642057157,80,4264
+09-02 10:07:37.162  3979  3979 I EasyMuteController: UnRegister failed. no registered
+09-02 10:07:37.163  3979  3979 D LightsService: [api] [SvcLED] turnOff:: id = 4 (uid: 1000 pid: 3979) 
+09-02 10:07:37.163  3979  3979 D LightsService: [api] [SvcLED] LED indicator : Not supported.
+09-02 10:07:37.165  3979  4672 D Notification: allPendingIntents
+09-02 10:07:37.166  3979  3979 D LightsService: [api] [SvcLED] turnOff:: id = 4 (uid: 1000 pid: 3979) 
+09-02 10:07:37.166  3979  3979 D LightsService: [api] [SvcLED] LED indicator : Not supported.
+09-02 10:07:37.170  3979  4673 D Notification: allPendingIntents
+09-02 10:07:37.172  3979  4673 D Notification: allPendingIntents
+09-02 10:07:37.172  3979  4672 D Notification: allPendingIntents
+09-02 10:07:37.196 14031 14031 E adbd    : recv: OPEN 0001a3af 00000000 0042:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 67 65 74 70 72 6F 70 20 72 6F 2E 62 75 69 6C 64 2E 76 65 72 73 69 6F 6E 2E 72 65 6C 65 61 73 65 00 
+09-02 10:07:37.196 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:getprop ro.build.version.release
+09-02 10:07:37.212  4349  4349 D KeyguardUpdateMonitor: handleStatusBarState( false )
+09-02 10:07:37.219  4349  4349 D KeyguardUpdateMonitor: handleStatusBarState( false )
+09-02 10:07:37.271 14031 14031 E adbd    : recv: OPEN 0001a3b2 00000000 003e:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 67 65 74 70 72 6F 70 20 72 6F 2E 62 75 69 6C 64 2E 76 65 72 73 69 6F 6E 2E 73 64 6B 00 
+09-02 10:07:37.271 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:getprop ro.build.version.sdk
+09-02 10:07:37.359 14031 14031 E adbd    : recv: OPEN 0001a3b5 00000000 0076:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 64 75 6D 70 73 79 73 20 61 63 74 69 76 69 74 79 20 72 65 63 65 6E 74 73 20 7C 20 67 72 65 70 20 22 52 65 63 65 6E 74 20 23 30 22 20 7C 20 63 75 74 20 2D 64 20 22 3D 22 20 2D 66 32 20 7C 20 67 72 65 70 20 2D 6F 20 2D 70 20 22 5B 61 2D 7A 7C 2E 5D 2A 22 00 
+09-02 10:07:37.360 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:dumpsys activity recents | grep "Recent #0" | cut -d "=" -f2 | grep -o -p "[a-z|.]*"
+09-02 10:07:37.464 14031 14031 E adbd    : recv: OPEN 0001a3b8 00000000 0042:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 67 65 74 70 72 6F 70 20 72 6F 2E 62 75 69 6C 64 2E 76 65 72 73 69 6F 6E 2E 72 65 6C 65 61 73 65 00 
+09-02 10:07:37.465 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:getprop ro.build.version.release
+09-02 10:07:37.505  3449  3449 I android.hardware.wifi@1.0-service: getLinkLayerStats
+09-02 10:07:37.531 14031 14031 E adbd    : recv: OPEN 0001a3bb 00000000 003e:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 67 65 74 70 72 6F 70 20 72 6F 2E 62 75 69 6C 64 2E 76 65 72 73 69 6F 6E 2E 73 64 6B 00 
+09-02 10:07:37.531 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:getprop ro.build.version.sdk
+09-02 10:07:37.617 14031 14031 E adbd    : recv: OPEN 0001a3be 00000000 0042:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 61 6D 20 66 6F 72 63 65 2D 73 74 6F 70 20 63 6F 6D 2E 61 6E 64 72 6F 69 64 2E 63 68 72 6F 6D 65 00 
+09-02 10:07:37.617 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:am force-stop com.android.chrome
+09-02 10:07:37.707  3979  4672 I ActivityManager: Force stopping com.android.chrome appid=10096 user=0: from pid 29419
+09-02 10:07:37.707  3979  4672 I ActivityManager: Killing 29194:com.android.chrome:privileged_process0/u0a96 (adj 0): stop com.android.chrome,from pid 29419
+09-02 10:07:37.708  3979  4672 W ActivityManager: Scheduling restart of crashed service com.android.chrome/org.chromium.content.app.PrivilegedProcessService0 in 1000ms
+09-02 10:07:37.712  3979  4672 I ActivityManager: Killing 29111:com.android.chrome/u0a96 (adj 0): stop com.android.chrome,from pid 29419
+09-02 10:07:37.713 22051 22051 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.languageprofile.service.START pkg=com.google.android.gms }
+09-02 10:07:37.714 22051 22051 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.key.retrieval.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsApiService }
+09-02 10:07:37.715 22051 22051 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.credential.manager.service.firstparty.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsApiService }
+09-02 10:07:37.716 22051 22051 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.safetynet.service.START pkg=com.google.android.gms }
+09-02 10:07:37.717  3979  4672 I ActivityManager: Killing 29339:com.android.chrome:sandboxed_process1/u0a96i134 (adj 0): isolated not needed
+09-02 10:07:37.717 29339 29339 I cr_ChildProcessService: Destroying ChildProcessService pid=29339
+09-02 10:07:37.720 29147 29147 I cr_ChildProcessService: Destroying ChildProcessService pid=29147
+09-02 10:07:37.721  3979  4672 W ActivityManager: Force removing ActivityRecord{909a98d u0 com.android.chrome/com.google.android.apps.chrome.Main t236}: app died, no saved state
+09-02 10:07:37.722 29147 29147 I /system/bin/webview_zygote32: System.exit called, status: 0
+09-02 10:07:37.722 29147 29147 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+09-02 10:07:37.727  3979  4672 D InputDispatcher: Focus left window: 29111
+09-02 10:07:37.730  3979  4672 I WindowManager: Failed to capture screenshot of Token{ad45742 ActivityRecord{909a98d u0 com.android.chrome/com.google.android.apps.chrome.Main t236 f}} appWin=Window{203bbaa u0 com.android.chrome/com.google.android.apps.chrome.Main} drawState=4
+09-02 10:07:37.731  3979  4672 I WindowManager: Destroying surface Surface(name=com.android.chrome/com.google.android.apps.chrome.Main) called by com.android.server.wm.WindowStateAnimator.destroySurface:2501 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:985 com.android.server.wm.WindowState.removeImmediately:2404 com.android.server.wm.WindowState.removeIfPossible:2603 com.android.server.wm.WindowState.removeIfPossible:2433 com.android.server.wm.WindowToken.removeAllWindowsIfPossible:143 com.android.server.wm.AppWindowToken.removeIfPossible:606 com.android.server.wm.AppWindowToken.onRemovedFromDisplay:674 
+09-02 10:07:37.731  3462  3502 I SurfaceFlinger: id=860 Removed com.android.chrome/com.google.android.apps.chrome.Main#0 (2/4)
+09-02 10:07:37.732  3462  3502 I SurfaceFlinger: id=860 Removed com.android.chrome/com.google.android.apps.chrome.Main#0 (-2/4)
+09-02 10:07:37.733  3462  3462 I Layer   : id=860 onRemoved com.android.chrome/com.google.android.apps.chrome.Main#0 
+09-02 10:07:37.734  3462  3462 I Layer   : id=862 onRemoved Background for - SurfaceView - com.android.chrome/com.google.android.apps.chrome.Main@a93a8fb@0#0 
+09-02 10:07:37.734  3462  3462 I Layer   : id=861 onRemoved SurfaceView - com.android.chrome/com.google.android.apps.chrome.Main@a93a8fb@0#0 
+09-02 10:07:37.738  3462  3462 I SurfaceFlinger: Display 0 HWC layers:
+09-02 10:07:37.738  3462  3462 I SurfaceFlinger:     type    |    handle    | flag |  format   |   source crop (l,t,r,b)    |         frame       | name 
+09-02 10:07:37.738  3462  3462 I SurfaceFlinger: ------------+--------------+------+-----------+----------------------------+---------------------+------
+09-02 10:07:37.738  3462  3462 I SurfaceFlinger:      Device | 0x7abe64b980 | 0000 | RGBA_8888 |   0.0    0.0  720.0   42.0 |    0    0  720   42 | StatusBar#0
+09-02 10:07:37.738  3462  3462 I SurfaceFlinger: 
+09-02 10:07:37.741  3979  4672 D InputDispatcher: Focused application released
+09-02 10:07:37.745  3979  4672 D CustomFrequencyManagerService: acquireDVFSLockLocked : type : DVFS_MIN_LIMIT  frequency : 1560000  uid : 1000  pid : 3979  pkgName : AMS_ACT_RESUME@CPU_MIN@70
+09-02 10:07:37.746  3979  4672 D ActivityManagerPerformance: AMP_acquire() ACT_RESUME
+09-02 10:07:37.747  3979  4672 D PersonaManagerService: Current focused persona service handled id set to : 0
+09-02 10:07:37.747  3979  4672 D InputDispatcher: Focused application set to: xxxx
+09-02 10:07:37.749  3979  4672 I ActivityManager: Killing 29147:com.android.chrome:sandboxed_process0/u0a96i133 (adj 0): isolated not needed
+09-02 10:07:37.751  3979  4238 D GameManagerService: handleForegroundChange(). pkgName: com.example.batterymanager_utility, clsName: com.example.batterymanager_utility.MainActivity,FgActivityName:com.example.batterymanager_utility/.MainActivity
+09-02 10:07:37.751  3979  4672 D MARsPolicyManager: onPackageResumedFG pkgName = com.example.batterymanager_utility, userId = 0
+09-02 10:07:37.751  3979  4238 D GameManagerService: sem_perfomance_mode: 3
+09-02 10:07:37.751  3979  4238 D GameManagerService: notifyResumePause(). pkg: com.example.batterymanager_utility, type: 4, isMinimized: false, isTunableApp: false
+09-02 10:07:37.752  3979  4238 D GameManagerService:   notifyResumePause(). unexpected mPrevNotiType: -1
+09-02 10:07:37.766  3979  3979 D SamsungAlarmManager: Remove alarm for next reason : android.intent.action.PACKAGE_RESTARTED : package: com.android.chrome
+09-02 10:07:37.768  3979  5966 V WindowManager: Relayout Window{faeb4d5 u0 com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity}: viewVisibility=4 req=720x1280 WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#81810100 pfl=0x20000 wanim=0x10302fd vsysui=0x600 needsMenuKey=2 colorMode=0 naviIconColor=0}
+09-02 10:07:37.771  3979  3995 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_RESTARTED dat=package:com.android.chrome flg=0x10 (has extras) } to android/com.kddi.android.CpaNotiReceiver
+09-02 10:07:37.773  4633  4633 D CarrierSvcBindHelper: No carrier app for: 0
+09-02 10:07:37.774  4633  4633 D CarrierSvcBindHelper: No carrier app for: 1
+09-02 10:07:37.775 29070 29070 D ViewRootImpl@110cd72[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x1 surface={valid=false 0} changed=false
+09-02 10:07:37.777  3979  3995 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_RESTARTED dat=package:com.android.chrome flg=0x10 (has extras) } to com.sec.android.daemonapp/com.samsung.android.weather.daemon.receiver.ClearDataReceiver
+09-02 10:07:37.779  3979  6899 D GamePkgDataHelper: getGamePkgDataIncServer(). com.example.batterymanager_utility
+09-02 10:07:37.780  3979  6899 D GameManagerService: identifyGamePackage. com.example.batterymanager_utility
+09-02 10:07:37.780  3979  6899 D GamePkgDataHelper: getGamePkgData(). com.example.batterymanager_utility
+09-02 10:07:37.781  3979  6899 D GameManagerService: identifyGamePackage. com.example.batterymanager_utility
+09-02 10:07:37.781  3979  6899 D GamePkgDataHelper: getGamePkgData(). com.example.batterymanager_utility
+09-02 10:07:37.781  3979  6899 D GamePkgDataHelper: getSosPolicy(). com.example.batterymanager_utility
+09-02 10:07:37.782  3979  3979 I SamsungAlarmManager: setLocked to kernel - T:2 / 20230902T100809, SetElapsed=87270441, nowELAPSED=87239214
+09-02 10:07:37.782  3979  3979 D SamsungAlarmManager: setInexact Listener (T:2/F:0/AC:false) 20230902T100806 - CU:1000/CP:3979
+09-02 10:07:37.782  3979  3979 I SamsungAlarmManager: setLocked to kernel - T:2 / 20230902T100806, SetElapsed=87268248, nowELAPSED=87239215
+09-02 10:07:37.784  3979  3979 D SamsungAlarmManager: setInexact Listener (T:2/F:0/AC:false) 20230902T101200 - CU:1000/CP:3979
+09-02 10:07:37.785  3979  4670 D ActivityManager: post active user change for 0 fullscreen true isHomeActivity() false
+09-02 10:07:37.787  3979  6899 D GameManagerService: identifyGamePackage. com.example.batterymanager_utility
+09-02 10:07:37.787  3979  6899 D GamePkgDataHelper: getGamePkgData(). com.example.batterymanager_utility
+09-02 10:07:37.789  3979  4670 V WindowManager: Relayout Window{faeb4d5 u0 com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity}: viewVisibility=0 req=720x1280 WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#81810100 pfl=0x20000 wanim=0x10302fd vsysui=0x600 needsMenuKey=2 colorMode=0 naviIconColor=0}
+09-02 10:07:37.789  3979  6899 D GameManagerService: identifyGamePackage. com.example.batterymanager_utility
+09-02 10:07:37.789  3979  6899 D GamePkgDataHelper: getGamePkgData(). com.example.batterymanager_utility
+09-02 10:07:37.790  3462  3462 I SurfaceFlinger: id=863 createSurf (720x1280),1 flag=404, com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity#0
+09-02 10:07:37.792  3979  4670 V Surface : sf_framedrop debug : 0x4f4c, game : false, logging : 0
+09-02 10:07:37.792  3979  3996 D WindowManager: set systemUiVisibility : systemUiFlags= 0x608 fullscreenStackSysUiFlags= 0x0
+09-02 10:07:37.795  3979  4670 D InputDispatcher: Focus entered window: 29070
+09-02 10:07:37.796 29070 29070 V Surface : sf_framedrop debug : 0x4f4c, game : false, logging : 0
+09-02 10:07:37.798 29070 29070 D ViewRootImpl@110cd72[MainActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x7 surface={valid=true 536211472384} changed=true
+09-02 10:07:37.803 29070 29086 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, egl_color_buffer_format *, EGLBoolean) returns 0x3000,  [720x1280]-format:1
+09-02 10:07:37.804 29070 29086 D OpenGLRenderer: eglCreateWindowSurface = 0x7cc18c6000
+09-02 10:07:37.805 22051 22051 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+09-02 10:07:37.806 29070 29070 D ViewRootImpl@110cd72[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1
+09-02 10:07:37.809 29070 29070 V InputMethodManager: Starting input: tba=android.view.inputmethod.EditorInfo@753c22d nm : com.example.batterymanager_utility ic=null
+09-02 10:07:37.809 29070 29070 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+09-02 10:07:37.809  3979  4670 D InputMethodManagerService: startInputOrWindowGainedFocus : windowGainedFocus 
+09-02 10:07:37.809  3979  4670 D InputMethodManagerService: windowGainedFocus: destinationUserId (getCallingUid) = 0
+09-02 10:07:37.809  3979  4670 D InputMethodManagerService: windowGainedFocus: currentUserId=0
+09-02 10:07:37.809  3979  4670 D InputMethodManagerService: windowGainedFocus: mCurrentFocusedUserId=0
+09-02 10:07:37.810  3979  4670 D InputMethodManagerService: windowGainedFocus : lock - currentUserId = 0 destinationUserId = 0
+09-02 10:07:37.810  3979  4670 D InputMethodManagerService: windowGainedFocus : mCurrentFocusedUserId - 0 and mSecureKeypadEnabled - false, userSwitched - false
+09-02 10:07:37.814  3979  4670 V InputMethodManagerService: windowGainedFocus : reason=WINDOW_FOCUS_GAIN client=android.os.BinderProxy@c64dabf inputContext=null missingMethods= attribute=android.view.inputmethod.EditorInfo@5490790 nm = com.example.batterymanager_utility controlFlags=#105 softInputMode=#120 windowFlags=#81810100
+09-02 10:07:37.814  3979  4670 V InputMethodManagerService: hideCurrentInputLocked : shouldHideSoftInput is false
+09-02 10:07:37.815  3979  4670 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 29111 uid 10096
+09-02 10:07:37.815  3979  4670 D InputMethodManagerService: isImeSwitcherDisabledPackage : false
+09-02 10:07:37.817  3979  4670 D InputMethodManagerService: setCurrentInputInfo - inputContext : null eidtorInfo : android.view.inputmethod.EditorInfo@5490790 missingMethods : 0
+09-02 10:07:37.819  4336  4336 I InputMethodWrapper:  call dispatchStartInputWithToken
+09-02 10:07:37.819  4336  4336 I InputMethodService: dispatchStartInputWithToken
+09-02 10:07:37.819  3979  4670 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ LISTEN id=447, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ], android.os.BinderProxy@67cd08e)
+09-02 10:07:37.819  3979  5966 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ LISTEN id=446, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ], android.os.BinderProxy@85f0cbc)
+09-02 10:07:37.819  3979  4673 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ LISTEN id=445, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ], android.os.BinderProxy@68440af)
+09-02 10:07:37.820  3979  4180 D ConnectivityService: releasing NetworkRequest [ LISTEN id=447, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ] (CALLBACK_RELEASED)
+09-02 10:07:37.820  3979  4004 W ActivityManager: setHasOverlayUi called on unknown pid: 29111
+09-02 10:07:37.821  3979  4180 D ConnectivityService: sending notification RELEASED for NetworkRequest [ LISTEN id=447, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ]
+09-02 10:07:37.821  4336  4336 I SKBD    : SamsungKeypad [IMI] onStartInput - caller pid : 29070, caller uid : 10157
+09-02 10:07:37.821  4336  4336 D InputEventReceiver: channel 'ClientState{7d41602 uid 10096 pid 29111} (client)' ~ Disposing input event receiver.
+09-02 10:07:37.821  4336  4336 D InputEventReceiver: channel 'ClientState{7d41602 uid 10096 pid 29111} (client)' ~NativeInputEventReceiver.
+09-02 10:07:37.822  3979  4180 E ConnectivityService: RemoteException caught trying to send a callback msg for NetworkRequest [ LISTEN id=447, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ]
+09-02 10:07:37.822  3979  4180 D ConnectivityService: releasing NetworkRequest [ LISTEN id=446, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ] (CALLBACK_RELEASED)
+09-02 10:07:37.823  3979  4180 D ConnectivityService: sending notification RELEASED for NetworkRequest [ LISTEN id=446, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ]
+09-02 10:07:37.824  3979  4180 E ConnectivityService: RemoteException caught trying to send a callback msg for NetworkRequest [ LISTEN id=446, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ]
+09-02 10:07:37.826  3979  4180 D ConnectivityService: releasing NetworkRequest [ LISTEN id=445, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ] (CALLBACK_RELEASED)
+09-02 10:07:37.827  3979  4180 D ConnectivityService: sending notification RELEASED for NetworkRequest [ LISTEN id=445, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ]
+09-02 10:07:37.828  3979  4180 E ConnectivityService: RemoteException caught trying to send a callback msg for NetworkRequest [ LISTEN id=445, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ]
+09-02 10:07:37.838  4349  4372 D SystemServicesProxy: updateOverviewLastStackActiveTimeAsync: newTime=1693559943942
+09-02 10:07:37.839  3979  5976 D SecContentProvider: query(), uri = 17 selection = isSettingsChangesAllowed
+09-02 10:07:37.840  3979  5976 D SecContentProvider: called from android.uid.systemui:10009
+09-02 10:07:37.841  4349  4561 D SystemServicesProxy: updateOverviewLastStackActiveTimeAsync: done.
+09-02 10:07:37.841  3979  3997 W zygote64: failed to open /acct/uid_99134/pid_29339/cgroup.procs: No such file or directory
+09-02 10:07:37.841  3979  3997 W zygote64: failed to open /acct/uid_99133/pid_29147/cgroup.procs: No such file or directory
+09-02 10:07:37.853  3979  5925 V WindowManager: finishDrawingLocked: mDrawState=COMMIT_DRAW_PENDING Window{faeb4d5 u0 com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity} in Surface(name=com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity)
+09-02 10:07:37.867  3462  3462 I SurfaceFlinger: id=864 createSurf (720x1280),-1 flag=20004, com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity_dim#0
+09-02 10:07:37.887  3462  3462 I SurfaceFlinger: Display 0 HWC layers:
+09-02 10:07:37.887  3462  3462 I SurfaceFlinger:     type    |    handle    | flag |  format   |   source crop (l,t,r,b)    |         frame       | name 
+09-02 10:07:37.887  3462  3462 I SurfaceFlinger: ------------+--------------+------+-----------+----------------------------+---------------------+------
+09-02 10:07:37.887  3462  3462 I SurfaceFlinger:      Client |              | 0000 |  Unknown  |  -0.2   -0.2   -0.8   -0.8 |    0    0  720 1280 | animation background stackId=1#0
+09-02 10:07:37.887  3462  3462 I SurfaceFlinger:      Client | 0x7abe64bf80 | 0002 | RGBA_8888 |   0.0    0.0   31.0 1280.0 |  689    0  720 1280 | com.example.batterymanager_utility/c[...]atterymanager_utility.MainActivity#0
+09-02 10:07:37.887  3462  3462 I SurfaceFlinger:      Device | 0x7ac4c25140 | 0000 | RGBA_8888 |   0.0    0.0  720.0   42.0 |    0    0  720   42 | StatusBar#0
+09-02 10:07:37.887  3462  3462 I SurfaceFlinger: 
+09-02 10:07:37.903  3462  3462 I SurfaceFlinger: Display 0 HWC layers:
+09-02 10:07:37.903  3462  3462 I SurfaceFlinger:     type    |    handle    | flag |  format   |   source crop (l,t,r,b)    |         frame       | name 
+09-02 10:07:37.903  3462  3462 I SurfaceFlinger: ------------+--------------+------+-----------+----------------------------+---------------------+------
+09-02 10:07:37.903  3462  3462 I SurfaceFlinger:      Client |              | 0000 |  Unknown  |   0.0    0.0   -1.0   -1.0 |    0    0  720 1280 | com.example.batterymanager_utility/c[...]rymanager_utility.MainActivity_dim#0
+09-02 10:07:37.903  3462  3462 I SurfaceFlinger:      Client |              | 0000 |  Unknown  |  -0.2   -0.2   -0.8   -0.8 |    0    0  720 1280 | animation background stackId=1#0
+09-02 10:07:37.903  3462  3462 I SurfaceFlinger:      Client | 0x7abe64bf80 | 0002 | RGBA_8888 |   0.0    0.0   67.0 1280.0 |  653    0  720 1280 | com.example.batterymanager_utility/c[...]atterymanager_utility.MainActivity#0
+09-02 10:07:37.903  3462  3462 I SurfaceFlinger:      Client | 0x7ac4c25140 | 0000 | RGBA_8888 |   0.0    0.0  720.0   42.0 |    0    0  720   42 | StatusBar#0
+09-02 10:07:37.903  3462  3462 I SurfaceFlinger: 
+09-02 10:07:37.911  3979  4111 D MdnieScenarioControlService:  packageName : com.example.batterymanager_utility    className : com.example.batterymanager_utility.MainActivity
+09-02 10:07:37.911  3979  4111 V MdnieScenarioControlService: setUIMode from UI function(3)
+09-02 10:07:38.065  3979  4111 V MdnieScenarioControlService: Calling MdnieManager API(setContentMode(0))
+09-02 10:07:38.065  3979  4111 D SemDisplaySolutionManagerService: uid : 1000 , pid : 3979 , name : hdr_effect_off
+09-02 10:07:38.065  3979  4111 D SemDisplaySolutionManagerService: where : application what : DEFAULT setScreenBrightnessScaleFactor(-1.0)
+09-02 10:07:38.065  3979  4111 D PowerManagerService: [api] setScreenBrightnessScaleFactor: scaleFactor: -1.0 (uid: 1000 pid: 3979)
+09-02 10:07:38.066  3979  4111 D SemDisplaySolutionManagerService: setMultipleScreenBrightness , application, DEFAULT, -1.0
+09-02 10:07:38.066  3979  4111 V MdnieScenarioControlService: Calling SemDisplaySolutionManager API(setMultipleScreenBrightness(0)
+09-02 10:07:38.069  3603 18534 V APM_AudioPolicyManager: setAudioPolicyConfig: audioEffectParam;audioHDR=0;packageName=com.example.batterymanager_utility
+09-02 10:07:38.071  3979  4111 I AudioService: audioEffectParam;audioHDR=0;packageName=com.example.batterymanager_utility
+09-02 10:07:38.071  3979  4111 V MdnieScenarioControlService: setUIMode from UI function
+09-02 10:07:38.252  3462  3462 I SurfaceFlinger: Display 0 HWC layers:
+09-02 10:07:38.252  3462  3462 I SurfaceFlinger:     type    |    handle    | flag |  format   |   source crop (l,t,r,b)    |         frame       | name 
+09-02 10:07:38.252  3462  3462 I SurfaceFlinger: ------------+--------------+------+-----------+----------------------------+---------------------+------
+09-02 10:07:38.252  3462  3462 I SurfaceFlinger:      Device | 0x7abe64bf80 | 0002 | RGBA_8888 |   0.0    0.0  720.0 1280.0 |    0    0  720 1280 | com.example.batterymanager_utility/c[...]atterymanager_utility.MainActivity#0
+09-02 10:07:38.252  3462  3462 I SurfaceFlinger:      Device | 0x7abe64b980 | 0000 | RGBA_8888 |   0.0    0.0  720.0   42.0 |    0    0  720   42 | StatusBar#0
+09-02 10:07:38.252  3462  3462 I SurfaceFlinger: 
+09-02 10:07:38.267  3979  4046 I WindowManager: Destroying surface Surface(name=com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity_dim) called by com.android.server.wm.WindowStateAnimator.destroyTransitionDimSurface:2733 com.android.server.wm.WindowState.onExitAnimationDone:5260 com.android.server.wm.AppWindowAnimator.stepAnimationLocked:508 com.android.server.wm.AppWindowToken.stepAppWindowsAnimation:1659 com.android.server.wm.WindowContainer.stepAppWindowsAnimation:521 com.android.server.wm.WindowContainer.stepAppWindowsAnimation:521 com.android.server.wm.TaskStack.stepAppWindowsAnimation:1948 com.android.server.wm.WindowContainer.stepAppWindowsAnimation:521 
+09-02 10:07:38.267  3462  4748 I SurfaceFlinger: id=864 Removed com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity_dim#0 (1/5)
+09-02 10:07:38.267  3462  4748 I SurfaceFlinger: id=864 Removed com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity_dim#0 (-2/5)
+09-02 10:07:38.268  3979  4004 D CustomFrequencyManagerService: releaseDVFSLockLocked : Getting Lock type frm List : DVFS_MIN_LIMIT  frequency : 1560000  uid : 1000  pid : 3979  tag : AMS_ACT_RESUME@CPU_MIN@70
+09-02 10:07:38.268  3979  4004 D ActivityManagerPerformance: AMP_release() ACT_RESUME
+09-02 10:07:38.283  3462  3462 I Layer   : id=864 onRemoved com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity_dim#0 
+09-02 10:07:38.801  4962  4962 D io_stats: !@ 179,0 r 554867 16997644 w 305066 6518840 d 30481 18718576 f 92501 94226 iot 407904 342107 th 51200 0 0 pt 0 inp 0 0 32592.045
+09-02 10:07:39.725  3979  3979 D PreBindingService: handleMessage : 1
+09-02 10:07:39.895  3979  4051 D SensorService: [SO] 0.129 -0.373 9.859
+09-02 10:07:40.525  3449  3449 I android.hardware.wifi@1.0-service: getLinkLayerStats
+09-02 10:07:40.809 14031 14031 E adbd    : recv: OPEN 0001a3c1 00000000 0042:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 67 65 74 70 72 6F 70 20 72 6F 2E 62 75 69 6C 64 2E 76 65 72 73 69 6F 6E 2E 72 65 6C 65 61 73 65 00 
+09-02 10:07:40.810 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:getprop ro.build.version.release
+09-02 10:07:40.902 14031 14031 E adbd    : recv: OPEN 0001a3c4 00000000 003e:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 67 65 74 70 72 6F 70 20 72 6F 2E 62 75 69 6C 64 2E 76 65 72 73 69 6F 6E 2E 73 64 6B 00 
+09-02 10:07:40.902 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:getprop ro.build.version.sdk
+09-02 10:07:41.001 14031 14031 E adbd    : recv: OPEN 0001a3c7 00000000 0052:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 61 6D 20 66 6F 72 63 65 2D 73 74 6F 70 20 63 6F 6D 2E 65 78 61 6D 70 6C 65 2E 62 61 74 74 65 72 79 6D 61 6E 61 67 65 72 5F 75 74 69 6C 69 74 79 00 
+09-02 10:07:41.001 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:am force-stop com.example.batterymanager_utility
+09-02 10:07:41.079  3979  5172 I ActivityManager: Force stopping com.example.batterymanager_utility appid=10157 user=0: from pid 29428
+09-02 10:07:41.080  3979  5172 I ActivityManager: Killing 29070:com.example.batterymanager_utility/u0a157 (adj 0): stop com.example.batterymanager_utility,from pid 29428
+09-02 10:07:41.081  3979  5172 W ActivityManager: Force removing ActivityRecord{d6f3fe2 u0 com.example.batterymanager_utility/.MainActivity t235}: app died, no saved state
+09-02 10:07:41.088  3979  5172 D InputDispatcher: Focus left window: 29070
+09-02 10:07:41.089  3979  5172 I WindowManager: Failed to capture screenshot of Token{8a13f73 ActivityRecord{d6f3fe2 u0 com.example.batterymanager_utility/.MainActivity t235 f}} appWin=Window{faeb4d5 u0 com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity} drawState=4
+09-02 10:07:41.090  3979  5172 D TaskSnapshotCache: removeRunningEntry taskId=235 RunningCache size=3
+09-02 10:07:41.090  3979  5172 I WindowManager: Destroying surface Surface(name=com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity) called by com.android.server.wm.WindowStateAnimator.destroySurface:2501 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:985 com.android.server.wm.WindowState.removeImmediately:2404 com.android.server.wm.WindowState.removeIfPossible:2603 com.android.server.wm.WindowState.removeIfPossible:2433 com.android.server.wm.WindowToken.removeAllWindowsIfPossible:143 com.android.server.wm.AppWindowToken.removeIfPossible:606 com.android.server.wm.AppWindowToken.onRemovedFromDisplay:674 
+09-02 10:07:41.091  3462  4748 I SurfaceFlinger: id=863 Removed com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity#0 (1/4)
+09-02 10:07:41.091  3462  4748 I SurfaceFlinger: id=863 Removed com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity#0 (-2/4)
+09-02 10:07:41.096  3979  5172 D InputDispatcher: Focused application released
+09-02 10:07:41.096  3979  5172 W MultiScreenManagerService: moveTaskBackToDisplayIfNeeded(): root activity or app is null, task=TaskRecord{5831e73d0 #235 A=com.example.batterymanager_utility U=0 StackId=1 sz=0}, rootActivity=null
+09-02 10:07:41.097  3979  3979 D MdnieScenarioControlService: Listener Real Multi Window State : true
+09-02 10:07:41.103  3462  3462 I Layer   : id=863 onRemoved com.example.batterymanager_utility/com.example.batterymanager_utility.MainActivity#0 
+09-02 10:07:41.107  3462  3462 I SurfaceFlinger: Display 0 HWC layers:
+09-02 10:07:41.107  3462  3462 I SurfaceFlinger:     type    |    handle    | flag |  format   |   source crop (l,t,r,b)    |         frame       | name 
+09-02 10:07:41.107  3462  3462 I SurfaceFlinger: ------------+--------------+------+-----------+----------------------------+---------------------+------
+09-02 10:07:41.107  3462  3462 I SurfaceFlinger:      Device | 0x7ac4c25140 | 0000 | RGBA_8888 |   0.0    0.0  720.0   42.0 |    0    0  720   42 | StatusBar#0
+09-02 10:07:41.107  3462  3462 I SurfaceFlinger: 
+09-02 10:07:41.108  3979  5172 D CustomFrequencyManagerService: acquireDVFSLockLocked : type : DVFS_MIN_LIMIT  frequency : 1560000  uid : 1000  pid : 3979  pkgName : AMS_APP_HOME@CPU_MIN@59
+09-02 10:07:41.110  3979  5172 D ActivityManagerPerformance: AMP_acquire() HOME
+09-02 10:07:41.111  3979  5172 D PersonaManagerService: Current focused persona service handled id set to : 0
+09-02 10:07:41.111  3979  5172 D InputDispatcher: Focused application set to: xxxx
+09-02 10:07:41.113  3979  5172 V WindowManager: rotationForOrientationLw(orient=5, last=0); user=0  sensorRotation=-1 mLidState=-1 mDockMode=0 mHdmiPlugged=false
+09-02 10:07:41.116  3979  4238 D GameManagerService: handleForegroundChange(). pkgName: com.sec.android.app.launcher, clsName: com.android.launcher3.Launcher,FgActivityName:com.sec.android.app.launcher/com.android.launcher3.Launcher
+09-02 10:07:41.116  3979  5172 D MARsPolicyManager: onPackageResumedFG pkgName = com.sec.android.app.launcher, userId = 0
+09-02 10:07:41.116  3979  4238 D GameManagerService: sem_perfomance_mode: 3
+09-02 10:07:41.116  3979  4238 D GameManagerService: notifyResumePause(). pkg: com.sec.android.app.launcher, type: 4, isMinimized: false, isTunableApp: false
+09-02 10:07:41.116  3979  4238 D GameManagerService:   notifyResumePause(). unexpected mPrevNotiType: -1
+09-02 10:07:41.120  5213  5213 I Launcher: onWindowVisibilityChanged : false
+09-02 10:07:41.122  3979  5925 V WindowManager: Relayout Window{7215288 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity}: viewVisibility=4 req=720x1280 WM.LayoutParams{(0,0)(fillxfill) sim=#130 ty=1 fl=#81910d00 pfl=0x20000 fmt=-2 wanim=0x10302ea vsysui=0x700 needsMenuKey=2 colorMode=0 dimDuration=100 naviIconColor=0}
+09-02 10:07:41.123  3979  3979 D SamsungAlarmManager: Remove alarm for next reason : android.intent.action.PACKAGE_RESTARTED : package: com.example.batterymanager_utility
+09-02 10:07:41.125  4633  4633 D CarrierSvcBindHelper: No carrier app for: 0
+09-02 10:07:41.126  4633  4633 D CarrierSvcBindHelper: No carrier app for: 1
+09-02 10:07:41.126  5213  5213 D ViewRootImpl@8c524b3[LauncherActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x1 surface={valid=false 0} changed=false
+09-02 10:07:41.127  3979  3995 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_RESTARTED dat=package:com.example.batterymanager_utility flg=0x10 (has extras) } to android/com.kddi.android.CpaNotiReceiver
+09-02 10:07:41.127  3979  3995 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_RESTARTED dat=package:com.example.batterymanager_utility flg=0x10 (has extras) } to com.sec.android.daemonapp/com.samsung.android.weather.daemon.receiver.ClearDataReceiver
+09-02 10:07:41.127  5213  5213 D HomeContainer: setAlpha : 1.0
+09-02 10:07:41.129  3979  6899 D GamePkgDataHelper: getGamePkgDataIncServer(). com.sec.android.app.launcher
+09-02 10:07:41.130  5213  5213 V Launcher: Launcher.onResume()
+09-02 10:07:41.130  3979  6899 D GameManagerService: identifyGamePackage. com.sec.android.app.launcher
+09-02 10:07:41.130  3979  6899 D GamePkgDataHelper: getGamePkgData(). com.sec.android.app.launcher
+09-02 10:07:41.130  3979  6899 D GameManagerService: identifyGamePackage. com.sec.android.app.launcher
+09-02 10:07:41.130  3979  6899 D GamePkgDataHelper: getGamePkgData(). com.sec.android.app.launcher
+09-02 10:07:41.131  3979  6899 D GamePkgDataHelper: getSosPolicy(). com.sec.android.app.launcher
+09-02 10:07:41.132  3979  6899 D GameManagerService: identifyGamePackage. com.sec.android.app.launcher
+09-02 10:07:41.132  3979  6899 D GamePkgDataHelper: getGamePkgData(). com.sec.android.app.launcher
+09-02 10:07:41.133  3979  6899 D GameManagerService: identifyGamePackage. com.sec.android.app.launcher
+09-02 10:07:41.133  3979  6899 D GamePkgDataHelper: getGamePkgData(). com.sec.android.app.launcher
+09-02 10:07:41.136  5213  5213 D ExternalMethodQueue: Getting and clearing EXTERNAL_METHOD_LIST: null
+09-02 10:07:41.136  5213  5302 I LauncherAppWidgetInfo: reinflateWidgetsIfNecessary, Not required: AppWidget(id=2)
+09-02 10:07:41.136  5213  5213 D Launcher: setHotWordDetection : call requestHotWordDetection true
+09-02 10:07:41.136  5213  5302 I LauncherAppWidgetInfo: reinflateWidgetsIfNecessary, Not required: AppWidget(id=3)
+09-02 10:07:41.137  5213  5213 D Launcher.HomeController: onResume HomeContainer current alpha = 1.0
+09-02 10:07:41.137  5213  5213 D AppsCustomAdapter: notifyUpdate : com.android.launcher3.Launcher@110cd72
+09-02 10:07:41.137  5213  5213 D AppsDragController: needDeferToBind : true , false
+09-02 10:07:41.139  3979  5172 D Notification: allPendingIntents
+09-02 10:07:41.139  5117  5117 I GsaVoiceInteractionSrv: Handling ACTION_START_HOTWORD
+09-02 10:07:41.140  5117  5385 I GsaVoiceInteractionSrv: (REDACTED) disregardVoiceMatch: %b
+09-02 10:07:41.140  3979  5172 D Notification: allPendingIntents
+09-02 10:07:41.140  5117  5385 I GsaVoiceInteractionSrv: Cannot start hotword, hotword has been explicitly disabled.
+09-02 10:07:41.140  3979  5172 D Notification: allPendingIntents
+09-02 10:07:41.141  3979  5172 I chatty  : uid=1000(system) Binder:3979_D identical 2 lines
+09-02 10:07:41.141  3979  5172 D Notification: allPendingIntents
+09-02 10:07:41.141  3979  5976 D ActivityManager: post active user change for 0 fullscreen true isHomeActivity() true
+09-02 10:07:41.141  3979  5172 D Notification: allPendingIntents
+09-02 10:07:41.141  3979  5976 I WallpaperManagerService: switchPersonaWallpaper is called for personaId-0
+09-02 10:07:41.142  3979  3979 D WallpaperManagerService:  force update = false; persona id = 0; current user =0; current persona = 0
+09-02 10:07:41.142  5213  5213 I Launcher: onWindowVisibilityChanged : true
+09-02 10:07:41.143  3979  5172 V WindowManager: Relayout Window{7215288 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity}: viewVisibility=0 req=720x1280 WM.LayoutParams{(0,0)(fillxfill) sim=#130 ty=1 fl=#81910d00 pfl=0x20000 fmt=-2 wanim=0x10302ea vsysui=0x700 needsMenuKey=2 colorMode=0 dimDuration=100 naviIconColor=0}
+09-02 10:07:41.143  5213  5302 D Notification.Badge: [filtered] shouldBeFilteredOut().isGroupHeader[true], missingTitleAndText[true], [sbn : StatusBarNotification(pkg=com.android.vending user=UserHandle{0} id=2147483647 tag=ranker_group key=0|com.android.vending|2147483647|ranker_group|10044|ranker_group: Notification(channel=maintenance-v2 pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x700 color=0xff01875f groupKey=ranker_group number=0 vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0))]
+09-02 10:07:41.143  5213  5302 D Notification.Badge: [filtered] shouldBeFilteredOut().mTempRanking.canShowBadge[false], [sbn : StatusBarNotification(pkg=com.android.settings user=UserHandle{0} id=2354 tag=null key=0|com.android.settings|2354|null|1000: Notification(channel=DeviceMaintenanceNoBadge pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x110 color=0xff7ccbe2 actions=1 number=0 vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0))]
+09-02 10:07:41.144  5213  5302 D Notification.Badge: [filtered] shouldBeFilteredOut().mTempRanking.canShowBadge[false], [sbn : StatusBarNotification(pkg=com.android.systemui user=UserHandle{-1} id=2131362729 tag=full_battery key=-1|com.android.systemui|2131362729|full_battery|10009: Notification(channel=FBT pri=-2 contentView=null vibrate=null sound=null tick defaults=0x0 flags=0xa color=0xff17c433 category=sys number=0 vis=PUBLIC semFlags=0x0 semPriority=0 semMissedCount=0))]
+09-02 10:07:41.144  5213  5302 D Notification.Badge: [filtered] shouldBeFilteredOut().mTempRanking.canShowBadge[false], [sbn : StatusBarNotification(pkg=android user=UserHandle{-1} id=32 tag=null key=-1|android|32|null|1000: Notification(channel=USB pri=0 contentView=null vibrate=null sound=null tick defaults=0x0 flags=0x2 color=0xff607d8b number=0 vis=PUBLIC semFlags=0x0 semPriority=0 semMissedCount=0))]
+09-02 10:07:41.144  3462  3462 I SurfaceFlinger: id=865 createSurf (720x1280),1 flag=4, com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity#0
+09-02 10:07:41.144  5213  5302 D Notification.Badge: LauncherModel:onNotificationFullRefresh() : [3], IconType : [0]
+09-02 10:07:41.144  5213  5302 D Notification.Badge: notificationKey : 0|com.android.vending|-2073578647|null|10044, count : 0, this.count : 1
+09-02 10:07:41.144  5213  5302 D Notification.Badge: notificationKey : 0|com.android.vending|-2073578647|null|10044, count : 1, mTotalCount : 1
+09-02 10:07:41.144  5213  5302 D Notification.Badge: notificationKey : 0|com.android.vending|-555892737|null|10044, count : 0, this.count : 1
+09-02 10:07:41.144  5213  5302 D Notification.Badge: notificationKey : 0|com.android.vending|-555892737|null|10044, count : 1, mTotalCount : 2
+09-02 10:07:41.144  5213  5302 D Notification.Badge: notificationKey : 0|com.android.vending|-234430262|null|10044, count : 13, this.count : 13
+09-02 10:07:41.144  5213  5302 D Notification.Badge: notificationKey : 0|com.android.vending|-234430262|null|10044, count : 13, mTotalCount : 15
+09-02 10:07:41.144  5213  5302 D Notification.Badge: LauncherModel:onNotificationFullRefresh() not need to update, updatedBadges.remove[com.android.vending], count : [15]
+09-02 10:07:41.145  3979  5172 V Surface : sf_framedrop debug : 0x4f4c, game : false, logging : 0
+09-02 10:07:41.145  3979  3996 D WindowManager: set systemUiVisibility : systemUiFlags= 0x708 fullscreenStackSysUiFlags= 0x0
+09-02 10:07:41.148  4336  4336 D InputEventReceiver: channel 'ClientState{e1c95b6 uid 10157 pid 29070} (client)' ~ Disposing input event receiver.
+09-02 10:07:41.149  4336  4336 D InputEventReceiver: channel 'ClientState{e1c95b6 uid 10157 pid 29070} (client)' ~NativeInputEventReceiver.
+09-02 10:07:41.149  3979  5172 D InputDispatcher: Focus entered window: 5213
+09-02 10:07:41.150  3979  5976 D WindowManager: adjustSystemUiVisibilityLw : vis= 0x708
+09-02 10:07:41.150  5213  5213 V Surface : sf_framedrop debug : 0x4f4c, game : false, logging : 0
+09-02 10:07:41.151  5213  5213 D ViewRootImpl@8c524b3[LauncherActivity]: Relayout returned: old=[0,0][720,1280] new=[0,0][720,1280] result=0x7 surface={valid=true 535746457600} changed=true
+09-02 10:07:41.151  3979  4004 W ActivityManager: setHasOverlayUi called on unknown pid: 29070
+09-02 10:07:41.156  5213  5479 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, egl_color_buffer_format *, EGLBoolean) returns 0x3000,  [720x1280]-format:1
+09-02 10:07:41.156  5213  5479 D OpenGLRenderer: eglCreateWindowSurface = 0x7c9eb60f40
+09-02 10:07:41.156  5213  5213 D AppsAdapter: notifyUpdate start : com.android.launcher3.Launcher@110cd72
+09-02 10:07:41.157  5213  5213 D AppsCustomAdapter: no change items
+09-02 10:07:41.157  5213  5213 D AppsAdapter: notifyUpdate end : com.android.launcher3.Launcher@110cd72
+09-02 10:07:41.157  5213  5213 D ViewRootImpl@8c524b3[LauncherActivity]: MSG_WINDOW_FOCUS_CHANGED 1
+09-02 10:07:41.160  5213  5213 V InputMethodManager: Starting input: tba=android.view.inputmethod.EditorInfo@933f5ea nm : com.sec.android.app.launcher ic=null
+09-02 10:07:41.160  5213  5213 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+09-02 10:07:41.160  3979  4673 D InputMethodManagerService: startInputOrWindowGainedFocus : windowGainedFocus 
+09-02 10:07:41.160  3979  4673 D InputMethodManagerService: windowGainedFocus: destinationUserId (getCallingUid) = 0
+09-02 10:07:41.160  3979  4673 D InputMethodManagerService: windowGainedFocus: currentUserId=0
+09-02 10:07:41.160  3979  4673 D InputMethodManagerService: windowGainedFocus: mCurrentFocusedUserId=0
+09-02 10:07:41.160  3979  4673 D InputMethodManagerService: windowGainedFocus : lock - currentUserId = 0 destinationUserId = 0
+09-02 10:07:41.161  3979  4673 D InputMethodManagerService: windowGainedFocus : mCurrentFocusedUserId - 0 and mSecureKeypadEnabled - false, userSwitched - false
+09-02 10:07:41.161  3979  4673 V InputMethodManagerService: windowGainedFocus : reason=WINDOW_FOCUS_GAIN client=android.os.BinderProxy@85bf16e inputContext=null missingMethods= attribute=android.view.inputmethod.EditorInfo@fb574c0 nm = com.sec.android.app.launcher controlFlags=#104 softInputMode=#130 windowFlags=#81910d00
+09-02 10:07:41.161  3979  4673 V InputMethodManagerService: hideCurrentInputLocked : shouldHideSoftInput is false
+09-02 10:07:41.161  3979  4673 D InputMethodManagerService: setCurrentInputInfo - inputContext : null eidtorInfo : android.view.inputmethod.EditorInfo@fb574c0 missingMethods : 0
+09-02 10:07:41.161  4336  4336 I InputMethodWrapper:  call dispatchStartInputWithToken
+09-02 10:07:41.161  4336  4336 I InputMethodService: dispatchStartInputWithToken
+09-02 10:07:41.162  4336  4336 I SKBD    : SamsungKeypad [IMI] onStartInput - caller pid : 29070, caller uid : 10157
+09-02 10:07:41.170  5213  5213 D DragLayer: DragLayer dispatchDraw, mIsNaviBarPositionChanged = false, mWillOrientationChange = false
+09-02 10:07:41.171 14031 14031 E adbd    : recv: OPEN 0001a3ca 00000000 0042:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 67 65 74 70 72 6F 70 20 72 6F 2E 62 75 69 6C 64 2E 76 65 72 73 69 6F 6E 2E 72 65 6C 65 61 73 65 00 
+09-02 10:07:41.171 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:getprop ro.build.version.release
+09-02 10:07:41.180  3979  4673 V WindowManager: finishDrawingLocked: mDrawState=COMMIT_DRAW_PENDING Window{7215288 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity} in Surface(name=com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity)
+09-02 10:07:41.181  4349  4372 D WallpaperService: dispatchAppVisibility onVisibilityChanged(): true
+09-02 10:07:41.182  4349  4349 D WallpaperService: updateSurface forceRelayout=false redrawNeeded=false myWidth=1280 myHeight=1280 fixedSize=true x = 0 y = 0 mWidth=1280 mHeight=1280 mIsSleepMode=false
+09-02 10:07:41.182  4349  4349 D ImageWallpaper: onVisibilityChanged: mVisible, visible=false, true
+09-02 10:07:41.182  4349  4349 D ImageWallpaper: Visibility changed to visible=true
+09-02 10:07:41.183  4349  4349 D ImageWallpaper: newRotation : 0,mLastRotation : 0
+09-02 10:07:41.183  4349  4349 D ImageWallpaper: drawFrame:[frame.width()]1280[frame.height()]1280
+09-02 10:07:41.183  4349  4349 D ImageWallpaper: surfaceDimensionsChanged=false mDisplayWidth=720 mDisplayHeight=1280
+09-02 10:07:41.183  4349  4349 D ImageWallpaper: redrawNeeded = false, mOffsetsChanged = false
+09-02 10:07:41.183  4349  4349 D ImageWallpaper: Suppressed drawFrame since redraw is not needed and offsets have not changed.
+09-02 10:07:41.183  4349  4349 D WallpaperService: reportVisibility onVisibilityChanged visible: true
+09-02 10:07:41.184  3979  4046 D SamsungAnimationCreator: createAnimation type:CHNLowEnd transit:13 enter:false wallpaperXoffset:-280 split:false fixedOri:false
+09-02 10:07:41.184  3979  4046 D SamsungAnimationCreator: createAnimation displayFrame:Rect(0, 0 - 720, 1280) frame:null insets:null
+09-02 10:07:41.186  4349  4349 D WallpaperService: updateSurface forceRelayout=true redrawNeeded=false myWidth=1280 myHeight=1280 fixedSize=true x = 0 y = 0 mWidth=1280 mHeight=1280 mIsSleepMode=false
+09-02 10:07:41.191  3979  5976 V WindowManager: Relayout Window{80ee464 u0 com.android.systemui.ImageWallpaper}: viewVisibility=0 req=1280x1280 WM.LayoutParams{(0,0)(1280x1280) gr=#800033 ty=2013 fl=#10318 fmt=2 wanim=0x103030e colorMode=0 naviIconColor=0}
+09-02 10:07:41.198  4349  4349 D ImageWallpaper: onOffsetsChanged: xOffset=0.0, yOffset=0.0, xOffsetStep=0.0, yOffsetStep=0.0, xPixels=0, yPixels=0
+09-02 10:07:41.198  4349  4349 D ImageWallpaper: newRotation : 0,mLastRotation : 0
+09-02 10:07:41.199  4349  4349 D ImageWallpaper: drawFrame:[frame.width()]1280[frame.height()]1280
+09-02 10:07:41.199  4349  4349 D ImageWallpaper: surfaceDimensionsChanged=false mDisplayWidth=720 mDisplayHeight=1280
+09-02 10:07:41.199  4349  4349 D ImageWallpaper: redrawNeeded = false, mOffsetsChanged = false
+09-02 10:07:41.199  4349  4349 D ImageWallpaper: Suppressed drawFrame since redraw is not needed and offsets have not changed.
+09-02 10:07:41.207  4349  4850 D SystemServicesProxy: updateOverviewLastStackActiveTimeAsync: newTime=1693559943942
+09-02 10:07:41.207  3462  3462 I SurfaceFlinger: Display 0 HWC layers:
+09-02 10:07:41.207  3462  3462 I SurfaceFlinger:     type    |    handle    | flag |  format   |   source crop (l,t,r,b)    |         frame       | name 
+09-02 10:07:41.207  3462  3462 I SurfaceFlinger: ------------+--------------+------+-----------+----------------------------+---------------------+------
+09-02 10:07:41.207  3462  3462 I SurfaceFlinger:      Device | 0x7abe64af00 | 0002 | RGBx_8888 | 280.0    0.0 1000.0 1280.0 |    0    0  720 1280 | com.android.systemui.ImageWallpaper#0
+09-02 10:07:41.207  3462  3462 I SurfaceFlinger:      Device | 0x7ac4c25080 | 0000 | RGBA_8888 | 120.0  213.0  601.0 1068.0 |    1    1  720 1280 | com.sec.android.app.launcher/com.sec[...]uncher.activities.LauncherActivity#0
+09-02 10:07:41.207  3462  3462 I SurfaceFlinger:      Device | 0x7ac4c25140 | 0000 | RGBA_8888 |   0.0    0.0  720.0   42.0 |    0    0  720   42 | StatusBar#0
+09-02 10:07:41.207  3462  3462 I SurfaceFlinger: 
+09-02 10:07:41.208  3979  5172 D SecContentProvider: query(), uri = 17 selection = isSettingsChangesAllowed
+09-02 10:07:41.208  3979  5172 D SecContentProvider: called from android.uid.systemui:10009
+09-02 10:07:41.209  4349  4561 D SystemServicesProxy: updateOverviewLastStackActiveTimeAsync: done.
+09-02 10:07:41.210  3979  4673 D PackageManager: getComponentMetadataForIconTray : com.example.batterymanager_utility.MainActivity does not exist in mServices
+09-02 10:07:41.210  3979  4673 D PackageManager: getComponentMetadataForIconTray : com.example.batterymanager_utility.MainActivity does not exist in mProviders
+09-02 10:07:41.210  3979  4673 D PackageManager: getComponentMetadataForIconTray : com.example.batterymanager_utility.MainActivity does not exist in mReceivers
+09-02 10:07:41.210  4349  4850 D ApplicationPackageManager: updateItemMetaDataForFixedIconScale: package: com.example.batterymanager_utility
+09-02 10:07:41.211  3979  4673 D PackageManager: getSelectedMetaData : packageName(com.example.batterymanager_utility) or Metadata strings {[Ljava.lang.String;@5ccb39f}
+09-02 10:07:41.211  4349  4850 I ApplicationPackageManager: load=com.example.batterymanager_utility, bg=144-144, dr=189-189, forDefault=true, density=0
+09-02 10:07:41.214  4349  4850 I ApplicationPackageManager: scaled rate=0.72, size=189, alpha=54, hold=102
+09-02 10:07:41.214  4349  4850 D ApplicationPackageManager: iconScale: getScale(): 0.72 getAlpha(): 54
+09-02 10:07:41.215  4349  4850 I ApplicationPackageManager: load=com.example.batterymanager_utility-contain, bg=112-112, dr=189-189
+09-02 10:07:41.236 14031 14031 E adbd    : recv: OPEN 0001a3cd 00000000 003e:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 67 65 74 70 72 6F 70 20 72 6F 2E 62 75 69 6C 64 2E 76 65 72 73 69 6F 6E 2E 73 64 6B 00 
+09-02 10:07:41.236 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:getprop ro.build.version.sdk
+09-02 10:07:41.261  3979  4111 D MdnieScenarioControlService:  packageName : com.sec.android.app.launcher    className : com.sec.android.app.launcher.activities.LauncherActivity
+09-02 10:07:41.261  3979  4111 V MdnieScenarioControlService: setUIMode from UI function(3)
+09-02 10:07:41.611  3979  3979 D CustomFrequencyManagerService: releaseDVFSLockLocked : Getting Lock type frm List : DVFS_MIN_LIMIT  frequency : 1560000  uid : 1000  pid : 3979  tag : AMS_APP_HOME@CPU_MIN@59
+09-02 10:07:41.689  5213  5479 W OpenGLRenderer: Incorrectly called buildLayer on View: WorkspaceCellLayoutChildren, destroying layer...
+09-02 10:07:41.690  5213  5479 W OpenGLRenderer: Incorrectly called buildLayer on View: WorkspaceCellLayoutChildren, destroying layer...
+09-02 10:07:42.608  3979  5172 D SamsungAlarmManager: Cancel Alarm calling from uid:10025 pid :10264 / op:PendingIntent{2dd1cec: PendingIntentRecord{4c88b8b com.google.android.gms broadcastIntent}}
+09-02 10:07:42.612 10264 26968 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 88734044]
+09-02 10:07:42.619  3979  5172 D SamsungAlarmManager: setExact Intent (T:2/F:5/AC:false) 20230902T103232 - CU:10025/CP:10264
+09-02 10:07:42.645 10264 28741 I AlarmManager: setExactAndAllowWhileIdle [name: FcmRetry type: 2 triggerAtMillis: 87364069]
+09-02 10:07:42.655  3979  5172 D SamsungAlarmManager: setExact Intent (T:2/F:5/AC:false) 20230902T100942 - CU:10025/CP:10264
+09-02 10:07:42.688  3979  5976 D ConnectivityService: filterNetworkStateForUid() uid: 10025 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:42.715  3979  4673 D SamsungAlarmManager: Cancel Alarm calling from uid:10025 pid :10264 / op:PendingIntent{79d99a2: PendingIntentRecord{dd2eabb com.google.android.gms broadcastIntent}}
+09-02 10:07:42.758  3979  5172 D ConnectivityService: filterNetworkStateForUid() uid: 10114 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:42.763  3979  5172 I SamsungAlarmManager: setLocked to kernel - T:2 / 20230902T100809, SetElapsed=87270441, nowELAPSED=87244195
+09-02 10:07:42.763  3979  5172 D SamsungAlarmManager: setInexact Listener (T:2/F:0/AC:false) 20230902T100757 - CU:1000/CP:3979
+09-02 10:07:42.763  3979  5172 I SamsungAlarmManager: setLocked to kernel - T:2 / 20230902T100800, SetElapsed=87261433, nowELAPSED=87244196
+09-02 10:07:42.766  3979  4673 D ConnectivityService: filterNetworkStateForUid() uid: 10025 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:42.810  3979  3994 D ConnectivityService: filterNetworkStateForUid() uid: 1000 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:42.813  3979  3994 D ConnectivityService: filterNetworkStateForUid() uid: 10114 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:42.820  3979  3994 D ConnectivityService: filterNetworkStateForUid() uid: 1000 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:42.840  3979  3994 D ConnectivityService: filterNetworkStateForUid() uid: 1000 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:42.869  3979  4673 I SamsungAlarmManager: setLocked to kernel - T:2 / 20230902T100809, SetElapsed=87270441, nowELAPSED=87244301
+09-02 10:07:42.869  3979  4673 D SamsungAlarmManager: setInexact Listener (T:2/F:0/AC:false) 20230902T100806 - CU:1000/CP:3979
+09-02 10:07:42.870  3979  4673 I SamsungAlarmManager: setLocked to kernel - T:2 / 20230902T100806, SetElapsed=87268248, nowELAPSED=87244302
+09-02 10:07:42.872  3979  4673 D SamsungAlarmManager: setInexact Listener (T:2/F:0/AC:false) 20230902T101200 - CU:1000/CP:3979
+09-02 10:07:42.938  3614  3927 D DnsProxyListener: DNSDBG::dns addrinfo af 2
+09-02 10:07:43.083  3979  3979 D PreBindingService: handleMessage : 1
+09-02 10:07:43.547  3449  3449 I android.hardware.wifi@1.0-service: getLinkLayerStats
+09-02 10:07:43.699  3979  4673 D ConnectivityService: filterNetworkStateForUid() uid: 10114 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:43.706 16394 16394 W ahbb    : Already started: ahbb@771cb20
+09-02 10:07:43.745 16394 16394 W ResourceType: For resource 0x7f150b13, entry index(2835) is beyond type entryCount(2415)
+09-02 10:07:43.745 16394 16394 W ResourceType: For resource 0x7f150b12, entry index(2834) is beyond type entryCount(2415)
+09-02 10:07:43.745 16394 16394 W ResourceType: For resource 0x7f150b1a, entry index(2842) is beyond type entryCount(2415)
+09-02 10:07:43.745 16394 16394 W ResourceType: For resource 0x7f150b18, entry index(2840) is beyond type entryCount(2415)
+09-02 10:07:43.745 16394 16394 W ResourceType: For resource 0x7f150b13, entry index(2835) is beyond type entryCount(2415)
+09-02 10:07:43.746 16394 16394 W ResourceType: For resource 0x7f150b12, entry index(2834) is beyond type entryCount(2415)
+09-02 10:07:43.746 16394 16394 W ResourceType: For resource 0x7f150b1a, entry index(2842) is beyond type entryCount(2415)
+09-02 10:07:43.746 16394 16394 W ResourceType: For resource 0x7f150b18, entry index(2840) is beyond type entryCount(2415)
+09-02 10:07:43.794  3979  3994 D ConnectivityService: filterNetworkStateForUid() uid: 1000 networkInfo: [type: WIFI[] - WIFI, state: CONNECTED/CONNECTED, reason: (unspecified), extra: "WiFi 69", failover: false, available: true, roaming: false, metered: false]
+09-02 10:07:43.797 16394 16394 W ird     : [Gmail] MailSyncAdapterService: MailSyncAdapterService is destroyed! [CONTEXT android_log_tag="MailSyncAdapterService" ]
+09-02 10:07:43.805  4962  4962 D io_stats: !@ 179,0 r 554963 16998612 w 305209 6520716 d 30495 18723136 f 92520 94245 iot 408040 342211 th 51200 0 0 pt 0 inp 0 0 32597.050
+09-02 10:07:45.208  3979  6899 D SSRM:G  : SIOP:: AP = 300, PST = 292 (W:10), BAT = 263, USB = 0, CHG = 0
+09-02 10:07:45.364  7505  7541 I Finsky  : [2056] hre.run(19): Stats for Executor: BlockingExecutor kfu@7d2615d[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 164]
+09-02 10:07:45.366  7505  7541 I Finsky  : [2056] hre.run(19): Stats for Executor: LightweightExecutor kfu@92bfad2[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 9557]
+09-02 10:07:45.473  7505  7541 I Finsky  : [2056] hre.run(19): Stats for Executor: bgExecutor kfu@e91f7a3[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 4085]
+09-02 10:07:45.564 16394 16399 I zygote64: Do full code cache collection, code=41KB, data=124KB
+09-02 10:07:45.565 16394 16399 I zygote64: After code cache collection, code=39KB, data=22KB
+09-02 10:07:46.245  3979  4673 D BatteryService: !@BatteryListener : batteryPropertiesChanged!
+09-02 10:07:46.247  3979  4673 D BatteryService: level:100, scale:100, status:5, health:2, present:true, voltage: 4309, temperature: 263, technology: Li-ion, AC powered:false, USB powered:true, POGO powered:false, Wireless powered:false, icon:17303834, invalid charger:0, maxChargingCurrent:0, maxChargingVoltage:0, chargeCounter:0
+09-02 10:07:46.247  3979  4673 D BatteryService: online:4, current avg:165, charge type:1, power sharing:false, high voltage charger:false, capacity:280000, batterySWSelfDischarging:false, misc_event:0, current_event:0, current_now:195
+09-02 10:07:46.247  3979  3979 D BatteryService: Sending ACTION_BATTERY_CHANGED.
+09-02 10:07:46.250  3979  3979 D SamsungPhoneWindowManager: ACTION_BATTERY_CHANGED - Level :: 100, battStatus :: 5
+09-02 10:07:46.251  3979  3979 I MotionRecognitionService: Plugged
+09-02 10:07:46.251  3979  3979 D MotionRecognitionService:   mCableConnection= 1
+09-02 10:07:46.251  3979  3979 D MotionRecognitionService: setPowerConnected : mGripEnabled = false
+09-02 10:07:46.251  3979  4002 D UsbDeviceManager: handleMessage -> MSG_UPDATE_CHARGING_STATE = 1
+09-02 10:07:46.252  4349  4349 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+09-02 10:07:46.253  4349  4349 D BatteryController: onReceive-ACTION_BATTERY_CHANGED : mLevel=100, mBatteryStatus=5
+09-02 10:07:46.258  4349  4349 D PowerUI : priorPlugType = 2 mPlugType =  2
+09-02 10:07:46.322 14031 14031 E adbd    : recv: OPEN 0001a3d0 00000000 003e:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 67 65 74 70 72 6F 70 20 72 6F 2E 62 75 69 6C 64 2E 76 65 72 73 69 6F 6E 2E 73 64 6B 00 
+09-02 10:07:46.323 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:getprop ro.build.version.sdk
+09-02 10:07:46.415 14031 14031 E adbd    : recv: OPEN 0001a3d3 00000000 0045:73 68 65 6C 6C 2C 76 32 2C 54 45 52 4D 3D 78 74 65 72 6D 2D 32 35 36 63 6F 6C 6F 72 2C 72 61 77 3A 6C 6F 67 63 61 74 20 2D 66 20 2F 6D 6E 74 2F 73 64 63 61 72 64 2F 6C 6F 67 63 61 74 2E 74 78 74 20 2D 64 00 
+09-02 10:07:46.415 14031 14031 E adbd    : service_to_fd: shell,v2,TERM=xterm-256color,raw:logcat -f /mnt/sdcard/logcat.txt -d
