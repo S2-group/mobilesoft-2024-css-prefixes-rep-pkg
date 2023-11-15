@@ -151,14 +151,17 @@ sns.boxplot(x=df_pixel5_firefox["prefix"], y=df_pixel5_firefox["lt"], data=df_pi
 opera_lt2 = sns.violinplot(data=df_pixel5_opera, x=df_pixel5_opera["prefix"], y=df_pixel5_opera["lt"], palette='pastel', ax=ax_lt2[2])
 sns.boxplot(x=df_pixel5_opera["prefix"], y=df_pixel5_opera["lt"], data=df_pixel5_opera, palette='deep', width=0.3,boxprops={'zorder': 2}, ax=opera_lt2)
 
+chrome_lt2.set(ylim = (0,1000))
 chrome_lt2.set(title='Chrome')
 chrome_lt2.set_xticklabels(['Without CSS \n prefixes','With CSS \n prefixes'])
 chrome_lt2.set(xlabel='CSS Prefixes', ylabel='Loading Time (milliseconds)')
 
+firefox_lt2.set(ylim = (0,1000))
 firefox_lt2.set(title='Firefox')
 firefox_lt2.set_xticklabels(['Without CSS \n prefixes','With CSS \n prefixes'])
 firefox_lt2.set(xlabel='CSS Prefixes', ylabel='Loading Time (milliseconds)')
 
+opera_lt2.set(ylim = (0,1000))
 opera_lt2.set(title='Opera')
 opera_lt2.set_xticklabels(['Without CSS \n prefixes','With CSS \n prefixes'])
 opera_lt2.set(xlabel='CSS Prefixes', ylabel='Loading Time (milliseconds)')
