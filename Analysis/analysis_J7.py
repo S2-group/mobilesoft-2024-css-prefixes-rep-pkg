@@ -94,6 +94,10 @@ ax_e[0].yaxis.set_tick_params(labelbottom=True)
 ax_e[1].yaxis.set_tick_params(labelbottom=True)
 ax_e[2].yaxis.set_tick_params(labelbottom=True)
 
+ax_e[0].set_yticklabels(['{:,.2f}'.format(x) for x in ax_e[0].get_yticks()* 1000])
+ax_e[1].set_yticklabels(['{:,.2f}'.format(x) for x in ax_e[1].get_yticks()* 1000])
+ax_e[2].set_yticklabels(['{:,.2f}'.format(x) for x in ax_e[2].get_yticks()* 1000])
+
 plt.setp(ax_e[0].get_yticklabels(),visible=True)
 plt.tight_layout()
 plt.savefig("J7_Energy_Consumption.png")

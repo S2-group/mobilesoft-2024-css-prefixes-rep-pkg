@@ -92,6 +92,11 @@ ax_e2[0].yaxis.set_tick_params(labelbottom=True)
 ax_e2[1].yaxis.set_tick_params(labelbottom=True)
 ax_e2[2].yaxis.set_tick_params(labelbottom=True)
 
+
+ax_e2[0].set_yticklabels(['{:,.2f}'.format(x) for x in ax_e2[0].get_yticks()* 100])
+ax_e2[1].set_yticklabels(['{:,.2f}'.format(x) for x in ax_e2[1].get_yticks()* 100])
+ax_e2[2].set_yticklabels(['{:,.2f}'.format(x) for x in ax_e2[2].get_yticks()* 100])
+
 plt.setp(ax_e2[0].get_yticklabels(),visible=True)
 plt.tight_layout()
 plt.savefig("Pixel5_Energy_Consumption.png")
