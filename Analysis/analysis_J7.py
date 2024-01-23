@@ -78,14 +78,17 @@ sns.boxplot(x=df_galaxyJ7_firefox["prefix"], y=df_galaxyJ7_firefox["e"], data=df
 opera = sns.violinplot(data=df_galaxyJ7_opera, x=df_galaxyJ7_opera["prefix"], y=df_galaxyJ7_opera["e"], palette='pastel', ax=ax_e[2])
 sns.boxplot(x=df_galaxyJ7_opera["prefix"], y=df_galaxyJ7_opera["e"], data=df_galaxyJ7_opera, palette='deep', width=0.3,boxprops={'zorder': 2}, ax=opera)
 
+chrome.set(ylim = (0,0.03))
 chrome.set(title='Chrome')
 chrome.set_xticklabels(['Without CSS \n prefixes','With CSS \n prefixes'])
 chrome.set(xlabel='CSS Prefixes', ylabel='Energy Consumption (Joules)')
 
+firefox.set(ylim = (0,0.03))
 firefox.set(title='Firefox')
 firefox.set_xticklabels(['Without CSS \n prefixes','With CSS \n prefixes'])
 firefox.set(xlabel='CSS Prefixes', ylabel='Energy Consumption (Joules)')
 
+opera.set(ylim = (0,0.03))
 opera.set(title='Opera')
 opera.set_xticklabels(['Without CSS \n prefixes','With CSS \n prefixes'])
 opera.set(xlabel='CSS Prefixes', ylabel='Energy Consumption (Joules)')
@@ -97,6 +100,7 @@ ax_e[2].yaxis.set_tick_params(labelbottom=True)
 ax_e[0].set_yticklabels(['{:,.2f}'.format(x) for x in ax_e[0].get_yticks()* 1000])
 ax_e[1].set_yticklabels(['{:,.2f}'.format(x) for x in ax_e[1].get_yticks()* 1000])
 ax_e[2].set_yticklabels(['{:,.2f}'.format(x) for x in ax_e[2].get_yticks()* 1000])
+
 
 plt.setp(ax_e[0].get_yticklabels(),visible=True)
 plt.tight_layout()
